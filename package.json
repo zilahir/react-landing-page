@@ -3,15 +3,23 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "framer-motion": "^1.6.8",
     "react": "^16.10.1",
     "react-dom": "^16.10.1",
-    "react-scripts": "3.1.2"
+    "react-redux": "^7.1.1",
+    "react-router-dom": "^5.1.2",
+    "react-scripts": "3.1.2",
+    "react-waypoint": "^9.0.2",
+    "redux": "^4.0.4",
+    "redux-thunk": "^2.3.0"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "format": "prettier --write",
+    "lint:js": "eslint --ext .js,.jsx ."
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -27,5 +35,42 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "lint-staged": {
+    "*.{js,jsx}": [
+      "yarn lint:js",
+      "git add"
+    ],
+    "*.{ts,tsx}": [
+      "yarn lint:ts",
+      "yarn format",
+      "git add"
+    ],
+    "*.{json,md,yml}": [
+      "yarn format",
+      "git add"
+    ]
+  },
+  "eslint-plugin-jsx-a11y": "^6.2.3",
+  "husky": {
+    "hooks": {
+      "pre-commit": "yarn lint-staged"
+    }
+  },
+  "devDependencies": {
+    "@zilahir/eslint-config": "^1.0.1",
+    "@zilahir/stylelint-config": "^1.0.0",
+    "eslint-config-airbnb": "^18.0.1",
+    "eslint-config-prettier": "^6.3.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-react": "^7.14.3",
+    "husky": "^3.0.5",
+    "lint-staged": "^9.2.5",
+    "prettier": "^1.18.2",
+    "redux-devtools-extension": "^2.13.8",
+    "sass-loader": "^8.0.0",
+    "stylelint": "^11.0.0",
+    "yarn": "^1.17.3"
   }
 }

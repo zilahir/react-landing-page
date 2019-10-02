@@ -20,6 +20,9 @@ const Homepage = () => {
 			<p>
 				the test reducer value is <code>{test.testItem}</code>
 			</p>
+			<p>
+				Test
+			</p>
 		</div>
 	)
 }

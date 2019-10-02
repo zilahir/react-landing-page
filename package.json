@@ -12,7 +12,8 @@
     "react-scripts": "3.1.2",
     "react-waypoint": "^9.0.2",
     "redux": "^4.0.4",
-    "redux-thunk": "^2.3.0"
+    "redux-thunk": "^2.3.0",
+    "styled-components": "^4.4.0"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -66,7 +67,7 @@
     "eslint-plugin-import": "^2.18.2",
     "eslint-plugin-jsx-a11y": "^6.2.3",
     "eslint-plugin-react": "^7.14.3",
-    "husky": "^3.0.5",
+    "husky": "^3.0.8",
     "lint-staged": "^9.2.5",
     "prettier": "^1.18.2",
     "redux-devtools-extension": "^2.13.8",

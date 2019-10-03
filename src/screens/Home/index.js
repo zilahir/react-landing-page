@@ -1,6 +1,7 @@
 import React from 'react'
 import { useStore } from 'react-redux'
 
+import TopHeader from '../../components/TopHeader'
 import styles from './Home.module.scss'
 
 /**
@@ -14,14 +15,9 @@ const Homepage = () => {
 
 	return (
 		<div className={styles.homePageWrapper}>
-			<p>
-				Homepage
-			</p>
+			<TopHeader />
 			<p>
 				the test reducer value is <code>{test.testItem}</code>
-			</p>
-			<p>
-				Test
 			</p>
 		</div>
 	)

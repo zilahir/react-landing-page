@@ -91,6 +91,27 @@ and then referencing them as:
 
 `styled-component` are part if this repository also, use it if a component requires styles related props, such as `color`, `width`, etc.
 
+Example:
+
+```
+import styled from 'styled-components`
+
+const DemoStyledComponent = styled.span`
+    display: flex;
+    &:before {
+        content: '';
+        width: ${props =>  props.width}px;
+        ...
+        ...
+        ...
+    }
+`
+```
+
+And then referencing them as the following:
+
+`<DemoStyledComponent width={200} />`
+
 Using the `!important` rule in `CSS` is strictly forbidden. If you come accross a problem which can be solved by using `!important` you need to redefine your `CSS`, or your `component` or both.
 
 Follow the rules of `HTML` tag nesting, to avoid `validateDOMnesting(...)` warnings.

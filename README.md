@@ -116,6 +116,10 @@ Here's a list of _important_ dependencies we are using in this project:
 
 Please read the documentation of these packages if you are not familiar with them.
 
+## Deployments
+
+This project is automatically deployed from branch `master`, using [`netlify`](https://www.netlify.com). You can follow the development process on this [url](react-landnig-page.netlify.com).
+
 ## Contact
 
 In case of questions, drop me a [message](mailto:zilahi@gmail.com).

@@ -3,25 +3,25 @@ import PropTypes from 'prop-types'
 
 /**
 * @author martincserep
-* @function Header
+* @function MenuItem
 * */
 
-const HeaderH2 = props => {
+const MenuItem = props => {
 	const { text, className } = props
 	return (
-		<h2 className={className}>
+		<li className={className}>
 			{text}
-		</h2>
+		</li>
 	)
 }
 
-HeaderH2.defaultProps = {
+MenuItem.defaultProps = {
 	className: null,
 }
 
-HeaderH2.propTypes = {
+MenuItem.propTypes = {
 	className: PropTypes.string,
 	text: PropTypes.string.isRequired,
 }
 
-export default HeaderH2
+export default MenuItem

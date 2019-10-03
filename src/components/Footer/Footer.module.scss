@@ -6,6 +6,9 @@
     min-height: 600px;
     background: rgba($color: #FFFFFF, $alpha: 1.0);
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
     .socialContainer {
         ul {
             list-style-type: none;

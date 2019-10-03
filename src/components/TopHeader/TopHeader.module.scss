@@ -22,14 +22,11 @@
         grid-auto-rows: minmax(20px,auto);
         grid-template-columns: repeat(2,1fr);
         grid-gap: 8px;
-        -webkit-align-content: center;
-        -ms-flex-line-pack: center;
         align-content: center;
         list-style: none;
         text-align: center;
         padding: 10px;
     }
-    
     .contact {
         padding: 10px;
         text-align: right;

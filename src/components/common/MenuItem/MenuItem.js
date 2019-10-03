@@ -1,6 +1,8 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
+import styles from './MenuItem.module.scss'
+
 /**
 * @author martincserep
 * @function MenuItem
@@ -9,7 +11,7 @@ import PropTypes from 'prop-types'
 const MenuItem = props => {
 	const { label } = props
 	return (
-		<li>
+		<li className={styles.menuItem}>
 			{label}
 		</li>
 	)

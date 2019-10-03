@@ -1,0 +1,38 @@
+.topHeader {
+    padding: 10px 0;
+    height: 50px;
+    background: rgba($color: #FFFFFF, $alpha: 1.0);
+    overflow: hidden;
+    .header {
+        display: grid;
+        grid-auto-flow: row;
+        grid-auto-rows: minmax(20px,auto);
+        grid-template-columns: repeat(3,1fr);
+        grid-gap: 8px;
+    }
+    .headerLogo {
+        padding: 10px;
+        text-align: left;
+        margin-left: 10px;
+    }
+    .headerList {
+        display: grid;
+        height: auto;
+        grid-auto-flow: row;
+        grid-auto-rows: minmax(20px,auto);
+        grid-template-columns: repeat(2,1fr);
+        grid-gap: 8px;
+        -webkit-align-content: center;
+        -ms-flex-line-pack: center;
+        align-content: center;
+        list-style: none;
+        text-align: center;
+        padding: 10px;
+    }
+    
+    .contact {
+        padding: 10px;
+        text-align: right;
+        margin-right: 10px;
+    }
+}

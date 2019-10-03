@@ -35,7 +35,7 @@ export default MenuItem
 
 **NOTE:** Please comment your components under the import section, so it's purpose will be clearly stated.
 
-1. We are using `css-grid` system in this project. More particularly [this](https://github.com/jxnblk/react-css-grid) one.
+1. We are using `css-grid` system in this project. More particularly [this](https://styled-css-grid.js.org/) one.
 
 2. We are using [`css modules`](https://create-react-app.dev/docs/adding-a-css-modules-stylesheet), but with `scss` syntax. Keep the `scss` as organizad as possible, try to avoid _endless_ nesting.
 

@@ -1,7 +1,9 @@
 import React from 'react'
+import { FiFacebook, FiInstagram } from 'react-icons/fi'
 
 import { footerMenu } from '../api/footer'
 import styles from './Footer.module.scss'
+
 
 /**
 * @author zilahir
@@ -16,10 +18,10 @@ const Footer = () => {
 			<div className={styles.socialContainer}>
 				<ul>
 					<li>
-						facebook
+						<FiFacebook size="2em" />
 					</li>
 					<li>
-						whatever
+						<FiInstagram size="2em" />
 					</li>
 				</ul>
 			</div>

@@ -1,5 +1,29 @@
 @import '../../../styles/mixins/ParagraphMixin';
+@import '../../../styles/variables';
 
 .menuItem {
     @include p;
+    position: relative;
+    &:after {
+        content: '';
+        height: 4px;
+        display: block;
+        position: absolute;
+        bottom: -10px;
+        left: 0;
+        width: 0;;
+    }
+    &:hover {
+        cursor: pointer;
+        &:after {
+            content: '';
+            height: 4px;
+            background-color: $main-green;
+            display: block;
+            position: absolute;
+            bottom: -10px;
+            left: 0;
+            width: -webkit-fill-available;
+        }
+    }
 }

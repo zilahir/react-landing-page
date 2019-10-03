@@ -22,13 +22,13 @@ const Footer = () => {
 					alignContent="center"
 				>
 					<Cell>
-						<p>lofasz</p>
+						<p>lorem</p>
 					</Cell>
 					<Cell>
-						<p>lofasz</p>
+						<p>lorem</p>
 					</Cell>
 					<Cell>
-						<p>lofasz</p>
+						<p>lorem</p>
 					</Cell>
 				</Grid>
 			</div>

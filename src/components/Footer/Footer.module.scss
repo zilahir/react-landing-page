@@ -1,9 +1,14 @@
+@import '../../styles/mixins/ParagraphMixin';
+
 .footerWrapper {
     padding: 60px 0;
     margin: 0 80px;
     min-height: 600px;
     background: rgba($color: #FFFFFF, $alpha: 1.0);
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
     .socialContainer {
         ul {
             list-style-type: none;
@@ -17,8 +22,16 @@
     }
     .legalContainer {
         max-width: 60%;
+        small {
+            line-height: 18px;
+        }
         p, small {
             color: #a8aabc;
+            @include p;
+            margin: 10px 0px;
+        }
+        .heart {
+            opacity: .6;
         }
     }
     .footerNavContainer {

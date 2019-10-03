@@ -33,7 +33,7 @@ const MenuItem = () => (
 export default MenuItem
 ```
 
-**NOTE:** Please comment your components under the import section, so it will it's purpose will be clearly stated.
+**NOTE:** Please comment your components under the import section, so it's purpose will be clearly stated.
 
 1. We are using `css-grid` system in this project. More particularly [this](https://github.com/jxnblk/react-css-grid) one.
 
@@ -58,6 +58,14 @@ import React, { useState } from 'react'
 
 const [isVisible, setIsVisible] = useState(false)
 ```
+
+and when you need to set it's value
+
+```
+setIsVisible(true)
+```
+
+Read more about `react-hooks` in it's [documentation](https://reactjs.org/docs/hooks-overview.html)
 
 For `hooks` follow the naming conventions, as in the example above. If a variable needs to be set to a specific value, use the `set` in the naming, so it will be consequent, and readable.
 

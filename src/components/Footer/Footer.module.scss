@@ -1,10 +1,18 @@
 .footerWrapper {
-    padding: 60 0px;
+    padding: 60px 0;
+    min-height: 600px;
+    background: rgba($color: #FFFFFF, $alpha: 1.0);
+    overflow: hidden;
     .socialContainer {
         ul {
             list-style-type: none;
             padding: 0;
             margin: 0;
+        }
+    }
+    .legalContainer {
+        p, small {
+            color: #a8aabc;
         }
     }
 }

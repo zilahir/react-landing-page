@@ -20,12 +20,15 @@
     .legalContainer {
         max-width: 60%;
         small {
-            line-height: 2;
+            line-height: 18px;
         }
         p, small {
             color: #a8aabc;
             @include p;
             margin: 10px 0px;
+        }
+        .heart {
+            opacity: .6;
         }
     }
     .footerNavContainer {

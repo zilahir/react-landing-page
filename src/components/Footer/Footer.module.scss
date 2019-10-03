@@ -1,3 +1,5 @@
+@import '../../styles/mixins/ParagraphMixin';
+
 .footerWrapper {
     padding: 60px 0;
     margin: 0 80px;
@@ -17,8 +19,13 @@
     }
     .legalContainer {
         max-width: 60%;
+        small {
+            line-height: 2;
+        }
         p, small {
             color: #a8aabc;
+            @include p;
+            margin: 10px 0px;
         }
     }
     .footerNavContainer {

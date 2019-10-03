@@ -5,5 +5,3 @@ export const headerMenu = {
 	],
 	getHeaderMenu: () => headerMenu.menuItems,
 }
-
-export default headerMenu

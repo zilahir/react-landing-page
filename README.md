@@ -16,7 +16,7 @@ PRs are welcome. To contribute to this repo, first `fork` it, create a local `br
 
 ### General rules
 
-We are _not_ using `class` based components, only [`stateless function`](https://www.robinwieruch.de/react-function-component#react-stateless-function-component) components. You _must_ follow the rules set by the provided [`ESlint`](https://eslint.org/) configuration. [`husky`](https://github.com/typicode/husky) package is applied, so you will not be able to commit to this repository if the requirements are not set.
+We are _not_ using `class` based components, only [`stateless function`](https://www.robinwieruch.de/react-function-component#react-stateless-function-component) components. You _must_ follow the rules set by the provided [`ESlint`](https://eslint.org/) configuration. [`husky`](https://github.com/typicode/husky) package is applied, so you will not be able to commit to this repository if the requirements are not met.
 
 Example:
 
@@ -46,6 +46,20 @@ export default MenuItem
 5. Using [`prop-types`](https://reactjs.org/docs/typechecking-with-proptypes.html) are mandatory. Read the docs of `prop-types` [here](https://reactjs.org/docs/typechecking-with-proptypes.html) if you are not familiar with it.
 
 6. Try to avoid installing 3rd party `react` components, unless it's a must. Try to implement everything by your own.
+
+## Hooks
+
+Since `hooks` has been introduced to `react`, let's aim to use them.
+
+For example:
+
+```
+import React, { useState } from 'react'
+
+const [isVisible, setIsVisible] = useState(false)
+```
+
+For `hooks` follow the naming conventions, as in the example above. If a variable needs to be set to a specific value, use the `set` in the naming, so it will be consequent, and readable.
 
 ## File structure
 
@@ -128,7 +142,7 @@ The headings (`h1`, `h2`, etc.) are `KoHo`, and body texts (`p`, `span`, etc.) a
 
 ## Contents
 
-Even for placeholders, it's **forbidden** to hardcode _any_ texts into the code. Let's use mimic some `API`, to help in the future connect some `graphQl`.
+Even for placeholders, it's **forbidden** to hardcode _any_ texts into the code. Let's use mimic some `API`, to help in the future connect some `graphQl`. Future plan is once the initial release is done, port this to [`gatsbyJs`](https://www.gatsbyjs.org/)
 
 Example:
 

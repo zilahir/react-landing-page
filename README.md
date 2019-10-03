@@ -142,7 +142,7 @@ The headings (`h1`, `h2`, etc.) are `KoHo`, and body texts (`p`, `span`, etc.) a
 
 ## Contents
 
-Even for placeholders, it's **forbidden** to hardcode _any_ texts into the code. Let's use mimic some `API`, to help in the future connect some `graphQl`.
+Even for placeholders, it's **forbidden** to hardcode _any_ texts into the code. Let's use mimic some `API`, to help in the future connect some `graphQl`. Future plan is once the initial release is done, port this to [`gatsbyJs`](https://www.gatsbyjs.org/)
 
 Example:
 

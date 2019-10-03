@@ -1,6 +1,6 @@
 import React from 'react'
 
-import MenuItem from '../common/MenuItem/MenuItem'
+import MenuItem from '../common/MenuItem'
 import { headerMenu } from '../api/headerMenu'
 import styles from './TopHeader.module.scss'
 

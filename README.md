@@ -127,17 +127,27 @@ The headings (`h1`, `h2`, etc.) are `KoHo`, and body texts (`p`, `span`, etc.) a
 
 ## Contents
 
-Even for placeholders, it's forbidden to hardcode any texts into the code. Let's use mimic some API, to help in the future connect some `graphQl`.
+Even for placeholders, it's **forbidden** to hardcode _any_ texts into the code. Let's use mimic some `API`, to help in the future connect some `graphQl`.
 
 Example:
 
 ```
 export const headerMenu = {
 	menuItems: [
-		{ label: 'Home', slug: 'home' },
+		{ key: 1, label: 'Home', slug: 'home' },
+		{ key: 2, label: 'About us', slug: 'aboutus' },
 	],
-	getHeaderMenu: () => this.menuItems,
+	getHeaderMenu: () => headerMenu.menuItems,
 }
+```
+
+Then reference it as the following:
+
+```
+import { headerMenu } from <path-to-file>
+
+const menuItem = headerMenu.getHeaderMenu();
+
 ```
 
 ## Dependencies

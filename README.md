@@ -47,6 +47,32 @@ export default MenuItem
 
 6. Try to avoid installing 3rd party `react` components, unless it's a must. Try to implement everything by your own.
 
+### Naming conventions
+
+We are using `camelCase` naming conventons for both variable names, and `classNames`, for example:
+
+`TopHeader`, `isVisible`, etc.
+
+The `scss modules` are always important for a specific component as `styles`.
+
+```
+import styles from ./TopHeader.module.scss
+```
+
+and then referencing them as:
+
+```
+<div className={styles.topHeaderWrapper}>
+    ...
+</div>
+```
+
+`styled-component` are part if this repository also, use it if a component requires styles related props, such as `color`, `width`, etc.
+
+Using the `!important` rule in `CSS` is strictly forbidden. If you come accross a problem which can be solved by using `!important` you need to redefine your `CSS`, or your `component` or both.
+
+Follow the rules of `HTML` tag nesting, to avoid `validateDOMnesting(...)` warnings.
+
 ## Dependencies
 
 Here's a list of _important_ dependencies we are using in this project:
@@ -61,4 +87,4 @@ Please read the documentation of these packages if you are not familiar with the
 
 ## Contact
 
-In case of questions, drop me a [message](mailto:zilahi@gmail.com)
+In case of questions, drop me a [message](mailto:zilahi@gmail.com).

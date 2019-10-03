@@ -95,6 +95,15 @@ Using the `!important` rule in `CSS` is strictly forbidden. If you come accross 
 
 Follow the rules of `HTML` tag nesting, to avoid `validateDOMnesting(...)` warnings.
 
+## Fonts
+
+We are using two different font familier here. Both provided by `Google fonts`.
+
+1. `KoHo`
+2. `Roboto`
+
+The headings (`h1`, `h2`, etc.) are `KoHo`, and body texts (`p`, `span`, etc.) are `Roboto`.
+
 ## Dependencies
 
 Here's a list of _important_ dependencies we are using in this project:

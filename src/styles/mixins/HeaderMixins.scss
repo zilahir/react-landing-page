@@ -1,0 +1,7 @@
+@import '../variables';
+
+@mixin HeaderH1 {
+    font-family: 'KoHo', sans-serif;
+    font-size: 72px;
+    color: $food-green;
+}

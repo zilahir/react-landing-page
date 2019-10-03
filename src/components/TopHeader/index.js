@@ -1,23 +1,30 @@
 import React from 'react'
 
+import MenuItem from '../common/MenuItem'
 import { headerMenu } from '../api/headerMenu'
+import styles from './TopHeader.module.scss'
+import Logo from '../../assets/img/logo.png'
 
 /**
-* @author
+* @author martincserep
 * @function TopHeader
 * */
 
 const TopHeader = () => (
-	<div>
-		<h1>TopHeader</h1>
-		<div>
-			menuitems
-			<ul>
+	<div className={styles.topHeader}>
+		<div className={styles.header}>
+			<ul className={styles.logo}>
+				<li>
+					<img alt="foodoclock" src={Logo} />
+				</li>
+			</ul>
+			<ul className={styles.headerList}>
 				{headerMenu.getHeaderMenu().map(menuItem => (
-					<li key={menuItem.key}>
-						{menuItem.label}
-					</li>
+					<MenuItem label={menuItem.label} />
 				))}
+			</ul>
+			<ul className={styles.menuRight}>
+				<MenuItem label="Contact" />
 			</ul>
 		</div>
 	</div>

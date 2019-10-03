@@ -22,13 +22,13 @@ const Footer = () => {
 					alignContent="center"
 				>
 					<Cell>
-						<p>lofasz</p>
+						<p>lorem</p>
 					</Cell>
 					<Cell>
-						<p>lofasz</p>
+						<p>lorem</p>
 					</Cell>
 					<Cell>
-						<p>lofasz</p>
+						<p>lorem</p>
 					</Cell>
 				</Grid>
 			</div>
@@ -44,13 +44,18 @@ const Footer = () => {
 			</div>
 			<div className={styles.legalContainer}>
 				<p>
-					{ rights }
+					{new Date().getFullYear()}, { rights }
 				</p>
 				<small>
 					{
 						legalText
 					}
 				</small>
+				<p className={styles.heart}>
+					<small>
+						made  with <span aria-label="heart" role="img">❤️</span> in Helsinki, Finland
+					</small>
+				</p>
 			</div>
 		</footer>
 	)

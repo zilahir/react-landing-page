@@ -1,0 +1,42 @@
+@import '../../styles/variables.scss';
+
+.topHeader {
+    height: 50px;
+    background: rgba($color: #FFFFFF, $alpha: 1.0);
+    overflow: hidden;
+    padding: 20px 0;
+    margin: 0 80px;
+    .header {
+        display: grid;
+        grid-auto-flow: row;
+        grid-auto-rows: minmax(20px,auto);
+        grid-template-columns: repeat(3,1fr);
+        grid-gap: 8px;
+    }
+    .logo {
+        list-style-type: none;
+        img {
+            max-width: 50px;
+            border-radius: 100%;
+            border-right: 4px solid $main-green;
+            border-bottom: 4px solid $main-green;
+        }
+    }
+    .headerList {
+        display: grid;
+        grid-auto-flow: row;
+        grid-auto-rows: minmax(20px,auto);
+        grid-template-columns: repeat(3, 150px);
+        grid-gap: 8px;
+        align-content: center;
+        list-style: none;
+        text-align: center;
+        padding: 10px;
+    }
+    .menuRight {
+        list-style-type: none;
+        align-items: center;
+        display: flex;
+        justify-content: flex-end;
+    }
+}

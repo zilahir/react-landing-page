@@ -43,7 +43,7 @@ export default MenuItem
 
 4. Write as generic components as possible to help reusability.
 
-5. Using [`prop-types`](https://reactjs.org/docs/typechecking-with-proptypes.html) are mandatory. Read the docs of prop-types [here](https://reactjs.org/docs/typechecking-with-proptypes.html) if you are not familiar with it.
+5. Using [`prop-types`](https://reactjs.org/docs/typechecking-with-proptypes.html) are mandatory. Read the docs of `prop-types` [here](https://reactjs.org/docs/typechecking-with-proptypes.html) if you are not familiar with it.
 
 6. Try to avoid installing 3rd party `react` components, unless it's a must. Try to implement everything by your own.
 

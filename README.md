@@ -16,7 +16,7 @@ PRs are welcome. To contribute to this repo, first `fork` it, create a local `br
 
 ## General rules
 
-We are _not_ using `class` based components, only `stateless function` components. You must follow the rules set by the provided `esLint` configuration. `husky` package is applied, so you will not be able to commit to this repository if the requirements are not set.
+We are _not_ using `class` based components, only `stateless function` components. You must follow the rules set by the provided [`ESlint`](https://eslint.org/) configuration. [`husky`](https://github.com/typicode/husky) package is applied, so you will not be able to commit to this repository if the requirements are not set.
 
 Example:
 

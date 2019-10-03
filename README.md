@@ -43,7 +43,7 @@ export default MenuItem
 
 4. Write as generic components as possible to help reusability.
 
-5. Using [`prop-types`](https://reactjs.org/docs/typechecking-with-proptypes.html) are mandatory. Read the docs of prop-types [here](https://reactjs.org/docs/typechecking-with-proptypes.html) if you are not familiar with it.
+5. Using [`prop-types`](https://reactjs.org/docs/typechecking-with-proptypes.html) are mandatory. Read the docs of `prop-types` [here](https://reactjs.org/docs/typechecking-with-proptypes.html) if you are not familiar with it.
 
 6. Try to avoid installing 3rd party `react` components, unless it's a must. Try to implement everything by your own.
 
@@ -58,13 +58,14 @@ Each component have to be in `components` folder.
 ## Folder structure
 
 - **components**
+
   - **MenuItem**
     - [index.js](components/MenuItem/index.js)
     - [MenuItem.module.scss](components/MenuItem/MenuItem.module.scss)
   - **api**
     - [headerMenu.js](components/api/headerMenu.js)
   - **common**
-  - [list.md](components/list.md)
+
   - **TopHeader**
     - [TopHeader.module.scss](components/TopHeader/TopHeader.module.scss)
     - [index.js](components/TopHeader/index.js)

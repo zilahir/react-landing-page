@@ -1,4 +1,4 @@
-This is a repo for an ongoing development of a landing page written in react.
+This is a repo for an ongoing development of a landing page written in `react`.
 
 ## List of components
 
@@ -94,6 +94,15 @@ and then referencing them as:
 Using the `!important` rule in `CSS` is strictly forbidden. If you come accross a problem which can be solved by using `!important` you need to redefine your `CSS`, or your `component` or both.
 
 Follow the rules of `HTML` tag nesting, to avoid `validateDOMnesting(...)` warnings.
+
+## Fonts
+
+We are using two different font familier here. Both provided by `Google fonts`.
+
+1. `KoHo`
+2. `Roboto`
+
+The headings (`h1`, `h2`, etc.) are `KoHo`, and body texts (`p`, `span`, etc.) are `Roboto`.
 
 ## Dependencies
 

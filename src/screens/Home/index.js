@@ -1,5 +1,6 @@
 import React from 'react'
 // import { useStore } from 'react-redux'
+import { Grid } from 'styled-css-grid'
 
 import TopHeader from '../../components/TopHeader'
 import Footer from '../../components/Footer'
@@ -17,8 +18,10 @@ const Homepage = () => {
 
 	return (
 		<>
-			<TopHeader />
-			<Footer />
+			<Grid columns={1} gap="40px">
+				<TopHeader />
+				<Footer />
+			</Grid>
 		</>
 	)
 }

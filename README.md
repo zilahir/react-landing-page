@@ -1,4 +1,4 @@
-This is a repo for an ongoing development of a landing page written in react.
+This is a repo for an ongoing development of a landing page written in `react`.
 
 ## List of components
 

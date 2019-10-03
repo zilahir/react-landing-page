@@ -23,6 +23,11 @@ const TopHeader = () => (
 					<MenuItem label={menuItem.label} />
 				))}
 			</ul>
+			<ul className={styles.menuRight}>
+				<li>
+					<MenuItem label="Contact" />
+				</li>
+			</ul>
 		</div>
 	</div>
 )

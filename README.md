@@ -47,6 +47,18 @@ export default MenuItem
 
 6. Try to avoid installing 3rd party `react` components, unless it's a must. Try to implement everything by your own.
 
+## Dependencies
+
+Here's a list of _important_ dependencies we are using in this project:
+
+1. [`framer-motion`](https://github.com/framer/motion)
+2. [`react-waypoint`](https://github.com/civiccc/react-waypoint)
+3. [`redux`](https://github.com/reduxjs/redux)
+4. [`redux-thunk`](https://github.com/reduxjs/redux-thunk)
+5. [`styled-components`](https://github.com/styled-components/styled-components)
+
+Please read the documentation of these packages if you are not familiar with them.
+
 ## Contact
 
 In case of questions, drop me a [message](mailto:zilahi@gmail.com)

@@ -1,8 +1,10 @@
-.topHeader {
-    padding: 10px 0;
+@import '../../styles/variables.scss';
+
+.topHeader {    
     height: 50px;
     background: rgba($color: #FFFFFF, $alpha: 1.0);
     overflow: hidden;
+    padding: 20px 0;
     .header {
         display: grid;
         grid-auto-flow: row;
@@ -10,10 +12,14 @@
         grid-template-columns: repeat(3,1fr);
         grid-gap: 8px;
     }
-    .headerLogo {
-        padding: 10px;
-        text-align: left;
-        margin-left: 10px;
+    .logo {
+        list-style-type: none;
+        img {
+            max-width: 50px;
+            border-radius: 100%;
+            border-right: 4px solid $main-green;
+            border-bottom: 4px solid $main-green;
+        }
     }
     .headerList {
         display: grid;
@@ -26,10 +32,5 @@
         list-style: none;
         text-align: center;
         padding: 10px;
-    }
-    .contact {
-        padding: 10px;
-        text-align: right;
-        margin-right: 10px;
     }
 }

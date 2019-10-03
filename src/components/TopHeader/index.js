@@ -3,6 +3,7 @@ import React from 'react'
 import MenuItem from '../common/MenuItem'
 import { headerMenu } from '../api/headerMenu'
 import styles from './TopHeader.module.scss'
+import Logo from '../../assets/img/logo.png'
 
 /**
 * @author martincserep
@@ -12,13 +13,16 @@ import styles from './TopHeader.module.scss'
 const TopHeader = () => (
 	<div className={styles.topHeader}>
 		<div className={styles.header}>
-			<p className={styles.headerLogo}>Logo</p>
+			<ul className={styles.logo}>
+				<li>
+					<img alt="foodoclock" src={Logo} />
+				</li>
+			</ul>
 			<ul className={styles.headerList}>
 				{headerMenu.getHeaderMenu().map(menuItem => (
 					<MenuItem label={menuItem.label} />
 				))}
 			</ul>
-			<p className={styles.contact}>Contact</p>
 		</div>
 	</div>
 )

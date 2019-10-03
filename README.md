@@ -14,7 +14,7 @@ This is a repo for an ongoing development of a landing page written in `react`.
 
 PRs are welcome. To contribute to this repo, first `fork` it, create a local `branch` with some meaningful name, and start working. When you are done, submit a `PR` and I'll review it.
 
-## General rules
+### General rules
 
 We are _not_ using `class` based components, only [`stateless function`](https://www.robinwieruch.de/react-function-component#react-stateless-function-component) components. You _must_ follow the rules set by the provided [`ESlint`](https://eslint.org/) configuration. [`husky`](https://github.com/typicode/husky) package is applied, so you will not be able to commit to this repository if the requirements are not set.
 

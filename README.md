@@ -125,6 +125,31 @@ We are using two different font familier here. Both provided by `Google fonts`.
 
 The headings (`h1`, `h2`, etc.) are `KoHo`, and body texts (`p`, `span`, etc.) are `Roboto`.
 
+## Contents
+
+Even for placeholders, it's **forbidden** to hardcode _any_ texts into the code. Let's use mimic some `API`, to help in the future connect some `graphQl`.
+
+Example:
+
+```
+export const headerMenu = {
+	menuItems: [
+		{ key: 1, label: 'Home', slug: 'home' },
+		{ key: 2, label: 'About us', slug: 'aboutus' },
+	],
+	getHeaderMenu: () => headerMenu.menuItems,
+}
+```
+
+Then reference it as the following:
+
+```
+import { headerMenu } from <path-to-file>
+
+const menuItem = headerMenu.getHeaderMenu();
+
+```
+
 ## Dependencies
 
 Here's a list of _important_ dependencies we are using in this project:

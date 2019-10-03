@@ -14,9 +14,9 @@ This is a repo for an ongoing development of a landing page written in `react`.
 
 PRs are welcome. To contribute to this repo, first `fork` it, create a local `branch` with some meaningful name, and start working. When you are done, submit a `PR` and I'll review it.
 
-### General rules
+## General rules
 
-We are _not_ using `class` based components, only `stateless function` components. You must follow the rules set by the provided `esLint` configuration. `husky` package is applied, so you will not be able to commit to this repository if the requirements are not set.
+We are _not_ using `class` based components, only [`stateless function`](https://www.robinwieruch.de/react-function-component#react-stateless-function-component) components. You _must_ follow the rules set by the provided [`ESlint`](https://eslint.org/) configuration. [`husky`](https://github.com/typicode/husky) package is applied, so you will not be able to commit to this repository if the requirements are not set.
 
 Example:
 
@@ -91,6 +91,27 @@ and then referencing them as:
 
 `styled-component` are part if this repository also, use it if a component requires styles related props, such as `color`, `width`, etc.
 
+Example:
+
+```
+import styled from 'styled-components`
+
+const DemoStyledComponent = styled.span`
+    display: flex;
+    &:before {
+        content: '';
+        width: ${props =>  props.width}px;
+        ...
+        ...
+        ...
+    }
+`
+```
+
+And then referencing them as the following:
+
+`<DemoStyledComponent width={200} />`
+
 Using the `!important` rule in `CSS` is strictly forbidden. If you come accross a problem which can be solved by using `!important` you need to redefine your `CSS`, or your `component` or both.
 
 Follow the rules of `HTML` tag nesting, to avoid `validateDOMnesting(...)` warnings.
@@ -118,7 +139,7 @@ Please read the documentation of these packages if you are not familiar with the
 
 ## Deployments
 
-This project is automatically deployed from branch `master`, using [`netlify`](https://www.netlify.com). You can follow the development process on this [url](react-landnig-page.netlify.com).
+This project is automatically deployed from branch `master`, using [`netlify`](https://www.netlify.com). You can follow the development process on this [url](https://react-landnig-page.netlify.com/).
 
 ## Contact
 

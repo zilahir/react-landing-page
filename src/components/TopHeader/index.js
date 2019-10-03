@@ -5,7 +5,7 @@ import { headerMenu } from '../api/headerMenu'
 import styles from './TopHeader.module.scss'
 
 /**
-* @author
+* @author martincserep
 * @function TopHeader
 * */
 

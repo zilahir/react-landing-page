@@ -4,6 +4,7 @@ import MenuItem from '../common/MenuItem'
 import { headerMenu } from '../api/headerMenu'
 import styles from './TopHeader.module.scss'
 import Logo from '../../assets/img/logo.png'
+import ContactButton from '../common/Button/ContactButton'
 
 /**
 * @author martincserep
@@ -23,6 +24,9 @@ const TopHeader = () => (
 					<MenuItem label={menuItem.label} />
 				))}
 			</ul>
+			<div className={styles.contact}>
+				<ContactButton text="Contact Sales" />
+			</div>
 		</div>
 	</div>
 )

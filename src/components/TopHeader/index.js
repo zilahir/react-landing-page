@@ -24,9 +24,7 @@ const TopHeader = () => (
 				))}
 			</ul>
 			<ul className={styles.menuRight}>
-				<li>
-					<MenuItem label="Contact" />
-				</li>
+				<MenuItem label="Contact" />
 			</ul>
 		</div>
 	</div>

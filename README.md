@@ -47,6 +47,20 @@ export default MenuItem
 
 6. Try to avoid installing 3rd party `react` components, unless it's a must. Try to implement everything by your own.
 
+## Hooks
+
+Since `hooks` has been introduced to `react`, let's aim to use them.
+
+For example:
+
+```
+import React, { useState } from 'react'
+
+const [isVisible, setIsVisible] = useState(false)
+```
+
+For `hooks` follow the naming conventions, as in the example above. If a variable needs to be set to a specific value, use the `set` in the naming, so it will be consequent, and readable.
+
 ## File structure
 
 Each component have to be in `components` folder.

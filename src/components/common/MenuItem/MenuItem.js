@@ -6,18 +6,18 @@ import PropTypes from 'prop-types'
 * @function MenuItem
 * */
 
-const MenuItem = label => {
-	const { text } = label
+const MenuItem = props => {
+	const { label } = props
 	return (
 		<li>
-			{text}
+			{label}
 		</li>
 	)
 }
 
 
-MenuItem.labelType = {
-	text: PropTypes.string.isRequired,
+MenuItem.propTypes = {
+	label: PropTypes.string.isRequired,
 }
 
 export default MenuItem

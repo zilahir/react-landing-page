@@ -14,7 +14,7 @@ const TopHeader = () => (
 		<div>
 			<ul>
 				{headerMenu.getHeaderMenu().map(menuItem => (
-					<MenuItem text={menuItem.label} />
+					<MenuItem label={menuItem.label} />
 				))}
 			</ul>
 		</div>

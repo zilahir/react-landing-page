@@ -1,6 +1,8 @@
 import React from 'react'
 
+import MenuItem from '../common/MenuItem/MenuItem'
 import { headerMenu } from '../api/headerMenu'
+
 
 /**
 * @author
@@ -9,14 +11,10 @@ import { headerMenu } from '../api/headerMenu'
 
 const TopHeader = () => (
 	<div>
-		<h1>TopHeader</h1>
 		<div>
-			menuitems
 			<ul>
 				{headerMenu.getHeaderMenu().map(menuItem => (
-					<li key={menuItem.key}>
-						{menuItem.label}
-					</li>
+					<MenuItem text={menuItem.label} />
 				))}
 			</ul>
 		</div>

@@ -7,20 +7,16 @@ import PropTypes from 'prop-types'
 * */
 
 const MenuItem = props => {
-	const { text, className } = props
+	const { text } = props
 	return (
-		<li className={className}>
+		<li>
 			{text}
 		</li>
 	)
 }
 
-MenuItem.defaultProps = {
-	className: null,
-}
 
 MenuItem.propTypes = {
-	className: PropTypes.string,
 	text: PropTypes.string.isRequired,
 }
 

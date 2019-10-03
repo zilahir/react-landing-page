@@ -47,7 +47,29 @@ export default MenuItem
 
 6. Try to avoid installing 3rd party `react` components, unless it's a must. Try to implement everything by your own.
 
-### Naming conventions
+## File structure
+
+Each component have to be in `components` folder.
+
+1. in `common/<component-name>`, if it's a _common_ component.
+
+2. in `screens/<screen-name>`, if it's a page.
+
+## Folder structure
+
+- **components**
+  - **MenuItem**
+    - [index.js](components/MenuItem/index.js)
+    - [MenuItem.module.scss](components/MenuItem/MenuItem.module.scss)
+  - **api**
+    - [headerMenu.js](components/api/headerMenu.js)
+  - **common**
+  - [list.md](components/list.md)
+  - **TopHeader**
+    - [TopHeader.module.scss](components/TopHeader/TopHeader.module.scss)
+    - [index.js](components/TopHeader/index.js)
+
+## Naming conventions
 
 We are using `camelCase` naming conventons for both variable names, and `classNames`, for example:
 

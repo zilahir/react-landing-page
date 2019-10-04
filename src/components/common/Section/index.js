@@ -11,14 +11,12 @@ import styles from './Section.module.scss'
 * */
 
 const Section = props => {
-	const { imagePos, bgColor } = props
+	const { imagePos, bgColor, children } = props
 	return (
 		<div className={styles.sectionWrapper}>
 			<Grid columns={12}>
 				<Cell width={6}>
-					<p>
-						left
-					</p>
+					{children}
 				</Cell>
 				<Cell width={6}>
 					<p>
@@ -32,6 +30,7 @@ const Section = props => {
 
 Section.propTypes = {
 	bgColor: PropTypes.string.isRequired,
+	children: PropTypes.node.isRequired,
 	imagePos: PropTypes.string.isRequired,
 }
 

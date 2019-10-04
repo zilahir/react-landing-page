@@ -16,7 +16,7 @@ const HeaderH1 = props => {
 }
 
 HeaderH1.defaultProps = {
-	className: null,
+	className: '',
 }
 
 HeaderH1.propTypes = {

@@ -5,7 +5,7 @@ import styled from 'styled-components'
 import styles from './Button.module.scss'
 
 /**
-* @author martincserep
+* @author martincserep, zilahir
 * @function Header
 * */
 

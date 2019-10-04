@@ -16,6 +16,7 @@
     }
     &:hover {
         cursor: pointer;
+        font-weight: 600;
         &:after {
             content: '';
             background: none;
@@ -31,6 +32,7 @@
             position: absolute;
             bottom: -10px;
             display: flex;
+            transition: all .4s ease;
         }
     }
 }

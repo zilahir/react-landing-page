@@ -1,9 +1,9 @@
 @import '../../../styles/variables';
+@import '../../../styles/mixins/ParagraphMixin.scss';
 
-button {
+.defaultButton {
     padding: 10px 20px;
     background-color: $main-green;
-    color: #fefefe;
     font-weight: bold;
     font-family: 'Roboto', sans-serif;
     letter-spacing: 1.20px;
@@ -12,5 +12,12 @@ button {
     box-shadow: none;
     border: none;
     width: 150px;
-    height: 50
+    height: 50;
+    @include p;
+    color: #fefefe;
+    font-size: 14px;
+    font-weight: normal;
+    &:hover {
+        cursor: pointer;
+    }
 }

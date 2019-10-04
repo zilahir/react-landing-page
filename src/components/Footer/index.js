@@ -4,6 +4,7 @@ import { Cell, Grid } from 'styled-css-grid'
 
 import { footerMenu } from '../api/footer'
 import styles from './Footer.module.scss'
+import Button from '../common/Button/Button'
 
 
 /**
@@ -28,7 +29,7 @@ const Footer = () => {
 						<p>lorem</p>
 					</Cell>
 					<Cell>
-						<p>lorem</p>
+						<Button text="Button" />
 					</Cell>
 				</Grid>
 			</div>

@@ -1,14 +1,14 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-import styles from './ContactButton.module.scss'
+import styles from './Button.module.scss'
 
 /**
 * @author martincserep
 * @function Header
 * */
 
-const ContactButton = props => {
+const Button = props => {
 	const { text } = props
 	return (
 		<button className={styles} type="button">
@@ -18,8 +18,8 @@ const ContactButton = props => {
 }
 
 
-ContactButton.propTypes = {
+Button.propTypes = {
 	text: PropTypes.string.isRequired,
 }
 
-export default ContactButton
+export default Button

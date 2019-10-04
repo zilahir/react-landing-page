@@ -5,7 +5,7 @@ import { Grid } from 'styled-css-grid'
 import TopHeader from '../../components/TopHeader'
 import Footer from '../../components/Footer'
 import Section from '../../components/common/Section'
-// import styles from './Home.module.scss'
+import styles from './Home.module.scss'
 
 /**
 * @author zilahir
@@ -21,9 +21,9 @@ const Homepage = () => {
 		<>
 			<Grid columns={1} gap="40px">
 				<TopHeader />
-				<>
+				<div className={styles.sectionContainer}>
 					<Section />
-				</>
+				</div>
 				<Footer />
 			</Grid>
 		</>

@@ -1,3 +1,5 @@
-.homePageWrapper {
-    display: block;
+@import '../../styles/mixins/Section';
+
+.sectionContainer {
+    @include section;
 }

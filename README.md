@@ -182,6 +182,7 @@ Here's a list of _important_ dependencies we are using in this project:
 3. [`redux`](https://github.com/reduxjs/redux)
 4. [`redux-thunk`](https://github.com/reduxjs/redux-thunk)
 5. [`styled-components`](https://github.com/styled-components/styled-components)
+6. [`react-parallax](https://github.com/RRutsche/react-parallax)
 
 Please read the documentation of these packages if you are not familiar with them.
 

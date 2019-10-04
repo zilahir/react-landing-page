@@ -20,7 +20,9 @@ const TopHeader = () => (
 			</ul>
 			<ul className={styles.headerList}>
 				{headerMenu.getHeaderMenu().map(menuItem => (
-					<MenuItem label={menuItem.label} />
+					<MenuItem
+						label={menuItem.label}
+					/>
 				))}
 			</ul>
 			<ul className={styles.menuRight}>

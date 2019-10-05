@@ -1,3 +1,8 @@
 .sectionWrapper {
     display: block;
+    .textContainer {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
 }

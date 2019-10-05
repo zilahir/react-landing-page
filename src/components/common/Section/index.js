@@ -15,7 +15,13 @@ const Section = props => {
 	return (
 		<div className={styles.sectionWrapper}>
 			<Row>
-				<Col xs={12} lg={6} md={6}>
+				<Col
+					xs={12}
+					lg={5}
+					md={6}
+					lgOffset={1}
+					className={styles.textContainer}
+				>
 					{
 						children.map(child => (
 							child.key !== 'image'
@@ -26,7 +32,12 @@ const Section = props => {
 						))
 					}
 				</Col>
-				<Col xs={12} lg={6} md={6}>
+				<Col
+					xs={12}
+					lg={5}
+					md={6}
+					lgOffset={1}
+				>
 					{
 						children.map(child => (
 							child.key === 'image'

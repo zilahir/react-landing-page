@@ -16,12 +16,26 @@ const Section = props => {
 		<div className={styles.sectionWrapper}>
 			<Grid columns={12}>
 				<Cell width={6}>
-					{children}
+					{
+						children.map(child => (
+							child.key !== 'image'
+								? (
+									child
+								)
+								: null
+						))
+					}
 				</Cell>
 				<Cell width={6}>
-					<p>
-						right
-					</p>
+					{
+						children.map(child => (
+							child.key === 'image'
+								? (
+									child
+								)
+								: null
+						))
+					}
 				</Cell>
 			</Grid>
 		</div>

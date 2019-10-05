@@ -34,9 +34,9 @@ const Homepage = () => {
 				<TopHeader />
 				<div className={styles.sectionContainer}>
 					<Section imagePos="left">
-						<HeaderH1 text="helloo" />
-						<Paragraph text="Exercitation pariatur fugiat incididunt esse consequat officia ut dolore. Voluptate ad nisi et fugiat reprehenderit cupidatat ipsum commodo proident veniam veniam ipsum magna et. Amet ipsum adipisicing adipisicing nostrud id culpa velit. Velit aliqua voluptate cillum ea nulla cillum eu exercitation laborum velit cupidatat mollit." />
-						<Image src={Image1} maxWidth={400} alt="phone" />
+						<HeaderH1 key="header" text="helloo" />
+						<Paragraph key="p" text="Exercitation pariatur fugiat incididunt esse consequat officia ut dolore. Voluptate ad nisi et fugiat reprehenderit cupidatat ipsum commodo proident veniam veniam ipsum magna et. Amet ipsum adipisicing adipisicing nostrud id culpa velit. Velit aliqua voluptate cillum ea nulla cillum eu exercitation laborum velit cupidatat mollit." />
+						<Image key="image" src={Image1} maxWidth={400} alt="phone" />
 					</Section>
 				</div>
 				<Footer />

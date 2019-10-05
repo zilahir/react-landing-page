@@ -1,6 +1,7 @@
 import React from 'react'
 import { FiFacebook, FiInstagram } from 'react-icons/fi'
 import { Cell, Grid } from 'styled-css-grid'
+import { Link } from 'react-router-dom'
 
 import { footerMenu } from '../api/footer'
 import styles from './Footer.module.scss'
@@ -36,10 +37,14 @@ const Footer = () => {
 			<div className={styles.socialContainer}>
 				<ul>
 					<li>
-						<FiFacebook size="2em" />
+						<Link to="/">
+							<FiFacebook size="2em" />
+						</Link>
 					</li>
 					<li>
-						<FiInstagram size="2em" />
+						<Link to="/">
+							<FiInstagram size="2em" />
+						</Link>
 					</li>
 				</ul>
 			</div>

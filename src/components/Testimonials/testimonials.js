@@ -10,8 +10,8 @@ import { testimonials } from '../api/testimonials'
 * */
 
 const Testimonials = () => (
-	<div>
-		<ul className={styles.testimonalWrapper}>
+	<div className={styles.testimonalWrapper}>
+		<ul>
 			{testimonials.getTestimonials().map(testimonialItems => (
 				<TestimonialItem
 					src={testimonialItems.src}

@@ -10,6 +10,7 @@ import Paragraph from '../../components/common/Paragraph'
 import Image from '../../components/common/Image'
 import styles from './Home.module.scss'
 import Image1 from '../../assets/img/girl_on_phone.jpg'
+import Testimonials from '../../components/Testimonials/testimonials'
 // import Image2 from '../../assets/img/girl_reading_menu.jpg'
 // import Image3 from '../../assets/img/phone_and_food.jpg'
 
@@ -39,6 +40,7 @@ const Homepage = () => {
 						<Image key="image" src={Image1} maxWidth={400} alt="phone" />
 					</Section>
 				</div>
+				<Testimonials />
 				<Footer />
 			</Grid>
 		</>

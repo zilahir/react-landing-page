@@ -1,7 +1,11 @@
 @import '../../styles/mixins/Section';
+@import '../../styles/variables';
 
 .sectionContainer {
     @include section;
+    background-color: $light-green;
+    margin: 0;
+    padding: 0 80px;
 }
 
 .testimonalContainer {

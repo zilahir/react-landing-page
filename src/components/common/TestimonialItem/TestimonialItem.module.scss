@@ -4,10 +4,10 @@
     align-self: center;
     img {
         max-width: 100px;
-        filter: grayscale(100%);
+        
         &:hover {
             transition: all .4s ease;
-            filter: grayscale(0);
+            
         }
     }
 }

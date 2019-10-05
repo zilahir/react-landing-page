@@ -13,6 +13,7 @@ import Image1 from '../../assets/img/girl_on_phone.jpg'
 import Testimonials from '../../components/Testimonials/testimonials'
 // import Image2 from '../../assets/img/girl_reading_menu.jpg'
 // import Image3 from '../../assets/img/phone_and_food.jpg'
+import purpleImages from '../../assets/img/misc/pruple_dots.svg'
 
 /**
 * @author zilahir
@@ -31,7 +32,10 @@ const Homepage = () => {
 
 	return (
 		<>
-			<Grid fluid>
+			<Grid
+				fluid
+				style={{ padding: 0 }}
+			>
 				<TopHeader />
 				<div className={styles.sectionContainer}>
 					{
@@ -40,7 +44,7 @@ const Homepage = () => {
 								<Section imagePos="left">
 									<HeaderH1 key="header" text="helloo" />
 									<Paragraph key="p" text="Exercitation pariatur fugiat incididunt esse consequat officia ut dolore. Voluptate ad nisi et fugiat reprehenderit cupidatat ipsum commodo proident veniam veniam ipsum magna et. Amet ipsum adipisicing adipisicing nostrud id culpa velit. Velit aliqua voluptate cillum ea nulla cillum eu exercitation laborum velit cupidatat mollit." />
-									<Image key="image" src={Image1} maxWidth={400} alt="phone" />
+									<Image secondaryImage={purpleImages} key="image" src={Image1} maxWidth={400} alt="phone" />
 								</Section>
 							)
 							: null

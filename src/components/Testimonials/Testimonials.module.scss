@@ -1,5 +1,7 @@
 .testimonalWrapper {
-    margin: auto;
+    display: flex;
+    justify-content: center;
+    margin: 60px 0;
     ul {
         display: grid;
         grid-auto-flow: row;
@@ -10,9 +12,5 @@
         list-style: none;
         text-align: center;
         padding: 10px;
-        li {
-            margin: 0;
-            padding: 0;
-        }
     }
 }

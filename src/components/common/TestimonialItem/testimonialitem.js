@@ -13,8 +13,8 @@ import styles from './TestimonialItem.module.scss'
 const TestimonialItem = props => {
 	const { key, src, alt, className } = props
 	return (
-		<li key={key}>
-			<img className={className} src={require(`../../../assets/img/testimonials/${src}`)} alt={alt} />
+		<li className={className} key={key}>
+			<img src={require(`../../../assets/img/testimonials/${src}`)} alt={alt} />
 		</li>
 	)
 }

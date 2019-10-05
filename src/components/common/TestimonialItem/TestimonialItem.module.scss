@@ -1,5 +1,13 @@
 .testimonalItem {
-    display: block;
-    margin: auto;
-    height: 100px;
+    margin: 0;
+    padding: 0;
+    align-self: center;
+    img {
+        max-width: 100px;
+        filter: grayscale(100%);
+        &:hover {
+            transition: all .4s ease;
+            filter: grayscale(0);
+        }
+    }
 }

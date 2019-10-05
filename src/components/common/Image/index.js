@@ -1,6 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
+import { motion } from 'framer-motion'
 
 import styles from './Image.module.scss'
 
@@ -16,7 +17,12 @@ const Img = styled.img`
 const Image = props => {
 	const { src, className, alt, maxWidth } = props
 	return (
-		<Img maxWidth={maxWidth} src={src} className={className} alt={alt} />
+		<motion.div
+			initial={{ x: 0 }}
+			animate={{ x: 100 }}
+		>
+			<Img maxWidth={maxWidth} src={src} className={className} alt={alt} />
+		</motion.div>
 	)
 }
 

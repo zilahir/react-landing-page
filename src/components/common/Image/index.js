@@ -37,7 +37,7 @@ const Image = props => {
 
 Image.defaultProps = {
 	className: styles.imageStyle,
-	maxWidth: null,
+	maxWidth: 400,
 	secondaryImage: null,
 }
 

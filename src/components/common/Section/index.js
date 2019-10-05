@@ -19,41 +19,83 @@ const Section = props => {
 	const { imagePos, bgColor, children, hero } = props
 	return (
 		<SectionContainer backgroundColor={hero ? '#c8e9d2' : '#ffffff'} className={styles.sectionWrapper}>
-			<Row>
-				<Col
-					xs={12}
-					lg={5}
-					md={6}
-					lgOffset={1}
-					className={styles.textContainer}
-				>
-					{
-						children.map(child => (
-							child.key !== 'image'
-								? (
-									child
-								)
-								: null
-						))
-					}
-				</Col>
-				<Col
-					xs={12}
-					lg={5}
-					md={6}
-					lgOffset={1}
-				>
-					{
-						children.map(child => (
-							child.key === 'image'
-								? (
-									child
-								)
-								: null
-						))
-					}
-				</Col>
-			</Row>
+			{
+				imagePos === 'right'
+					? (
+						<Row>
+							<Col
+								xs={12}
+								lg={5}
+								md={6}
+								lgOffset={1}
+								className={styles.textContainer}
+							>
+								{
+									children.map(child => (
+										child.key !== 'image'
+											? (
+												child
+											)
+											: null
+									))
+								}
+							</Col>
+							<Col
+								xs={12}
+								lg={5}
+								md={6}
+								lgOffset={1}
+							>
+								{
+									children.map(child => (
+										child.key === 'image'
+											? (
+												child
+											)
+											: null
+									))
+								}
+							</Col>
+						</Row>
+					)
+					: (
+						<Row>
+							<Col
+								xs={12}
+								lg={5}
+								md={6}
+								lgOffset={1}
+							>
+								{
+									children.map(child => (
+										child.key === 'image'
+											? (
+												child
+											)
+											: null
+									))
+								}
+							</Col>
+							<Col
+								xs={12}
+								lg={5}
+								md={6}
+								lgOffset={1}
+								className={styles.textContainer}
+							>
+								{
+									children.map(child => (
+										child.key !== 'image'
+											? (
+												child
+											)
+											: null
+									))
+								}
+							</Col>
+						</Row>
+					)
+			}
 		</SectionContainer>
 	)
 }

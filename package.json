@@ -3,9 +3,11 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@zilahir/html5-device-mockups": "github:zilahir/html5-device-mockups",
+    "@zilahir/html5-device-mockups": "^3.2.4",
     "framer-motion": "^1.6.8",
+    "i": "^0.3.6",
     "node-sass": "^4.12.0",
+    "npm": "^6.11.3",
     "prop-types": "^15.7.2",
     "react": "^16.10.1",
     "react-dom": "^16.10.1",

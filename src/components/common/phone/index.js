@@ -1,8 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-
-import styles from './Phone.module.scss'
-import '@zilahir/html5-device-mockups/dist/device-mockups.min.css'
+import '@zilahir/html5-device-mockups/dist/device-mockups.css'
 
 /**
 * @author
@@ -12,9 +10,9 @@ import '@zilahir/html5-device-mockups/dist/device-mockups.min.css'
 const Phone = props => {
 	const { children } = props
 	return (
-		<div classNameName={styles.phoneRootWrapper}>
+		<div>
 			<div className="device-wrapper">
-				<div className="device" data-device="iphoneX" data-orientation="portrait" data-color="black">
+				<div className="device" data-device="iPhoneX" data-orientation="portrait" data-color="dark">
 					<div className="screen">
 						{children}
 					</div>

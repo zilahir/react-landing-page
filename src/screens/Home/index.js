@@ -11,7 +11,8 @@ import Image from '../../components/common/Image'
 import styles from './Home.module.scss'
 import Image1 from '../../assets/img/girl_on_phone.jpg'
 import Testimonials from '../../components/Testimonials/testimonials'
-// import Image2 from '../../assets/img/girl_reading_menu.jpg'
+import Phone from '../../components/common/Phone'
+import Image2 from '../../assets/img/girl_reading_menu.jpg'
 // import Image3 from '../../assets/img/phone_and_food.jpg'
 import purpleImages from '../../assets/img/misc/pruple_dots.svg'
 
@@ -51,9 +52,19 @@ const Homepage = () => {
 					<Testimonials />
 				</div>
 				<div className={styles.sectionContainer}>
-					<Section imagePos="left">
+					<Section>
 						<HeaderH1 key="header" text="lorem ipsum" />
 						<Paragraph key="p" text="Exercitation pariatur fugiat incididunt esse consequat officia ut dolore. Voluptate ad nisi et fugiat reprehenderit cupidatat ipsum commodo proident veniam veniam ipsum magna et. Amet ipsum adipisicing adipisicing nostrud id culpa velit. Velit aliqua voluptate cillum ea nulla cillum eu exercitation laborum velit cupidatat mollit." />
+						<Phone key="image">
+							<div style={{
+								backgroundImage: `url(${Image2})`,
+								width: '100%',
+								height: '100%',
+								backgroundSize: 'cover',
+								backgroundPosition: '50% 50%',
+							}}
+							/>
+						</Phone>
 					</Section>
 				</div>
 				<Footer />

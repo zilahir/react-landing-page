@@ -11,10 +11,11 @@ import { testimonials } from '../api/testimonials'
 
 const Testimonials = () => (
 	<div>
-		<ul className={styles}>
+		<ul className={styles.testimonalWrapper}>
 			{testimonials.getTestimonials().map(testimonialItems => (
 				<TestimonialItem
 					src={testimonialItems.src}
+					key={testimonialItems.key}
 				/>
 			))}
 		</ul>

@@ -40,7 +40,9 @@ const Homepage = () => {
 						<Image key="image" src={Image1} maxWidth={400} alt="phone" />
 					</Section>
 				</div>
-				<Testimonials />
+				<div className={styles.testimonalContainer}>
+					<Testimonials />
+				</div>
 				<Footer />
 			</Grid>
 		</>

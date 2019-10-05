@@ -1,4 +1,7 @@
+/* eslint-disable global-require */
+/* eslint-disable import/no-dynamic-require */
 import React from 'react'
+import PropTypes from 'prop-types'
 
 import styles from './TestimonialItem.module.scss'
 
@@ -7,12 +10,22 @@ import styles from './TestimonialItem.module.scss'
 * @function TestimonialsItem
 * */
 
-const TestimonialItem = values => {
-	const { src, alt } = values
+const TestimonialItem = props => {
+	const { key, src, alt, className } = props
 	return (
-		<img className={styles} src={src} alt={alt} />
+		<img key={key} className={className} src={require(`../../../assets/img/testimonials/${src}`)} alt={alt} />
 	)
 }
 
+TestimonialItem.defaultProps = {
+	className: styles.testimonalItem,
+}
+
+TestimonialItem.propTypes = {
+	alt: PropTypes.string.isRequired,
+	className: PropTypes.string,
+	key: PropTypes.number.isRequired,
+	src: PropTypes.string.isRequired,
+}
 
 export default TestimonialItem

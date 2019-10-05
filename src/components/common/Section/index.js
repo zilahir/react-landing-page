@@ -1,7 +1,7 @@
 /* eslint-disable no-unused-vars */
 import React from 'react'
 import PropTypes from 'prop-types'
-import { Grid, Cell } from 'styled-css-grid'
+import { Row, Col } from 'react-flexbox-grid'
 
 import styles from './Section.module.scss'
 
@@ -14,8 +14,8 @@ const Section = props => {
 	const { imagePos, bgColor, children } = props
 	return (
 		<div className={styles.sectionWrapper}>
-			<Grid columns={12}>
-				<Cell width={6}>
+			<Row>
+				<Col xs={12} lg={6} md={6}>
 					{
 						children.map(child => (
 							child.key !== 'image'
@@ -25,8 +25,8 @@ const Section = props => {
 								: null
 						))
 					}
-				</Cell>
-				<Cell width={6}>
+				</Col>
+				<Col xs={12} lg={6} md={6}>
 					{
 						children.map(child => (
 							child.key === 'image'
@@ -36,8 +36,8 @@ const Section = props => {
 								: null
 						))
 					}
-				</Cell>
-			</Grid>
+				</Col>
+			</Row>
 		</div>
 	)
 }

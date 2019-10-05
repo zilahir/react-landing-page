@@ -1,6 +1,6 @@
 import React from 'react'
 import { FiFacebook, FiInstagram } from 'react-icons/fi'
-import { Cell, Grid } from 'styled-css-grid'
+import { Row, Col } from 'react-flexbox-grid'
 import { Link } from 'react-router-dom'
 
 import { footerMenu } from '../api/footer'
@@ -17,17 +17,21 @@ const Footer = () => {
 	return (
 		<footer className={styles.footerWrapper}>
 			<div className={styles.footerNavContainer}>
-				<Grid
+				<Row
 					columns={3}
 					alignContent="center"
 				>
-					<Cell>
-						<p>lorem</p>
-					</Cell>
-					<Cell>
-						<p>lorem</p>
-					</Cell>
-				</Grid>
+					<Col xs={12} lg={4}>
+						<p>
+							lorem
+						</p>
+					</Col>
+					<Col xs={12} lg={4}>
+						<p>
+							lorem
+						</p>
+					</Col>
+				</Row>
 			</div>
 			<div className={styles.socialContainer}>
 				<ul>

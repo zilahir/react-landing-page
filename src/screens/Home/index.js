@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 // import { useStore } from 'react-redux'
-import { Grid } from 'styled-css-grid'
+import { Grid } from 'react-flexbox-grid'
 
 import TopHeader from '../../components/TopHeader'
 import Footer from '../../components/Footer'
@@ -30,7 +30,7 @@ const Homepage = () => {
 
 	return (
 		<>
-			<Grid columns={1} gap="40px">
+			<Grid fluid>
 				<TopHeader />
 				<div className={styles.sectionContainer}>
 					<Section imagePos="left">

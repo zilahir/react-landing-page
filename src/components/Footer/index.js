@@ -5,8 +5,6 @@ import { Link } from 'react-router-dom'
 
 import { footerMenu } from '../api/footer'
 import styles from './Footer.module.scss'
-import Button from '../common/Button/Button'
-
 
 /**
 * @author zilahir
@@ -28,9 +26,6 @@ const Footer = () => {
 					</Cell>
 					<Cell>
 						<p>lorem</p>
-					</Cell>
-					<Cell>
-						<Button text="Button" />
 					</Cell>
 				</Grid>
 			</div>

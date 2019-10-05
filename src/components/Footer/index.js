@@ -19,7 +19,6 @@ const Footer = () => {
 			<div className={styles.footerNavContainer}>
 				<Row
 					columns={3}
-					alignContent="center"
 				>
 					<Col xs={12} lg={4}>
 						<p>

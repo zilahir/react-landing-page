@@ -13,6 +13,7 @@ import styles from './TestimonialItem.module.scss'
 
 const Image = styled.li`
 	position: relative;
+	opacity: .8;
 	&:hover {
 		&:after {
 			opacity: 1;

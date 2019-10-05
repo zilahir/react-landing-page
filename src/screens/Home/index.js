@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 // import { useStore } from 'react-redux'
 import { Grid } from 'react-flexbox-grid'
 
+
 import TopHeader from '../../components/TopHeader'
 import Footer from '../../components/Footer'
 import Section from '../../components/common/Section'
@@ -11,10 +12,11 @@ import Image from '../../components/common/Image'
 import styles from './Home.module.scss'
 import Image1 from '../../assets/img/girl_on_phone.jpg'
 import Testimonials from '../../components/Testimonials/testimonials'
-import Phone from '../../components/common/Phone'
+import Phone from '../../components/common/phone'
 import Image2 from '../../assets/img/girl_reading_menu.jpg'
 // import Image3 from '../../assets/img/phone_and_food.jpg'
 import purpleImages from '../../assets/img/misc/pruple_dots.svg'
+
 
 /**
 * @author zilahir
@@ -49,7 +51,9 @@ const Homepage = () => {
 					</Section>
 				</div>
 				<div className={styles.testimonalContainer}>
-					<Testimonials />
+					<Section>
+						<Testimonials />
+					</Section>
 				</div>
 				<div className={styles.sectionContainer}>
 					<Section>

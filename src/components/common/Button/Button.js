@@ -27,7 +27,6 @@ Button.defaultProps = {
 	className: styles.defaultButton,
 }
 
-
 Button.propTypes = {
 	bgColor: PropTypes.string,
 	className: PropTypes.string,

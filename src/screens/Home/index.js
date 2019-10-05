@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 // import { useStore } from 'react-redux'
 import { Grid } from 'styled-css-grid'
 
@@ -22,6 +22,11 @@ import Image1 from '../../assets/img/girl_on_phone.jpg'
 const Homepage = () => {
 	// const store = useStore()
 	// const { test } = store.getState()
+	const [isPageLoaded, setIsPageLoaded] = useState(false)
+
+	useEffect(() => {
+		setIsPageLoaded(true)
+	}, [isPageLoaded])
 
 	return (
 		<>

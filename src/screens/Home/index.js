@@ -38,20 +38,23 @@ const Homepage = () => {
 			>
 				<TopHeader />
 				<div className={styles.sectionContainer}>
-					{
-						isPageLoaded
-							? (
-								<Section imagePos="left">
-									<HeaderH1 key="header" text="helloo" />
-									<Paragraph key="p" text="Exercitation pariatur fugiat incididunt esse consequat officia ut dolore. Voluptate ad nisi et fugiat reprehenderit cupidatat ipsum commodo proident veniam veniam ipsum magna et. Amet ipsum adipisicing adipisicing nostrud id culpa velit. Velit aliqua voluptate cillum ea nulla cillum eu exercitation laborum velit cupidatat mollit." />
-									<Image secondaryImage={purpleImages} key="image" src={Image1} maxWidth={400} alt="phone" />
-								</Section>
-							)
-							: null
-					}
+					<Section
+						imagePos="right"
+						hero
+					>
+						<HeaderH1 key="header" text="helloo" />
+						<Paragraph key="p" text="Exercitation pariatur fugiat incididunt esse consequat officia ut dolore. Voluptate ad nisi et fugiat reprehenderit cupidatat ipsum commodo proident veniam veniam ipsum magna et. Amet ipsum adipisicing adipisicing nostrud id culpa velit. Velit aliqua voluptate cillum ea nulla cillum eu exercitation laborum velit cupidatat mollit." />
+						<Image secondaryImage={purpleImages} key="image" src={Image1} maxWidth={400} alt="phone" />
+					</Section>
 				</div>
 				<div className={styles.testimonalContainer}>
 					<Testimonials />
+				</div>
+				<div className={styles.sectionContainer}>
+					<Section imagePos="left">
+						<HeaderH1 key="header" text="lorem ipsum" />
+						<Paragraph key="p" text="Exercitation pariatur fugiat incididunt esse consequat officia ut dolore. Voluptate ad nisi et fugiat reprehenderit cupidatat ipsum commodo proident veniam veniam ipsum magna et. Amet ipsum adipisicing adipisicing nostrud id culpa velit. Velit aliqua voluptate cillum ea nulla cillum eu exercitation laborum velit cupidatat mollit." />
+					</Section>
 				</div>
 				<Footer />
 			</Grid>

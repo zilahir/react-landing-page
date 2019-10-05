@@ -2,6 +2,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { Row, Col } from 'react-flexbox-grid'
+import styled from 'styled-components'
 
 import styles from './Section.module.scss'
 
@@ -10,10 +11,14 @@ import styles from './Section.module.scss'
 * @function Section
 * */
 
+const SectionContainer = styled.div`
+	background-color: ${props => props.backgroundColor};
+`
+
 const Section = props => {
-	const { imagePos, bgColor, children } = props
+	const { imagePos, bgColor, children, hero } = props
 	return (
-		<div className={styles.sectionWrapper}>
+		<SectionContainer backgroundColor={hero ? '#c8e9d2' : '#ffffff'} className={styles.sectionWrapper}>
 			<Row>
 				<Col
 					xs={12}
@@ -49,13 +54,18 @@ const Section = props => {
 					}
 				</Col>
 			</Row>
-		</div>
+		</SectionContainer>
 	)
+}
+
+Section.defaultProps = {
+	hero: false,
 }
 
 Section.propTypes = {
 	bgColor: PropTypes.string.isRequired,
 	children: PropTypes.node.isRequired,
+	hero: PropTypes.bool,
 	imagePos: PropTypes.string.isRequired,
 }
 

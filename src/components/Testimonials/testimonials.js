@@ -11,7 +11,7 @@ import { testimonials } from '../api/testimonials'
 
 const Testimonials = () => (
 	<div className={styles.testimonalWrapper}>
-		<ul>
+		<ul className={styles.testimonalList}>
 			{testimonials.getTestimonials().map(testimonialItems => (
 				<TestimonialItem
 					src={testimonialItems.src}

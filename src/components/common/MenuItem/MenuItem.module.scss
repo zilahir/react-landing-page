@@ -2,7 +2,8 @@
 @import '../../../styles/variables';
 
 .menuItem {
-    @include p;
+    font-family: 'Roboto', sans-serif;
+    color: $main-dark;
     position: relative;
     &:after {
         content: '';

@@ -1,0 +1,13 @@
+.testimonalItem {
+    margin: 0;
+    padding: 0;
+    align-self: center;
+    img {
+        max-width: 100px;
+        
+        &:hover {
+            transition: all .4s ease;
+            
+        }
+    }
+}

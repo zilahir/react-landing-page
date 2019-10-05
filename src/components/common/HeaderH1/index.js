@@ -1,6 +1,8 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
+import styles from './HeaderH1.module.scss'
+
 /**
 * @author zilahir
 * @function Header
@@ -16,7 +18,7 @@ const HeaderH1 = props => {
 }
 
 HeaderH1.defaultProps = {
-	className: null,
+	className: styles.mainH1,
 }
 
 HeaderH1.propTypes = {

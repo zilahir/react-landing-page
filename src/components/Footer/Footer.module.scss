@@ -1,4 +1,5 @@
 @import '../../styles/mixins/ParagraphMixin';
+@import '../../styles/variables';
 
 .footerWrapper {
     padding: 60px 0;
@@ -17,6 +18,15 @@
             display: inline-flex;
             li {
                 margin-right: 20px;
+                a {
+                    color: unset;
+                    &:hover {
+                        svg {
+                            transition: all .4s ease;
+                            stroke: $main-green;
+                        }
+                    }
+                }
             }
         }
     }
@@ -29,6 +39,7 @@
             color: #a8aabc;
             @include p;
             margin: 10px 0px;
+            letter-spacing: 1.20px;
         }
         .heart {
             opacity: .6;

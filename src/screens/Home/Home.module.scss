@@ -1,3 +1,13 @@
-.homePageWrapper {
+@import '../../styles/mixins/Section';
+@import '../../styles/variables';
+
+.sectionContainer {
+    @include section;
+    margin: 0;
+    padding: 0 80px;
+}
+
+.testimonalContainer {
     display: block;
+    margin: auto;
 }

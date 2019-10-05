@@ -1,0 +1,6 @@
+@import '../../../styles/mixins/HeaderMixins';
+@import '../../../styles/variables';
+
+.mainH1 {
+    @include HeaderH1($main-green);
+}

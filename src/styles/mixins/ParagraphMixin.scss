@@ -3,5 +3,8 @@
 @mixin p {
     font-family: 'Roboto', sans-serif;
     color: $main-dark;
-    letter-spacing: 1.20px;
+    max-width: 400px;
+    padding-bottom: 40px;
+    font-size: 18px;
+    line-height: 28px;
 }

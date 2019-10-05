@@ -11,7 +11,7 @@ import { testimonials } from '../api/testimonials'
 * */
 
 const Testimonials = () => (
-	<div className={styles.testimonalWrapper}>
+	<div className={styles.testimonialWrapper}>
 		<Row>
 			<Col lg={12}>
 				<ul className={styles.testimonalList}>

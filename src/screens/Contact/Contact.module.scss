@@ -2,6 +2,7 @@
 @import '../../styles/variables';
 @import '../../styles/mixins/Button';
 @import '../../styles/mixins/HeaderMixins.scss';
+@import '../../styles/mixins/mediaQueries.scss';
 
 .btnContainer {
     display: block;
@@ -20,8 +21,16 @@
 }
 
 .options {
+    @include smMax {
+        margin-top: 100px;
+    }
     .option {
-        margin: 80px 0;
+        @include lg {
+            margin: 10px 0;
+        }
+        @include sm {
+            margin: 80px 0;
+        }
         position: relative;
         &:before {
             content: '';

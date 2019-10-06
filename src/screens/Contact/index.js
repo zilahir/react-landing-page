@@ -29,13 +29,8 @@ const Contactpage = () => {
 						<Input type="text" placeholder="Your name" />
 						<Input type="email" placeholder="Your e-mail" />
 						<Input type="text" placeholder="Your message" />
-						<div>
-							<Input type="text" placeholder="Your name" />
-							<Input type="email" placeholder="Your e-mail" />
-							<Input type="text" placeholder="Your message" />
-							<div className={styles.btnContainer}>
-								<Button text="Contact Us" />
-							</div>
+						<div className={styles.btnContainer}>
+							<Button text="Contact Us" />
 						</div>
 					</div>
 				</Col>

@@ -51,9 +51,7 @@ const Homepage = () => {
 					</Section>
 				</div>
 				<div className={styles.testimonalContainer}>
-					<Section>
-						<Testimonials />
-					</Section>
+					<Testimonials />
 				</div>
 				<div className={styles.sectionContainer}>
 					<Section>

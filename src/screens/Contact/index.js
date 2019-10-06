@@ -3,12 +3,14 @@ import React, { useState } from 'react'
 import { Grid, Row, Col } from 'react-flexbox-grid'
 import { motion } from 'framer-motion'
 import { Parallax } from 'react-parallax'
+import { IoIosSend, IoIosChatboxes, IoIosHelpBuoy } from 'react-icons/io'
 
 import purpleDots from '../../assets/img/misc/pruple_dots.svg'
 import Input from '../../components/Input'
 import TopHeader from '../../components/TopHeader'
 import Button from '../../components/common/Button'
 import HeaderH1 from '../../components/common/HeaderH1'
+import HeaderH2 from '../../components/common/HeaderH2'
 import styles from './Contact.module.scss'
 import Footer from '../../components/Footer'
 import Paragraph from '../../components/common/Paragraph'
@@ -67,6 +69,25 @@ const Contactpage = () => {
 					</div>
 				</Col>
 			</Row>
+			<div className={styles.options}>
+				<Row>
+					<Col lg={2} lgOffset={1} xs={6}>
+						<IoIosSend size="3em" />
+						<HeaderH2 text="Email us" />
+						<Paragraph text="Voluptate ad nisi et fugiat reprehenderit cupidatat ipsum commodo proident veniam veniam ipsum magna et." />
+					</Col>
+					<Col lg={2} lgOffset={1} xs={6}>
+						<IoIosChatboxes size="3em" />
+						<HeaderH2 text="Call us" />
+						<Paragraph text="Amet ipsum adipisicing adipisicing nostrud id culpa velit. Velit aliqua voluptate cillum ea nulla cillum" />
+					</Col>
+					<Col lg={2} lgOffset={1} xs={6}>
+						<IoIosHelpBuoy size="3em" />
+						<HeaderH2 text="Support" />
+						<Paragraph text="eu exercitation laborum velit cupidatat mollit." />
+					</Col>
+				</Row>
+			</div>
 			<Footer />
 		</Grid>
 	)

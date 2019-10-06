@@ -2,6 +2,8 @@ import React, { useState } from 'react'
 import PropTypes from 'prop-types'
 import { Waypoint } from 'react-waypoint'
 import styled from 'styled-components'
+import { motion } from 'framer-motion'
+import { Parallax } from 'react-parallax'
 
 import purpleImages from '../../../assets/img/misc/pruple_dots.svg'
 import '@zilahir/html5-device-mockups/dist/device-mockups.css'
@@ -47,12 +49,33 @@ const Phone = props => {
 			bottomOffset={600}
 		>
 			<PurleWrapper
-				purpleImages={purpleImages}
+				// purpleImages={purpleImages}
 				className={styles.phone}
 				style={
 					toggle
 				}
 			>
+				<Parallax
+					bgImage={
+						purpleImages
+					}
+					strength={300}
+					style={{
+						height: '500px',
+						width: '500px',
+						position: 'absolute',
+						top: '50px',
+					}}
+					bgImageStyle={{
+						position: 'absolute',
+						width: '400px',
+						height: '400px',
+					}}
+				/>
+				<motion.div
+					initial={{ x: 0 }}
+					animate={{ x: 100 }}
+				/>
 				<div className="device-wrapper">
 					<div className="device" data-device="iPhoneX" data-orientation="portrait" data-color="dark">
 						<div className="screen">

@@ -2,6 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
 import { motion } from 'framer-motion'
+import { Parallax } from 'react-parallax'
 
 import styles from './Image.module.scss'
 
@@ -21,7 +22,23 @@ const Image = props => {
 			{
 				secondaryImage
 					? (
-						<img className={styles.sImage} alt={alt} src={secondaryImage} />
+						<Parallax
+							bgImage={
+								secondaryImage
+							}
+							strength={300}
+							style={{
+								height: '300px',
+								width: '300px',
+								position: 'absolute',
+								top: '-30px',
+							}}
+							bgImageStyle={{
+								position: 'absolute',
+								width: '400px',
+								height: '200px',
+							}}
+						/>
 					)
 					: null
 			}

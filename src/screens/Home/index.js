@@ -19,7 +19,7 @@ import purpleImages from '../../assets/img/misc/pruple_dots.svg'
 
 
 /**
-* @author zilahir
+* @author zilahir,martincserep
 * @function Homepage
 * */
 

@@ -104,7 +104,7 @@ const Contactpage = () => {
 				</Col>
 			</Row>
 			<div className={styles.options}>
-				<Row>
+				<Row center="xs">
 					<Col lg={3} lgOffset={1} xs={12}>
 						<div className={styles.option}>
 							<FiMail size="3em" />

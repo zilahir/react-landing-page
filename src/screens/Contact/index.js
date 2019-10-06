@@ -48,8 +48,8 @@ const Contactpage = () => {
 							height: '300px',
 							width: '300px',
 							position: 'absolute',
-							top: '150px',
-							right: '100px',
+							right: '200px',
+							top: '100px',
 						}}
 						bgImageStyle={{
 							position: 'absolute',

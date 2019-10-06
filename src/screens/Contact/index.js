@@ -39,31 +39,33 @@ const Contactpage = () => {
 					/>
 				</Col>
 				<Col lg={6} xs={12}>
-					<Parallax
-						bgImage={
-							purpleDots
-						}
-						strength={300}
-						style={{
-							height: '300px',
-							width: '300px',
-							position: 'absolute',
-							right: '200px',
-							top: '100px',
-						}}
-						bgImageStyle={{
-							position: 'absolute',
-							width: '300px',
-							height: '300px',
-						}}
-					/>
-					<div className={styles.contactForm}>
-						<div>
-							<Input onChange={e => setName(e.target.value)} type="text" placeholder="Your name" />
-							<Input onChange={e => setEmail(e.target.value)} type="email" placeholder="Your e-mail" />
-							<Input onChange={e => setMessage(e.target.value)} type="text" placeholder="Your message" />
-							<div className={styles.btnContainer}>
-								<Button text="Contact Us" />
+					<div className={styles.formContainer}>
+						<Parallax
+							bgImage={
+								purpleDots
+							}
+							strength={300}
+							style={{
+								height: '300px',
+								width: '300px',
+								position: 'absolute',
+								right: '200px',
+								top: '-50px',
+							}}
+							bgImageStyle={{
+								position: 'absolute',
+								width: '300px',
+								height: '300px',
+							}}
+						/>
+						<div className={styles.contactForm}>
+							<div>
+								<Input onChange={e => setName(e.target.value)} type="text" placeholder="Your name" />
+								<Input onChange={e => setEmail(e.target.value)} type="email" placeholder="Your e-mail" />
+								<Input onChange={e => setMessage(e.target.value)} type="text" placeholder="Your message" />
+								<div className={styles.btnContainer}>
+									<Button text="Contact Us" />
+								</div>
 							</div>
 						</div>
 					</div>

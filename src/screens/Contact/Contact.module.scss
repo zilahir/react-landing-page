@@ -5,13 +5,17 @@
     display: block;
 }
 
-.contactForm {
-    background-color: #fefefe;
-    padding: 40px;
-    width: 450px;
-    box-shadow: 0px 0px 20px 0px rgba(148,148,148,0.75);
+.formContainer {
     position: relative;
+    .contactForm {
+        background-color: #fefefe;
+        padding: 40px;
+        width: 450px;
+        box-shadow: 0px 0px 20px 0px rgba(148,148,148,0.75);
+        position: relative;
+    }
 }
+
 .options {
     margin: 80px 0;
     svg {

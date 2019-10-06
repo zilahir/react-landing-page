@@ -1,24 +1,7 @@
 @import '../../../styles/variables';
 @import '../../../styles/mixins/ParagraphMixin.scss';
+@import '../../../styles/mixins/Button';
 
 .defaultButton {
-    padding: 10px 20px;
-    background-color: $main-green;
-    font-weight: bold;
-    font-family: 'Roboto', sans-serif;
-    letter-spacing: 1.20px;
-    background-color:#5abd79;
-    border-radius: 3px;
-    outline: none;
-    box-shadow: none;
-    border: none;
-    width: 150px;
-    height: 50px;
-    @include p;
-    color: #fefefe;
-    font-size: 14px;
-    font-weight: normal;
-    &:hover {
-        cursor: pointer;
-    }
+    @include Button;
 }

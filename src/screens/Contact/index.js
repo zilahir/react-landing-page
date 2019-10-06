@@ -4,6 +4,7 @@ import { Grid, Row, Col } from 'react-flexbox-grid'
 import { motion } from 'framer-motion'
 import { Parallax } from 'react-parallax'
 import { IoIosSend, IoIosChatboxes, IoIosHelpBuoy } from 'react-icons/io'
+import UseAnimations from 'react-useanimations'
 
 import purpleDots from '../../assets/img/misc/pruple_dots.svg'
 import Input from '../../components/Input'
@@ -24,6 +25,7 @@ const Contactpage = () => {
 	const [name, setName] = useState(null)
 	const [email, setEmail] = useState(null)
 	const [message, setMessage] = useState(null)
+	const [isAnimationOn, setAnimationOn] = useState(false)
 	return (
 		<Grid
 			fluid
@@ -64,7 +66,20 @@ const Contactpage = () => {
 								<Input onChange={e => setEmail(e.target.value)} type="email" placeholder="Your e-mail" />
 								<Input onChange={e => setMessage(e.target.value)} type="text" placeholder="Your message" />
 								<div className={styles.btnContainer}>
-									<Button text="Contact Us" />
+									<Button
+										text="Contact Us"
+										className={
+											isAnimationOn ? styles.sendMessageBtnExtended
+												: styles.sendMessageBtn
+										}
+										isAnimationOn={isAnimationOn}
+										onClick={() => setAnimationOn(true)}
+									>
+										<UseAnimations
+											animationKey="infinity"
+											size={30}
+										/>
+									</Button>
 								</div>
 							</div>
 						</div>

@@ -1,5 +1,6 @@
 @import '../../styles/mixins/Section';
 @import '../../styles/variables';
+@import '../../styles/mixins/Button';
 
 .btnContainer {
     display: block;
@@ -22,5 +23,37 @@
     svg {
         stroke: $main-green;
         fill: $main-green;
+    }
+}
+
+.sendMessageBtn {
+   @include Button;
+   width: 121px;
+   display: flex;
+   justify-content: space-between;
+   transition: all .4s ease;
+   div {
+       margin-right: 20px;
+       svg {
+           path {
+                stroke: $light-green;
+           }
+        }
+    }
+}
+
+.sendMessageBtnExtended {
+    @include Button;
+    width: 180px;
+    display: flex;
+    justify-content: space-between;
+    transition: all .4s ease;
+    div {
+        margin-right: 20px;
+        svg {
+            path {
+                    stroke: $light-green;
+            }
+        }
     }
 }

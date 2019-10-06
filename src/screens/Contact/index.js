@@ -20,6 +20,8 @@ import Paragraph from '../../components/common/Paragraph'
 
 const Contactpage = () => {
 	const [name, setName] = useState(null)
+	const [email, setEmail] = useState(null)
+	const [message, setMessage] = useState(null)
 	return (
 		<Grid
 			fluid
@@ -50,11 +52,10 @@ const Contactpage = () => {
 						}}
 					/>
 					<div className={styles.contactForm}>
-						<Input type="text" placeholder="Your name" />
 						<div>
 							<Input onChange={e => setName(e.target.value)} type="text" placeholder="Your name" />
-							<Input type="email" placeholder="Your e-mail" />
-							<Input type="text" placeholder="Your message" />
+							<Input onChange={e => setEmail(e.target.value)} type="email" placeholder="Your e-mail" />
+							<Input onChange={e => setMessage(e.target.value)} type="text" placeholder="Your message" />
 							<div className={styles.btnContainer}>
 								<Button text="Contact Us" />
 							</div>

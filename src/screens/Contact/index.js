@@ -89,19 +89,25 @@ const Contactpage = () => {
 			<div className={styles.options}>
 				<Row>
 					<Col lg={3} lgOffset={1} xs={12}>
-						<FiMail size="3em" />
-						<HeaderH2 text="Email us" />
-						<Paragraph text="Voluptate ad nisi et fugiat reprehenderit cupidatat ipsum commodo proident veniam veniam ipsum magna et." />
+						<div className={styles.option}>
+							<FiMail size="3em" />
+							<HeaderH2 text="Email us" />
+							<Paragraph text="Voluptate ad nisi et fugiat reprehenderit cupidatat ipsum commodo proident veniam veniam ipsum magna et." />
+						</div>
 					</Col>
 					<Col lg={3} lgOffset={1} xs={12}>
-						<FiPhoneCall size="3em" />
-						<HeaderH2 text="Call us" />
-						<Paragraph text="Amet ipsum adipisicing adipisicing nostrud id culpa velit. Velit aliqua voluptate cillum ea nulla cillum" />
+						<div className={styles.option}>
+							<FiPhoneCall size="3em" />
+							<HeaderH2 text="Call us" />
+							<Paragraph text="Amet ipsum adipisicing adipisicing nostrud id culpa velit. Velit aliqua voluptate cillum ea nulla cillum" />
+						</div>
 					</Col>
 					<Col lg={3} lgOffset={1} xs={12}>
-						<FiLifeBuoy size="3em" />
-						<HeaderH2 text="Support" />
-						<Paragraph text="eu exercitation laborum velit cupidatat mollit." />
+						<div className={styles.option}>
+							<FiLifeBuoy size="3em" />
+							<HeaderH2 text="Support" />
+							<Paragraph text="eu exercitation laborum velit cupidatat mollit." />
+						</div>
 					</Col>
 				</Row>
 			</div>

@@ -1,7 +1,9 @@
 import React, { useState } from 'react'
 import PropTypes from 'prop-types'
 import { Waypoint } from 'react-waypoint'
+import styled from 'styled-components'
 
+import purpleImages from '../../../assets/img/misc/pruple_dots.svg'
 import '@zilahir/html5-device-mockups/dist/device-mockups.css'
 import styles from './Phone.module.scss'
 
@@ -9,6 +11,22 @@ import styles from './Phone.module.scss'
 * @author zilahri
 * @function Phone
 * */
+
+const PurleWrapper = styled.div`
+	&:before {
+		content: '';
+		background-image: url(${props => props.purpleImages});
+		position: absolute;
+		width: 300px;
+		height: 200px;
+		top: 0;
+		left: 50px;
+		background-repeat: no-repeat;
+	}
+	.device-wrapper {
+		padding-top: 50px;
+	}
+`
 
 const Phone = props => {
 	const { children } = props
@@ -28,8 +46,8 @@ const Phone = props => {
 			onEnter={() => togglePhone()}
 			bottomOffset={600}
 		>
-			<div
-				id="test"
+			<PurleWrapper
+				purpleImages={purpleImages}
 				className={styles.phone}
 				style={
 					toggle
@@ -42,7 +60,7 @@ const Phone = props => {
 						</div>
 					</div>
 				</div>
-			</div>
+			</PurleWrapper>
 		</Waypoint>
 	)
 }

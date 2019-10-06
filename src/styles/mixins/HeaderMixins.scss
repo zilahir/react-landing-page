@@ -10,3 +10,13 @@
     font-size: 60px;
     letter-spacing: -1px;
 }
+
+@mixin HeaderH2($color) {
+    font-family: 'KoHo', sans-serif;
+    color: $color;
+    max-width: 450px;
+    margin-left: 0px;
+    padding-top: 0px;
+    padding-bottom: 30px;
+    letter-spacing: -1px;
+}

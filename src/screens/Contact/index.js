@@ -71,17 +71,17 @@ const Contactpage = () => {
 			</Row>
 			<div className={styles.options}>
 				<Row>
-					<Col lg={2} lgOffset={1} xs={6}>
+					<Col lg={3} lgOffset={1} xs={12}>
 						<IoIosSend size="3em" />
 						<HeaderH2 text="Email us" />
 						<Paragraph text="Voluptate ad nisi et fugiat reprehenderit cupidatat ipsum commodo proident veniam veniam ipsum magna et." />
 					</Col>
-					<Col lg={2} lgOffset={1} xs={6}>
+					<Col lg={3} lgOffset={1} xs={12}>
 						<IoIosChatboxes size="3em" />
 						<HeaderH2 text="Call us" />
 						<Paragraph text="Amet ipsum adipisicing adipisicing nostrud id culpa velit. Velit aliqua voluptate cillum ea nulla cillum" />
 					</Col>
-					<Col lg={2} lgOffset={1} xs={6}>
+					<Col lg={3} lgOffset={1} xs={12}>
 						<IoIosHelpBuoy size="3em" />
 						<HeaderH2 text="Support" />
 						<Paragraph text="eu exercitation laborum velit cupidatat mollit." />

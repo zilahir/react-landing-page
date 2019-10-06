@@ -3,7 +3,7 @@ import React, { useState } from 'react'
 import { Grid, Row, Col } from 'react-flexbox-grid'
 import { motion } from 'framer-motion'
 import { Parallax } from 'react-parallax'
-import { IoIosSend, IoIosChatboxes, IoIosHelpBuoy } from 'react-icons/io'
+import { FiMail, FiPhoneCall, FiLifeBuoy } from 'react-icons/fi'
 import UseAnimations from 'react-useanimations'
 
 import purpleDots from '../../assets/img/misc/pruple_dots.svg'
@@ -89,17 +89,17 @@ const Contactpage = () => {
 			<div className={styles.options}>
 				<Row>
 					<Col lg={3} lgOffset={1} xs={12}>
-						<IoIosSend size="3em" />
+						<FiMail size="3em" />
 						<HeaderH2 text="Email us" />
 						<Paragraph text="Voluptate ad nisi et fugiat reprehenderit cupidatat ipsum commodo proident veniam veniam ipsum magna et." />
 					</Col>
 					<Col lg={3} lgOffset={1} xs={12}>
-						<IoIosChatboxes size="3em" />
+						<FiPhoneCall size="3em" />
 						<HeaderH2 text="Call us" />
 						<Paragraph text="Amet ipsum adipisicing adipisicing nostrud id culpa velit. Velit aliqua voluptate cillum ea nulla cillum" />
 					</Col>
 					<Col lg={3} lgOffset={1} xs={12}>
-						<IoIosHelpBuoy size="3em" />
+						<FiLifeBuoy size="3em" />
 						<HeaderH2 text="Support" />
 						<Paragraph text="eu exercitation laborum velit cupidatat mollit." />
 					</Col>

@@ -63,7 +63,7 @@ const Contactpage = () => {
 						<motion.div
 							initial={{ x: 1000 }}
 							animate={{ x: 0 }}
-							transition={{ duration: 0.5 }}
+							transition={{ duration: 1, delay: 0.2 }}
 						>
 							<div className={styles.contactForm}>
 								<div>

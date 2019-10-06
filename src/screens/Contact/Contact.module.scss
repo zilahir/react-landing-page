@@ -29,10 +29,13 @@
             height: 50px;
             background: $light-green;
             position: absolute;
-            left: 15px;
-            top: -15px;
+            left: -20px;
+            top: -20px;
             z-index: -1;
             border-radius: 5px;
+            right: 0;
+            margin-left: auto;
+            margin-right: auto;
         }
         svg {
             stroke: $main-green;

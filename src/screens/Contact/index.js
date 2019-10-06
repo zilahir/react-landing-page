@@ -30,7 +30,11 @@ const Contactpage = () => {
 			<Row>
 				<Col lg={5} lgOffset={1} xs={12}>
 					<HeaderH1 key="header" text="Contact us" />
-					<Paragraph text="Test" />
+					<Paragraph text="Exercitation pariatur fugiat incididunt esse consequat officia ut dolore.
+					Voluptate ad nisi et fugiat reprehenderit cupidatat ipsum commodo proident veniam veniam ipsum magna et.
+					Amet ipsum adipisicing adipisicing nostrud id culpa velit. Velit aliqua voluptate cillum ea nulla cillum
+					eu exercitation laborum velit cupidatat mollit."
+					/>
 				</Col>
 				<Col lg={6} xs={12}>
 					<Parallax

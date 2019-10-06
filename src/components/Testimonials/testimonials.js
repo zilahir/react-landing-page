@@ -8,7 +8,7 @@ import TestimonialItem from '../common/TestimonialItem/testimonialitem'
 import { testimonials } from '../api/testimonials'
 
 /**
-* @author martincserep
+* @author martincserep, zilahri
 * @function Testimonials
 * */
 

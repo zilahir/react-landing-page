@@ -5,12 +5,12 @@ import styled from 'styled-components'
 import { motion } from 'framer-motion'
 import { Parallax } from 'react-parallax'
 
-import purpleImages from '../../../assets/img/misc/pruple_dots.svg'
+import redStars from '../../../assets/img/misc/red_starts.svg'
 import '@zilahir/html5-device-mockups/dist/device-mockups.css'
 import styles from './Phone.module.scss'
 
 /**
-* @author zilahri
+* @author zilahri,martincserep
 * @function Phone
 * */
 
@@ -57,18 +57,18 @@ const Phone = props => {
 			>
 				<Parallax
 					bgImage={
-						purpleImages
+						redStars
 					}
 					strength={300}
 					style={{
-						height: '500px',
-						width: '500px',
+						height: '400px',
+						width: '600px',
 						position: 'absolute',
 						top: '50px',
 					}}
 					bgImageStyle={{
 						position: 'absolute',
-						width: '400px',
+						width: '600px',
 						height: '400px',
 					}}
 				/>

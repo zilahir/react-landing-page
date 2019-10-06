@@ -1,9 +1,14 @@
 @import '../../styles/mixins/ParagraphMixin';
 @import '../../styles/variables';
+@import '../../styles/mixins/mediaQueries.scss';
 
 .footerWrapper {
     padding: 60px 0;
     margin: 0 80px;
+    @include smMax {
+        padding: 0;
+        margin: 0;
+    }
     min-height: 600px;
     background: rgba($color: #FFFFFF, $alpha: 1.0);
     overflow: hidden;
@@ -32,6 +37,9 @@
     }
     .legalContainer {
         max-width: 60%;
+        @include smMax {
+            max-width: unset;
+        }
         small {
             line-height: 18px;
         }

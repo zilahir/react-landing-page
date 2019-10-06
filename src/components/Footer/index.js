@@ -19,6 +19,7 @@ const Footer = () => {
 			<div className={styles.footerNavContainer}>
 				<Row
 					columns={3}
+					center="xs"
 				>
 					<Col xs={12} lg={4}>
 						<p>
@@ -32,35 +33,43 @@ const Footer = () => {
 					</Col>
 				</Row>
 			</div>
-			<div className={styles.socialContainer}>
-				<ul>
-					<li>
-						<Link to="/">
-							<FiFacebook size="2em" />
-						</Link>
-					</li>
-					<li>
-						<Link to="/">
-							<FiInstagram size="2em" />
-						</Link>
-					</li>
-				</ul>
-			</div>
-			<div className={styles.legalContainer}>
-				<p>
-					{new Date().getFullYear()}, { rights }
-				</p>
-				<small>
-					{
-						legalText
-					}
-				</small>
-				<p className={styles.heart}>
-					<small>
-						made  with <span aria-label="heart" role="img">❤️</span> in Helsinki, Finland
-					</small>
-				</p>
-			</div>
+			<Row center="xs">
+				<Col lg={12}>
+					<div className={styles.socialContainer}>
+						<ul>
+							<li>
+								<Link to="/">
+									<FiFacebook size="2em" />
+								</Link>
+							</li>
+							<li>
+								<Link to="/">
+									<FiInstagram size="2em" />
+								</Link>
+							</li>
+						</ul>
+					</div>
+				</Col>
+			</Row>
+			<Row center="xs">
+				<Col lg={12} xs={12}>
+					<div className={styles.legalContainer}>
+						<p>
+							{new Date().getFullYear()}, { rights }
+						</p>
+						<small>
+							{
+								legalText
+							}
+						</small>
+						<p className={styles.heart}>
+							<small>
+								made  with <span aria-label="heart" role="img">❤️</span> in Helsinki, Finland
+							</small>
+						</p>
+					</div>
+				</Col>
+			</Row>
 		</footer>
 	)
 }

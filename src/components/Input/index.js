@@ -9,9 +9,15 @@ import styles from './Input.module.scss'
 * */
 
 const Input = props => {
-	const { type, placeholder, name, className } = props
+	const { type, placeholder, name, className, onChange } = props
 	return (
-		<input type={type} placeholder={placeholder} name={name} className={className} />
+		<input
+			onChange={onChange}
+			type={type}
+			placeholder={placeholder}
+			name={name}
+			className={className}
+		/>
 	)
 }
 
@@ -22,6 +28,7 @@ Input.defaultProps = {
 Input.propTypes = {
 	className: PropTypes.string,
 	name: PropTypes.string.isRequired,
+	onChange: PropTypes.func.isRequired,
 	placeholder: PropTypes.string.isRequired,
 	type: PropTypes.string.isRequired,
 }

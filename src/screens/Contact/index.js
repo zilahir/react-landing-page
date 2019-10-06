@@ -1,4 +1,5 @@
-import React from 'react'
+/* eslint-disable no-unused-vars */
+import React, { useState } from 'react'
 import { Grid, Row, Col } from 'react-flexbox-grid'
 
 import Input from '../../components/Input'
@@ -13,8 +14,8 @@ import Footer from '../../components/Footer'
 * @function Contactpage
 * */
 
-// eslint-disable-next-line arrow-body-style
 const Contactpage = () => {
+	const [name, setName] = useState(null)
 	return (
 		<Grid
 			fluid
@@ -26,7 +27,7 @@ const Contactpage = () => {
 				</Col>
 				<Col lg={6} xs={12}>
 					<div>
-						<Input type="text" placeholder="Your name" />
+						<Input onChange={e => setName(e.target.value)} type="text" placeholder="Your name" />
 						<Input type="email" placeholder="Your e-mail" />
 						<Input type="text" placeholder="Your message" />
 						<div className={styles.btnContainer}>

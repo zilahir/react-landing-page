@@ -7,7 +7,7 @@ import TopHeader from '../../components/TopHeader'
 import Button from '../../components/common/Button'
 import HeaderH1 from '../../components/common/HeaderH1'
 import Section from '../../components/common/Section'
-
+import Footer from '../../components/Footer'
 
 /**
 * @author martincserep
@@ -34,6 +34,7 @@ const Contactpage = () => {
 					<Button text="Contact Us" />
 				</div>
 			</Section>
+			<Footer />
 		</Grid>
 	)
 }

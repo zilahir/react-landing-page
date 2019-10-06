@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import PropTypes from 'prop-types'
+import { Link } from 'react-router-dom'
 
 import styles from './MenuItem.module.scss'
 
@@ -9,7 +10,7 @@ import styles from './MenuItem.module.scss'
 * */
 
 const MenuItem = props => {
-	const { label } = props
+	const { label, target } = props
 	const [hovered, setHovered] = useState(false)
 	const toggleHover = () => setHovered(!hovered)
 
@@ -19,13 +20,20 @@ const MenuItem = props => {
 			onMouseEnter={() => toggleHover()}
 			onMouseLeave={() => toggleHover()}
 		>
-			{label}
+			<Link to={target}>
+				{label}
+			</Link>
 		</li>
 	)
 }
 
+MenuItem.defaultProps = {
+	target: '',
+}
+
 MenuItem.propTypes = {
 	label: PropTypes.string.isRequired,
+	target: PropTypes.string,
 }
 
 export default MenuItem

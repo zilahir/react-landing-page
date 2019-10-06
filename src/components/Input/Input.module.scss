@@ -5,7 +5,15 @@
 .mainInput {
     width: 80%;
     font-family: 'Roboto', sans-serif;
-    color: $main-dark;
     font-size: 18px;
     line-height: 28px;
+    height: 50px;
+    padding-left: 15px;
+    margin-bottom: 10px;
+    border: 2px solid $light-green;
+    color:  $main-green;
+    &:focus, &:active {
+        border: 2px solid $main-green;
+        outline: none;
+    }
 }

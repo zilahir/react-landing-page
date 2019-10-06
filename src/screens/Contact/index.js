@@ -32,7 +32,14 @@ const Contactpage = () => {
 		>
 			<TopHeader />
 			<Row>
-				<Col lg={5} lgOffset={1} xs={12}>
+				<Col
+					lg={5}
+					lgOffset={1}
+					xs={12}
+					style={{
+						padding: '40px 80px',
+					}}
+				>
 					<HeaderH2 className={styles.contactSub} text="Get in touch with us" />
 					<HeaderH1 text="Contact us" />
 					<Paragraph text="Exercitation pariatur fugiat incididunt esse consequat officia ut dolore.
@@ -41,7 +48,10 @@ const Contactpage = () => {
 					eu exercitation laborum velit cupidatat mollit."
 					/>
 				</Col>
-				<Col lg={6} xs={12}>
+				<Col
+					lg={6}
+					xs={12}
+				>
 					<div className={styles.formContainer}>
 						<Parallax
 							bgImage={

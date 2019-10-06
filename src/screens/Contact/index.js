@@ -60,29 +60,35 @@ const Contactpage = () => {
 								height: '300px',
 							}}
 						/>
-						<div className={styles.contactForm}>
-							<div>
-								<Input onChange={e => setName(e.target.value)} type="text" placeholder="Your name" />
-								<Input onChange={e => setEmail(e.target.value)} type="email" placeholder="Your e-mail" />
-								<Input onChange={e => setMessage(e.target.value)} type="text" placeholder="Your message" />
-								<div className={styles.btnContainer}>
-									<Button
-										text="Contact Us"
-										className={
-											isAnimationOn ? styles.sendMessageBtnExtended
-												: styles.sendMessageBtn
-										}
-										isAnimationOn={isAnimationOn}
-										onClick={() => setAnimationOn(true)}
-									>
-										<UseAnimations
-											animationKey="infinity"
-											size={30}
-										/>
-									</Button>
+						<motion.div
+							initial={{ x: 1000 }}
+							animate={{ x: 0 }}
+							transition={{ duration: 0.5 }}
+						>
+							<div className={styles.contactForm}>
+								<div>
+									<Input onChange={e => setName(e.target.value)} type="text" placeholder="Your name" />
+									<Input onChange={e => setEmail(e.target.value)} type="email" placeholder="Your e-mail" />
+									<Input onChange={e => setMessage(e.target.value)} type="text" placeholder="Your message" />
+									<div className={styles.btnContainer}>
+										<Button
+											text="Contact Us"
+											className={
+												isAnimationOn ? styles.sendMessageBtnExtended
+													: styles.sendMessageBtn
+											}
+											isAnimationOn={isAnimationOn}
+											onClick={() => setAnimationOn(true)}
+										>
+											<UseAnimations
+												animationKey="infinity"
+												size={30}
+											/>
+										</Button>
+									</div>
 								</div>
 							</div>
-						</div>
+						</motion.div>
 					</div>
 				</Col>
 			</Row>

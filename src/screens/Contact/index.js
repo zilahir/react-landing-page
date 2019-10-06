@@ -33,7 +33,8 @@ const Contactpage = () => {
 			<TopHeader />
 			<Row>
 				<Col lg={5} lgOffset={1} xs={12}>
-					<HeaderH1 key="header" text="Contact us" />
+					<HeaderH2 className={styles.contactSub} text="Get in touch with us" />
+					<HeaderH1 text="Contact us" />
 					<Paragraph text="Exercitation pariatur fugiat incididunt esse consequat officia ut dolore.
 					Voluptate ad nisi et fugiat reprehenderit cupidatat ipsum commodo proident veniam veniam ipsum magna et.
 					Amet ipsum adipisicing adipisicing nostrud id culpa velit. Velit aliqua voluptate cillum ea nulla cillum
@@ -72,7 +73,7 @@ const Contactpage = () => {
 									<Input onChange={e => setMessage(e.target.value)} type="text" placeholder="Your message" />
 									<div className={styles.btnContainer}>
 										<Button
-											text="Contact Us"
+											text="Send message"
 											className={
 												isAnimationOn ? styles.sendMessageBtnExtended
 													: styles.sendMessageBtn

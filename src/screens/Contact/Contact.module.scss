@@ -1,6 +1,7 @@
 @import '../../styles/mixins/Section';
 @import '../../styles/variables';
 @import '../../styles/mixins/Button';
+@import '../../styles/mixins/HeaderMixins.scss';
 
 .btnContainer {
     display: block;
@@ -41,7 +42,7 @@
 
 .sendMessageBtn {
    @include Button;
-   width: 121px;
+   width: 150px;
    display: flex;
    justify-content: space-between;
    transition: all .4s ease;
@@ -57,7 +58,7 @@
 
 .sendMessageBtnExtended {
     @include Button;
-    width: 180px;
+    width: 200px;
     display: flex;
     justify-content: space-between;
     transition: all .4s ease;
@@ -68,5 +69,25 @@
                     stroke: $light-green;
             }
         }
+    }
+}
+
+.contactSub {
+    @include HeaderH2($main-green);
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    font-weight: normal;
+    display: flex;
+    &:before {
+        content: '';
+        width: 100px;
+        display: block;
+        height: 1px;
+        background: $main-green;
+        top: -6px;
+        left: 0;
+        align-self: center;
+        margin-right: 10px;
     }
 }

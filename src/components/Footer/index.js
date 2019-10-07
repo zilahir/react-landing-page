@@ -33,8 +33,8 @@ const Footer = () => {
 					</Col>
 				</Row>
 			</div>
-			<Row center="xs">
-				<Col lg={12}>
+			<Row>
+				<Col xs={12} lg={12}>
 					<div className={styles.socialContainer}>
 						<ul>
 							<li>
@@ -51,7 +51,7 @@ const Footer = () => {
 					</div>
 				</Col>
 			</Row>
-			<Row center="xs">
+			<Row>
 				<Col lg={12} xs={12}>
 					<div className={styles.legalContainer}>
 						<p>

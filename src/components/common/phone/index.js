@@ -49,7 +49,6 @@ const Phone = props => {
 			bottomOffset={600}
 		>
 			<PurleWrapper
-				// purpleImages={purpleImages}
 				className={styles.phone}
 				style={
 					toggle

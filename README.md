@@ -2,13 +2,13 @@ This is a repo for an ongoing development of a landing page written in `react`.
 
 ## List of components
 
-| task              | status   |
-| ----------------- | -------- |
-| header `h1`       | :hammer: |
-| header `h2`       | :hammer: |
-| header menu items | :hammer: |
-| `button`          | :hammer: |
-| text block `p`    | :hammer: |
+| task              | status             |
+| ----------------- | ------------------ |
+| header `h1`       | :white_check_mark: |
+| header `h2`       | :white_check_mark: |
+| header menu items | :hammer:           |
+| `button`          | :white_check_mark: |
+| text block `p`    | :white_check_mark: |
 
 ## Code of conduct
 
@@ -35,7 +35,7 @@ export default MenuItem
 
 **NOTE:** Please comment your components under the import section, so it's purpose will be clearly stated.
 
-1. We are using `css-grid` system in this project. More particularly [this](https://styled-css-grid.js.org/) one.
+1. We are using `flex-grid` system in this project. More particularly [this](https://roylee0704.github.io/react-flexbox-grid/) one.
 
 2. We are using [`css modules`](https://create-react-app.dev/docs/adding-a-css-modules-stylesheet), but with `scss` syntax. Keep the `scss` as organizad as possible, try to avoid _endless_ nesting.
 

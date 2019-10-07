@@ -14,9 +14,14 @@ const Btn = styled.button`
 `
 
 const Button = props => {
-	const { text, bgColor, className, onClick } = props
+	const { text, bgColor, className, onClick, children, isAnimationOn } = props
 	return (
 		<Btn className={className} bgColor={bgColor} onClick={onClick} type="button">
+			{
+				isAnimationOn
+					? children
+					: null
+			}
 			{text}
 		</Btn>
 	)
@@ -24,12 +29,16 @@ const Button = props => {
 
 Button.defaultProps = {
 	bgColor: '#5abd79',
+	children: null,
 	className: styles.defaultButton,
+	isAnimationOn: false,
 }
 
 Button.propTypes = {
 	bgColor: PropTypes.string,
+	children: PropTypes.node,
 	className: PropTypes.string,
+	isAnimationOn: PropTypes.bool,
 	onClick: PropTypes.func.isRequired,
 	text: PropTypes.string.isRequired,
 }

@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 // import { useStore } from 'react-redux'
 import { Grid } from 'react-flexbox-grid'
 
+
 import TopHeader from '../../components/TopHeader'
 import Footer from '../../components/Footer'
 import Section from '../../components/common/Section'
@@ -16,8 +17,9 @@ import Image2 from '../../assets/img/girl_reading_menu.jpg'
 // import Image3 from '../../assets/img/phone_and_food.jpg'
 import purpleImages from '../../assets/img/misc/pruple_dots.svg'
 
+
 /**
-* @author zilahir
+* @author zilahir,martincserep
 * @function Homepage
 * */
 

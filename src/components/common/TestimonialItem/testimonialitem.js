@@ -11,26 +11,7 @@ import styles from './TestimonialItem.module.scss'
 * @function TestimonialsItem
 * */
 
-const Image = styled.li`
-	position: relative;
-	opacity: .8;
-	&:hover {
-		&:after {
-			opacity: 1;
-			content: '';
-			background-image: url(${props => props.hoverImage});
-			width: 100px;
-			height: 100px;
-			position: absolute;
-			display: block;
-			top: 0;
-			background-size: cover;
-			margin-left: auto;
-			margin-right: auto;
-			left: 0;
-			right: 0;
-		}
-	}
+const Image = styled.div`
 `
 
 const TestimonialItem = props => {

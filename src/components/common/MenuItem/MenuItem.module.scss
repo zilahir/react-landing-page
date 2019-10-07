@@ -2,6 +2,10 @@
 @import '../../../styles/variables';
 
 .menuItem {
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
     font-family: 'Roboto', sans-serif;
     color: $main-dark;
     position: relative;

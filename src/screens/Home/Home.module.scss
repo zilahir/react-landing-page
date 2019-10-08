@@ -1,6 +1,7 @@
 @import '../../styles/mixins/Section';
 @import '../../styles/variables';
 @import '../../styles/mixins/mediaQueries.scss';
+@import '../../styles/mixins/HeaderMixins';
 
 .sectionContainer {
     @include section;
@@ -8,6 +9,7 @@
     @include smMax {
         justify-content: center;
     }
+
 }
 
 .testimonalContainer {
@@ -15,5 +17,25 @@
     margin: auto;
     @include smMax {
         display: none;
+    }
+}
+
+.subHeader {
+    @include HeaderH2($gray-1);
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    font-weight: normal;
+    display: flex;
+    &:before {
+        content: '';
+        width: 100px;
+        display: block;
+        height: 1px;
+        background: $gray-1;
+        top: -6px;
+        left: 0;
+        align-self: center;
+        margin-right: 10px;
     }
 }

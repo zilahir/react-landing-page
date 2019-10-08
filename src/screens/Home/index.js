@@ -15,6 +15,7 @@ import Phone from '../../components/common/phone'
 import Image2 from '../../assets/img/girl_reading_menu.jpg'
 // import Image3 from '../../assets/img/phone_and_food.jpg'
 import purpleImages from '../../assets/img/misc/pruple_dots.svg'
+import HeaderH2 from '../../components/common/HeaderH2'
 
 
 /**
@@ -45,6 +46,7 @@ const Homepage = () => {
 								imagePos="right"
 								hero
 							>
+								<HeaderH2 className={styles.subHeader} key="header" text="lorem" />
 								<HeaderH1 key="header" text="helloo" />
 								<Paragraph key="p" text="Exercitation pariatur fugiat incididunt esse consequat officia ut dolore. Voluptate ad nisi et fugiat reprehenderit cupidatat ipsum commodo proident veniam veniam ipsum magna et. Amet ipsum adipisicing adipisicing nostrud id culpa velit. Velit aliqua voluptate cillum ea nulla cillum eu exercitation laborum velit cupidatat mollit." />
 								<Image secondaryImage={purpleImages} key="image" src={Image1} maxWidth={400} alt="phone" />

@@ -2,6 +2,10 @@
 
 .imageWrapper {
     position: relative;
+    @include smMax {
+        display: flex;
+        justify-content: center;
+    }
     img {
         @include smMax {
             max-width: 300px;

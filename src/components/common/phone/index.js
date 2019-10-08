@@ -1,9 +1,10 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import PropTypes from 'prop-types'
 import { Waypoint } from 'react-waypoint'
 import styled from 'styled-components'
 import { motion } from 'framer-motion'
 import { Parallax } from 'react-parallax'
+import { useMediaQuery } from 'react-responsive'
 
 import redStars from '../../../assets/img/misc/red_starts.svg'
 import '@zilahir/html5-device-mockups/dist/device-mockups.css'
@@ -36,12 +37,36 @@ const Phone = props => {
 		height: '200px',
 		overflow: 'hidden',
 	})
+	const [style, setStyles] = useState({})
+	const isTabletOrMobile = useMediaQuery({ query: '(max-width: 1224px)' })
+	const isTabletOrMobileDevice = useMediaQuery({
+		query: '(max-device-width: 1224px)',
+	})
 
 	function togglePhone() {
 		setToggle({
 			height: '100%',
 		})
 	}
+
+	useEffect(() => {
+		if (!isTabletOrMobile && !isTabletOrMobileDevice) {
+			setStyles({
+				height: '400px',
+				width: '600px',
+				position: 'absolute',
+				top: '50px',
+			})
+		} else {
+			setStyles({
+				height: '400px',
+				width: '600px',
+				position: 'absolute',
+				top: '0px',
+				left: '-10px',
+			})
+		}
+	}, [isTabletOrMobile, isTabletOrMobileDevice])
 
 	return (
 		<Waypoint
@@ -59,12 +84,7 @@ const Phone = props => {
 						redStars
 					}
 					strength={300}
-					style={{
-						height: '400px',
-						width: '600px',
-						position: 'absolute',
-						top: '50px',
-					}}
+					style={style}
 					bgImageStyle={{
 						position: 'absolute',
 						width: '600px',

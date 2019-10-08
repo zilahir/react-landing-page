@@ -1,12 +1,19 @@
 @import '../../styles/mixins/Section';
 @import '../../styles/variables';
+@import '../../styles/mixins/mediaQueries.scss';
 
 .sectionContainer {
     @include section;
     margin: 0;
+    @include smMax {
+        justify-content: center;
+    }
 }
 
 .testimonalContainer {
     display: block;
     margin: auto;
+    @include smMax {
+        display: none;
+    }
 }

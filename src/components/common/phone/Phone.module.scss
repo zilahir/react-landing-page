@@ -1,5 +1,11 @@
+@import '../../../styles/mixins/mediaQueries.scss';
+
 .phone {
     transition: all .4s ease;
     overflow: hidden;
     position: relative;
+    @include smMax {
+        display: flex;
+        justify-content: center;
+    }
 }

@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react'
 // import { useStore } from 'react-redux'
-import { Grid } from 'react-flexbox-grid'
-
+import { Grid, Row, Col } from 'react-flexbox-grid'
 
 import TopHeader from '../../components/TopHeader'
 import Footer from '../../components/Footer'
@@ -37,38 +36,49 @@ const Homepage = () => {
 		<>
 			<Grid
 				fluid
-				style={{ padding: 0 }}
 			>
 				<TopHeader />
-				<div className={styles.sectionContainer}>
-					<Section
-						imagePos="right"
-						hero
-					>
-						<HeaderH1 key="header" text="helloo" />
-						<Paragraph key="p" text="Exercitation pariatur fugiat incididunt esse consequat officia ut dolore. Voluptate ad nisi et fugiat reprehenderit cupidatat ipsum commodo proident veniam veniam ipsum magna et. Amet ipsum adipisicing adipisicing nostrud id culpa velit. Velit aliqua voluptate cillum ea nulla cillum eu exercitation laborum velit cupidatat mollit." />
-						<Image secondaryImage={purpleImages} key="image" src={Image1} maxWidth={400} alt="phone" />
-					</Section>
-				</div>
-				<div className={styles.testimonalContainer}>
-					<Testimonials />
-				</div>
-				<div className={styles.sectionContainer}>
-					<Section>
-						<HeaderH1 key="header" text="lorem ipsum" />
-						<Paragraph key="p" text="Exercitation pariatur fugiat incididunt esse consequat officia ut dolore. Voluptate ad nisi et fugiat reprehenderit cupidatat ipsum commodo proident veniam veniam ipsum magna et. Amet ipsum adipisicing adipisicing nostrud id culpa velit. Velit aliqua voluptate cillum ea nulla cillum eu exercitation laborum velit cupidatat mollit." />
-						<Phone key="image">
-							<div style={{
-								backgroundImage: `url(${Image2})`,
-								width: '100%',
-								height: '100%',
-								backgroundSize: 'cover',
-								backgroundPosition: '50% 50%',
-							}}
-							/>
-						</Phone>
-					</Section>
-				</div>
+				<Row>
+					<Col lg={12} xs={12}>
+						<div className={styles.sectionContainer}>
+							<Section
+								imagePos="right"
+								hero
+							>
+								<HeaderH1 key="header" text="helloo" />
+								<Paragraph key="p" text="Exercitation pariatur fugiat incididunt esse consequat officia ut dolore. Voluptate ad nisi et fugiat reprehenderit cupidatat ipsum commodo proident veniam veniam ipsum magna et. Amet ipsum adipisicing adipisicing nostrud id culpa velit. Velit aliqua voluptate cillum ea nulla cillum eu exercitation laborum velit cupidatat mollit." />
+								<Image secondaryImage={purpleImages} key="image" src={Image1} maxWidth={400} alt="phone" />
+							</Section>
+						</div>
+					</Col>
+				</Row>
+				<Row>
+					<Col lg={12} xs={12}>
+						<div className={styles.testimonalContainer}>
+							<Testimonials />
+						</div>
+					</Col>
+				</Row>
+				<Row>
+					<Col lg={12} xs={12}>
+						<div className={styles.sectionContainer}>
+							<Section>
+								<HeaderH1 key="header" text="lorem ipsum" />
+								<Paragraph key="p" text="Exercitation pariatur fugiat incididunt esse consequat officia ut dolore. Voluptate ad nisi et fugiat reprehenderit cupidatat ipsum commodo proident veniam veniam ipsum magna et. Amet ipsum adipisicing adipisicing nostrud id culpa velit. Velit aliqua voluptate cillum ea nulla cillum eu exercitation laborum velit cupidatat mollit." />
+								<Phone key="image">
+									<div style={{
+										backgroundImage: `url(${Image2})`,
+										width: '100%',
+										height: '100%',
+										backgroundSize: 'cover',
+										backgroundPosition: '50% 50%',
+									}}
+									/>
+								</Phone>
+							</Section>
+						</div>
+					</Col>
+				</Row>
 				<Footer />
 			</Grid>
 		</>

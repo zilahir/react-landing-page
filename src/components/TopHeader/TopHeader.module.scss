@@ -1,6 +1,8 @@
 @import '../../styles/variables.scss';
+@import '../../styles/mixins/mediaQueries.scss';
 
 .topHeader {
+    
     height: 50px;
     background: rgba($color: #FFFFFF, $alpha: 1.0);
     overflow: hidden;
@@ -34,11 +36,17 @@
         list-style: none;
         text-align: center;
         padding: 10px;
+        @include smMax {
+            display: none;
+        }
     }
     .menuRight {
         list-style-type: none;
         align-items: center;
         display: flex;
         justify-content: flex-end;
+        @include smMax {
+            display: none;
+        }
     }
 }

@@ -1,8 +1,9 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import PropTypes from 'prop-types'
 import styled from 'styled-components'
-import { motion } from 'framer-motion'
+import { motion, useAnimation } from 'framer-motion'
 import { Parallax } from 'react-parallax'
+import { useMediaQuery } from 'react-responsive'
 
 import styles from './Image.module.scss'
 
@@ -17,6 +18,28 @@ const Img = styled.img`
 
 const Image = props => {
 	const { src, className, alt, maxWidth, secondaryImage } = props
+
+	const controls = useAnimation()
+	const isTabletOrMobile = useMediaQuery({ query: '(max-width: 1224px)' })
+	const isTabletOrMobileDevice = useMediaQuery({
+		query: '(max-device-width: 1224px)',
+	})
+
+	const animation = {
+		start: {
+			x: 0,
+		},
+		end: {
+			x: 100,
+		},
+	}
+
+	useEffect(() => {
+		if (!isTabletOrMobile && !isTabletOrMobileDevice) {
+			controls.start('end')
+		}
+	}, [controls])
+
 	return (
 		<div className={styles.imageWrapper}>
 			{
@@ -43,8 +66,9 @@ const Image = props => {
 					: null
 			}
 			<motion.div
-				initial={{ x: 0 }}
-				animate={{ x: 100 }}
+				initial="start"
+				animate={controls}
+				variants={animation}
 				transition={{ duration: 1, delay: 0.3 }}
 			>
 				<Img maxWidth={maxWidth} src={src} className={className} alt={alt} />

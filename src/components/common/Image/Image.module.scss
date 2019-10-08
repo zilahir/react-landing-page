@@ -1,5 +1,19 @@
+@import '../../../styles/mixins/mediaQueries.scss';
+
 .imageWrapper {
     position: relative;
+    @include smMax {
+        display: flex;
+        justify-content: center;
+    }
+    @include sm {
+        margin-bottom: -3px;
+    }
+    img {
+        @include smMax {
+            max-width: 300px;
+        }
+    }
     .sImage {
         position: absolute;
         top: -30px;

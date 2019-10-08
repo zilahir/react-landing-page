@@ -2,13 +2,15 @@ This is a repo for an ongoing development of a landing page written in `react`.
 
 ## List of components
 
-| task              | status             |
-| ----------------- | ------------------ |
-| header `h1`       | :white_check_mark: |
-| header `h2`       | :white_check_mark: |
-| header menu items | :hammer:           |
-| `button`          | :white_check_mark: |
-| text block `p`    | :white_check_mark: |
+| task                  | status             |
+| --------------------- | ------------------ |
+| header `h1`           | :white_check_mark: |
+| header `h2`           | :white_check_mark: |
+| header menu items     | :hammer:           |
+| `button`              | :white_check_mark: |
+| text block `p`        | :white_check_mark: |
+| testimonials `(logo)` | :white_check_mark: |
+| map                   | :white_check_mark: |
 
 ## Code of conduct
 
@@ -150,7 +152,7 @@ The headings (`h1`, `h2`, etc.) are `KoHo`, and body texts (`p`, `span`, etc.) a
 
 ## Contents
 
-Even for placeholders, it's **forbidden** to hardcode _any_ texts into the code. Let's use mimic some `API`, to help in the future connect some `graphQl`. Future plan is once the initial release is done, port this to [`gatsbyJs`](https://www.gatsbyjs.org/)
+Even for placeholders, it's **forbidden** to hardcode _any_ texts into the code. Let's _mimic_ some `API`, to help in the future connect some `graphQl`. Future plan is once the initial release is done, port this to [`gatsbyJs`](https://www.gatsbyjs.org/)
 
 Example:
 

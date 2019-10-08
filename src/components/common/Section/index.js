@@ -45,6 +45,7 @@ const Section = props => {
 								lg={5}
 								md={6}
 								lgOffset={1}
+								xsOffset={0}
 							>
 								{
 									children.map(child => (
@@ -65,6 +66,7 @@ const Section = props => {
 								lg={5}
 								md={6}
 								lgOffset={1}
+								xsOffset={0}
 							>
 								{
 									children.map(child => (

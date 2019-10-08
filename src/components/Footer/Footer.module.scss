@@ -7,7 +7,7 @@
     margin: 0 80px;
     @include smMax {
         padding: 0;
-        margin: 0;
+        margin: 30px;
     }
     min-height: 600px;
     background: rgba($color: #FFFFFF, $alpha: 1.0);
@@ -55,5 +55,8 @@
     }
     .footerNavContainer {
         padding: 40px 0px;
+        p {
+            @include p;
+        }
     }
 }

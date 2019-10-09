@@ -14,7 +14,7 @@ import { testimonials } from '../api/testimonials'
 * */
 
 
-const Testimonials = (props) => {
+const Testimonials = props => {
 	const { className } = props
 	const variants = {
 		visible: i => ({

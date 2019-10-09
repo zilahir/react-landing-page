@@ -22,6 +22,7 @@ const TopHeader = () => (
 				{headerMenu.getHeaderMenu().map(menuItem => (
 					<MenuItem
 						label={menuItem.label}
+						target={menuItem.slug}
 					/>
 				))}
 			</ul>

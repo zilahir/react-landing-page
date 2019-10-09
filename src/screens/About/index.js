@@ -33,7 +33,9 @@ const About = () => (
 						<HeaderH1 key="header" text="Get to know us" />
 						<Paragraph text="Veniam tempor exercitation consectetur deserunt esse excepteur elit adipisicing. Officia laboris id tempor aliquip ullamco ullamco amet ex occaecat est eiusmod. Magna nisi veniam eiusmod nostrud aliqua aliqua reprehenderit anim. Excepteur est cillum sunt deserunt nostrud laborum in dolor nostrud ut Lorem nisi. Ut deserunt officia laborum proident ad qui consectetur dolore incididunt. Cupidatat nulla ea id irure labore consequat laboris cupidatat reprehenderit qui pariatur laboris magna." />
 						<Image maxWidth={600} key="image" alt="eating out" src={GirlsEatingOut} />
-						<DownArrow />
+						<div className={styles.arrowContainer}>
+							<DownArrow />
+						</div>
 					</Section>
 				</div>
 			</Col>

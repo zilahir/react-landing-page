@@ -45,6 +45,7 @@ const Homepage = () => {
 							<Section
 								imagePos="right"
 								hero
+								xsOffset={0}
 							>
 								<HeaderH2 className={styles.subHeader} key="header" text="lorem" />
 								<HeaderH1 key="header" text="helloo" />
@@ -57,6 +58,7 @@ const Homepage = () => {
 				<Row>
 					<Col lg={10} xs={12} lgOffset={1}>
 						<div className={styles.testimonalContainer}>
+							<HeaderH2 className={styles.subHeader} text="Team up with us!" />
 							<HeaderH1 text="Our partners" />
 							<Testimonials />
 						</div>

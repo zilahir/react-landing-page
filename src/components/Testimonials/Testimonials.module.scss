@@ -1,8 +1,13 @@
+@import '../../styles/mixins/mediaQueries.scss';
+
 .testimonialWrapper {
     display: flex;
     justify-content: center;
-    margin: 160px 0;
+    margin: 80px 0;
     ul {
+        @include smMax {
+            grid-template-columns: repeat(2, 150px);
+        }
         display: grid;
         grid-auto-flow: row;
         grid-auto-rows: minmax(20px,auto);

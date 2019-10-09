@@ -16,7 +16,20 @@ const SectionContainer = styled.div`
 `
 
 const Section = props => {
-	const { imagePos, bgColor, children, hero } = props
+	const {
+		imagePos,
+		bgColor,
+		children,
+		hero,
+		leftXs,
+		leftLg,
+		lgOffsetLeft,
+		lgOffsetRight,
+		rightXs,
+		rightLg,
+		xsOffset,
+		textContainer,
+	} = props
 	return (
 		<SectionContainer backgroundColor={hero ? '#c8e9d2' : '#ffffff'} className={styles.sectionWrapper}>
 			{
@@ -24,11 +37,11 @@ const Section = props => {
 					? (
 						<Row>
 							<Col
-								xs={12}
-								lg={5}
+								xs={leftXs}
+								lg={leftLg}
 								md={6}
-								lgOffset={1}
-								className={styles.textContainer}
+								lgOffset={lgOffsetLeft}
+								className={textContainer}
 							>
 								{
 									children.map(child => (
@@ -41,11 +54,11 @@ const Section = props => {
 								}
 							</Col>
 							<Col
-								xs={12}
-								lg={5}
+								xs={rightXs}
+								lg={rightLg}
 								md={6}
-								lgOffset={1}
-								xsOffset={0}
+								lgOffset={lgOffsetRight}
+								xsOffset={xsOffset}
 							>
 								{
 									children.map(child => (
@@ -104,6 +117,14 @@ const Section = props => {
 
 Section.defaultProps = {
 	hero: false,
+	leftLg: 5,
+	leftXs: 12,
+	lgOffsetLeft: 1,
+	lgOffsetRight: 1,
+	rightLg: 5,
+	rightXs: 12,
+	textContainer: styles.textContainer,
+	xsOffset: 1,
 }
 
 Section.propTypes = {
@@ -111,6 +132,14 @@ Section.propTypes = {
 	children: PropTypes.node.isRequired,
 	hero: PropTypes.bool,
 	imagePos: PropTypes.string.isRequired,
+	leftLg: PropTypes.number,
+	leftXs: PropTypes.number,
+	lgOffsetLeft: PropTypes.number,
+	lgOffsetRight: PropTypes.number,
+	rightLg: PropTypes.number,
+	rightXs: PropTypes.number,
+	textContainer: PropTypes.string,
+	xsOffset: PropTypes.number,
 }
 
 export default Section

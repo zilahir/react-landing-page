@@ -5,6 +5,7 @@ import { motion } from 'framer-motion'
 import { Parallax } from 'react-parallax'
 import { FiMail, FiPhoneCall, FiLifeBuoy } from 'react-icons/fi'
 import UseAnimations from 'react-useanimations'
+import { useMediaQuery } from 'react-responsive'
 
 import purpleDots from '../../assets/img/misc/pruple_dots.svg'
 import Input from '../../components/Input'
@@ -26,6 +27,11 @@ const Contactpage = () => {
 	const [email, setEmail] = useState(null)
 	const [message, setMessage] = useState(null)
 	const [isAnimationOn, setAnimationOn] = useState(false)
+	const isTabletOrMobile = useMediaQuery({ query: '(max-width: 1224px)' })
+	const isTabletOrMobileDevice = useMediaQuery({
+		query: '(max-device-width: 1224px)',
+	})
+
 	return (
 		<Grid
 			fluid
@@ -36,9 +42,7 @@ const Contactpage = () => {
 					lg={5}
 					lgOffset={1}
 					xs={12}
-					style={{
-						padding: '40px 80px',
-					}}
+					style={!isTabletOrMobileDevice && !isTabletOrMobile ? { padding: '40px 80px' } : { padding: '20px 40px' }}
 				>
 					<HeaderH2 className={styles.contactSub} text="Get in touch with us" />
 					<HeaderH1 text="Contact us" />

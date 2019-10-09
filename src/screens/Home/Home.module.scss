@@ -14,9 +14,9 @@
 
 .testimonalContainer {
     display: block;
-    margin: auto;
+    margin: 80px 0;
     @include smMax {
-        display: none;
+        display: block;
     }
 }
 

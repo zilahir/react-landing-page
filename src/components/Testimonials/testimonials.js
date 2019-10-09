@@ -2,6 +2,7 @@ import React from 'react'
 import { Row, Col } from 'react-flexbox-grid'
 import { Waypoint } from 'react-waypoint'
 import { motion, useAnimation } from 'framer-motion'
+import PropTypes from 'prop-types'
 
 import styles from './Testimonials.module.scss'
 import TestimonialItem from '../common/TestimonialItem/testimonialitem'
@@ -13,7 +14,8 @@ import { testimonials } from '../api/testimonials'
 * */
 
 
-const Testimonials = () => {
+const Testimonials = (props) => {
+	const { className } = props
 	const variants = {
 		visible: i => ({
 			opacity: 1,
@@ -51,7 +53,7 @@ const Testimonials = () => {
 					<Row>
 						<Col lg={12}>
 							<motion.ul
-								className={`${styles.testimonalList} ${container}`}
+								className={className}
 								variants={container}
 								initial="hidden"
 								animate={controls}
@@ -75,6 +77,14 @@ const Testimonials = () => {
 			</div>
 		</Waypoint>
 	)
+}
+
+Testimonials.defaultProps = {
+	className: '',
+}
+
+Testimonials.propTypes = {
+	className: PropTypes.string,
 }
 
 export default Testimonials

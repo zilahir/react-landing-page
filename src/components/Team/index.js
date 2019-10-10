@@ -1,3 +1,4 @@
+/* eslint-disable react/no-array-index-key */
 import React from 'react'
 import { motion, useAnimation } from 'framer-motion'
 
@@ -42,8 +43,12 @@ const Team = () => {
 		controls.start('visible')
 	} */
 
+	controls.start('visible')
+
 	return (
-		<div>
+		<div
+			className={styles.teamMembersContainer}
+		>
 			<motion.ul
 				className={styles.teamList}
 				variants={container}
@@ -54,6 +59,7 @@ const Team = () => {
 					TeamMembers.map((member, i) => (
 						<motion.li
 							custom={i}
+							key={i}
 							animate={controls}
 							variants={variants}
 						>

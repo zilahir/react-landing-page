@@ -59,7 +59,7 @@ const About = () => (
 		</Row>
 		<Row>
 			<Col lg={12} xs={12}>
-				<div className={`${styles.aboutusContainer} ${styles.teamMembersContainer}`}>
+				<div className={`${styles.aboutusContainer}`}>
 					<Team />
 				</div>
 			</Col>

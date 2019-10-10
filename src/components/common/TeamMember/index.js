@@ -29,27 +29,26 @@ const MemberPofile = styled.div`
 
 const TeamMember = props => {
 	const { image, name, roleText, lnUrl, bio } = props
+
 	return (
-		<li className={styles.oneMember}>
-			<div className={styles.teamMemberWrapper}>
-				<MemberPofile className={styles.memberProfile} image={image} />
-				<div className={styles.memberMeta}>
-					<h6>
-						{name}
-					</h6>
-					<p>
-						{roleText}
-					</p>
-					<ul className={styles.linkList}>
-						<li>
-							<Link to={lnUrl}>
-								<FiLinkedin size="1.5em" />
-							</Link>
-						</li>
-					</ul>
-				</div>
+		<div className={styles.teamMemberWrapper}>
+			<MemberPofile className={styles.memberProfile} image={image} />
+			<div className={styles.memberMeta}>
+				<h6>
+					{name}
+				</h6>
+				<p>
+					{roleText}
+				</p>
+				<ul className={styles.linkList}>
+					<li>
+						<Link to={lnUrl}>
+							<FiLinkedin size="1.5em" />
+						</Link>
+					</li>
+				</ul>
 			</div>
-		</li>
+		</div>
 	)
 }
 

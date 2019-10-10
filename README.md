@@ -11,6 +11,8 @@ This is a repo for an ongoing development of a landing page written in `react`.
 | text block `p`        | :white_check_mark: |
 | testimonials `(logo)` | :white_check_mark: |
 | map                   | :white_check_mark: |
+| team                  | :white_check_mark: |
+| phone                 | :white_check_mark: |
 
 ## Code of conduct
 

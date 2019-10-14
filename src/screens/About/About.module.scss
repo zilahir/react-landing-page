@@ -4,6 +4,9 @@
 @import '../../../src/styles/mixins/ParagraphMixin.scss';
 
 .aboutusContainer {
+    .image {
+        padding: 60px;
+    }
     padding: 80px 0;
     .textContainer {
         justify-content: flex-start;

@@ -2,6 +2,22 @@
 @import '../../../styles/variables';
 
 .menuItem {
+    &.isActive {
+        position: relative;
+        a {
+            display: flex;
+            justify-content: center;
+            align-items: baseline;
+            &:after {
+                content: '';
+                height: 4px;
+                width: 100px;
+                background: $main-green;
+                position: absolute;
+                top: 25px;
+            }
+        }
+    }
     a {
         text-decoration: none;
         color: inherit;

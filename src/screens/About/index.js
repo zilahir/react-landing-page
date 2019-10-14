@@ -2,6 +2,7 @@ import React from 'react'
 import { Grid, Row, Col } from 'react-flexbox-grid'
 
 import TopHeader from '../../components/TopHeader'
+import Footer from '../../components/Footer'
 import Section from '../../components/common/Section'
 import HeaderH1 from '../../components/common/HeaderH1'
 import HeaderH2 from '../../components/common/HeaderH2'
@@ -71,6 +72,7 @@ const About = () => (
 				</div>
 			</Col>
 		</Row>
+		<Footer />
 	</Grid>
 )
 

@@ -2,10 +2,10 @@ This is a repo for an ongoing development of a landing page written in `react`.
 
 ## List of components
 
-| task                  | status             |
-| --------------------- | ------------------ |
-| header `h1`           | :white_check_mark: |
-| header `h2`           | :white_check_mark: |
+| task                  | status             | props                             |
+| --------------------- | ------------------ | --------------------------------- |
+| header `h1`           | :white_check_mark: | `text:string`, `className:string` |
+| header `h2`           | :white_check_mark: | `text:string`, `className:string` |
 | header menu items     | :hammer:           |
 | `button`              | :white_check_mark: |
 | text block `p`        | :white_check_mark: |

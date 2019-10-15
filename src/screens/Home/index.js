@@ -12,7 +12,7 @@ import styles from './Home.module.scss'
 import Image1 from '../../assets/img/girl_on_phone.jpg'
 import Testimonials from '../../components/Testimonials/testimonials'
 import Phone from '../../components/common/phone'
-import Image2 from '../../assets/img/girl_reading_menu.jpg'
+import Screen2 from '../../assets/img/phonescreens/screen_2.png'
 // import Image3 from '../../assets/img/phone_and_food.jpg'
 import purpleImages from '../../assets/img/misc/pruple_dots.svg'
 import HeaderH2 from '../../components/common/HeaderH2'
@@ -72,7 +72,7 @@ const Homepage = () => {
 								<Paragraph key="p" text="Exercitation pariatur fugiat incididunt esse consequat officia ut dolore. Voluptate ad nisi et fugiat reprehenderit cupidatat ipsum commodo proident veniam veniam ipsum magna et. Amet ipsum adipisicing adipisicing nostrud id culpa velit. Velit aliqua voluptate cillum ea nulla cillum eu exercitation laborum velit cupidatat mollit." />
 								<Phone key="image">
 									<div style={{
-										backgroundImage: `url(${Image2})`,
+										backgroundImage: `url(${Screen2})`,
 										width: '100%',
 										height: '100%',
 										backgroundSize: 'cover',

@@ -1,9 +1,9 @@
 import React, { useEffect } from 'react'
 import PropTypes from 'prop-types'
-import styled from 'styled-components'
 import { motion, useAnimation } from 'framer-motion'
 import { Parallax } from 'react-parallax'
 import { useMediaQuery } from 'react-responsive'
+import styled from 'styled-components'
 
 import styles from './Image.module.scss'
 
@@ -49,6 +49,7 @@ const Image = props => {
 							bgImage={
 								secondaryImage
 							}
+							className={className}
 							strength={300}
 							style={{
 								height: '300px',
@@ -71,7 +72,24 @@ const Image = props => {
 				variants={animation}
 				transition={{ duration: 1, delay: 0.3 }}
 			>
-				<Img maxWidth={maxWidth} src={src} className={className} alt={alt} />
+				{
+					!isTabletOrMobile && !isTabletOrMobileDevice
+						? (
+							<Parallax
+								blur={0}
+								bgImage={src}
+								bgImageAlt={alt}
+								strength={200}
+								style={{
+									width: maxWidth,
+									height: '600px',
+								}}
+								bgImageStyle={{
+									top: '10%',
+								}}
+							/>
+						) : <Img maxWidth={maxWidth} src={src} className={className} alt={alt} />
+				}
 			</motion.div>
 		</div>
 	)

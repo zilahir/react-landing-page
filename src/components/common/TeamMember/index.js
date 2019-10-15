@@ -1,6 +1,7 @@
 /* eslint-disable no-unused-vars */
 import React from 'react'
 import PropTypes from 'prop-types'
+import { useMediaQuery } from 'react-responsive'
 import { ParallaxProvider, Parallax } from 'react-scroll-parallax'
 import { Link } from 'react-router-dom'
 import styled from 'styled-components'
@@ -33,9 +34,16 @@ const MemberPofile = styled.div`
 
 const TeamMember = props => {
 	const { image, name, roleText, lnUrl, bio, parallaxY } = props
+	const isTabletOrMobile = useMediaQuery({ query: '(max-width: 1224px)' })
+	const isTabletOrMobileDevice = useMediaQuery({
+		query: '(max-device-width: 1224px)',
+	})
 	return (
 		<ParallaxProvider>
-			<Parallax y={parallaxY}>
+			<Parallax
+				disabled={isTabletOrMobile && isTabletOrMobileDevice}
+				y={parallaxY}
+			>
 				<div className={styles.teamMemberWrapper}>
 					<MemberPofile
 						className={styles.memberProfile}

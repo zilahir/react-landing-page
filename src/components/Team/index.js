@@ -39,12 +39,16 @@ const Team = () => {
 	}
 	const controls = useAnimation()
 
+	const PARALLAX_Y = [
+		[10, -10],
+		[-20, 20],
+	]
+
 	/* function fadeIn() {
 		controls.start('visible')
 	} */
 
 	controls.start('visible')
-
 	return (
 		<div
 			className={styles.teamMembersContainer}
@@ -69,6 +73,7 @@ const Team = () => {
 								roleText="Lead Developer"
 								lnUrl="#"
 								ind={i}
+								parallaxY={i % 2 === 0 ? PARALLAX_Y[0] : PARALLAX_Y[1]}
 							/>
 						</motion.li>
 					))

@@ -24,7 +24,7 @@ const Maps = () => {
 		<div className={styles.mapWrapper}>
 			<ReactMapGL
 				width="100%"
-				height={400}
+				height={600}
 				latitude={61.49911}
 				longitude={23.78712}
 				zoom={12}

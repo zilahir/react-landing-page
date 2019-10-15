@@ -96,7 +96,7 @@ const Section = props => {
 								lg={5}
 								md={6}
 								lgOffset={1}
-								className={styles.textContainer}
+								className={textContainer}
 							>
 								{
 									children.map(child => (

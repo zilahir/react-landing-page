@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 import { motion, useAnimation } from 'framer-motion'
 import { Parallax } from 'react-parallax'
 import { useMediaQuery } from 'react-responsive'
+import styled from 'styled-components'
 
 import styles from './Image.module.scss'
 
@@ -10,6 +11,10 @@ import styles from './Image.module.scss'
 * @author zilahir
 * @function Image
 * */
+
+const Img = styled.img`
+	max-width: ${props => props.maxWidth}px;
+`
 
 const Image = props => {
 	const { src, className, alt, maxWidth, secondaryImage } = props
@@ -67,19 +72,24 @@ const Image = props => {
 				variants={animation}
 				transition={{ duration: 1, delay: 0.3 }}
 			>
-				<Parallax
-					blur={0}
-					bgImage={src}
-					bgImageAlt={alt}
-					strength={200}
-					style={{
-						width: maxWidth,
-						height: '600px',
-					}}
-					bgImageStyle={{
-						top: '10%',
-					}}
-				/>
+				{
+					!isTabletOrMobile && !isTabletOrMobileDevice
+						? (
+							<Parallax
+								blur={0}
+								bgImage={src}
+								bgImageAlt={alt}
+								strength={200}
+								style={{
+									width: maxWidth,
+									height: '600px',
+								}}
+								bgImageStyle={{
+									top: '10%',
+								}}
+							/>
+						) : <Img maxWidth={maxWidth} src={src} className={className} alt={alt} />
+				}
 			</motion.div>
 		</div>
 	)

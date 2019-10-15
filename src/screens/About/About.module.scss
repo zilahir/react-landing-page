@@ -12,6 +12,9 @@
     padding: 80px 0;
     .textContainer {
         justify-content: flex-start;
+        @include smMax {
+            margin: 0;
+        }
     }
     .subHeader {
         @include HeaderH2($gray-1);
@@ -39,6 +42,8 @@
         padding-top: 20px;
         @include smMax {
             padding-top: 0;
+            display: flex;
+            justify-content: center;
         }
         svg {
             animation:slide-bottom 1.5s cubic-bezier(.25,.46,.45,.94) .5s infinite both

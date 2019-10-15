@@ -31,6 +31,7 @@ const About = () => (
 						imagePos="left"
 						hero
 						lgOffsetLeft={0}
+						textContainer={styles.textContainer}
 					>
 						<HeaderH2 className={styles.subHeader} key="header" text="lorem" />
 						<HeaderH1 key="header" text="Get to know us" />
@@ -51,6 +52,7 @@ const About = () => (
 						leftLg={3}
 						rightLg={5}
 						textContainer={styles.textContainer}
+						xsOffset={0}
 					>
 						<HeaderH2 className={styles.subHeader} key="header" text="This is who we are" />
 						<HeaderH1 text="Our story" />

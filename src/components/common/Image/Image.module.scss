@@ -2,9 +2,11 @@
 
 .imageWrapper {
     position: relative;
+    padding: 50px;
     @include smMax {
         display: flex;
         justify-content: center;
+        padding: 0px;
     }
     @include sm {
         margin-bottom: -3px;

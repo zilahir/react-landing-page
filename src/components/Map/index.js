@@ -13,28 +13,21 @@ import { allRestaurants } from './restaurants'
 * */
 
 const Maps = () => {
-	function handleViewportChange(v) {
-		console.debug('v', v)
-	}
-
 	function renderCityMarker(restaurant, index) {
-		console.debug('city', restaurant)
 		return (
 			<Marker key={`marker-${index}`} longitude={restaurant.longitude} latitude={restaurant.latitude}>
 				<CityPin size={20} onClick={() => console.debug('city city')} />
 			</Marker>
 		)
 	}
-	console.debug('allRest', allRestaurants.partners)
 	return (
 		<div className={styles.mapWrapper}>
 			<ReactMapGL
 				width="100%"
-				height={400}
+				height={600}
 				latitude={61.49911}
 				longitude={23.78712}
 				zoom={12}
-				onViewportChange={v => handleViewportChange({ v })}
 			>
 				{
 					allRestaurants.partners.map(((rest, i) => (

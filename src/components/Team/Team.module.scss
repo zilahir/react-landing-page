@@ -1,0 +1,14 @@
+.teamList {
+    list-style-type: none;
+    display: contents;
+}
+
+.teamMembersContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 20px;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 900px;
+}

@@ -2,15 +2,17 @@ This is a repo for an ongoing development of a landing page written in `react`.
 
 ## List of components
 
-| task                  | status             |
-| --------------------- | ------------------ |
-| header `h1`           | :white_check_mark: |
-| header `h2`           | :white_check_mark: |
+| task                  | status             | props                             |
+| --------------------- | ------------------ | --------------------------------- |
+| header `h1`           | :white_check_mark: | `text:string`, `className:string` |
+| header `h2`           | :white_check_mark: | `text:string`, `className:string` |
 | header menu items     | :hammer:           |
 | `button`              | :white_check_mark: |
 | text block `p`        | :white_check_mark: |
 | testimonials `(logo)` | :white_check_mark: |
 | map                   | :white_check_mark: |
+| team                  | :white_check_mark: |
+| phone                 | :white_check_mark: |
 
 ## Code of conduct
 
@@ -191,8 +193,12 @@ Please read the documentation of these packages if you are not familiar with the
 
 ## Deployments
 
-This project is automatically deployed from branch `master`, using [`netlify`](https://www.netlify.com). You can follow the development process on this [url](https://react-landnig-page.netlify.com/).
+This project is automatically deployed from branch [`master`](https://github.com/zilahir/react-landing-page/commits/master), using [`netlify`](https://www.netlify.com). You can follow the development process on this [url](https://react-landnig-page.netlify.com/).
 
 ## Contact
 
 In case of questions, drop me a [message](mailto:zilahi@gmail.com).
+
+#Section
+
+Section is a component for displaying content in a section. It's responsive and takes multiple props:

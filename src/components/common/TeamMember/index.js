@@ -23,6 +23,9 @@ const MemberPofile = styled.div`
 		top: -30px;
 		left: 30px;
 		z-index: -1;
+		background-color: #5abd79;
+		filter: blur(46px);
+		opacity: .4;
 	}
 	position: relative;
 	background-image: url(${props => props.image});

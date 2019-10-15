@@ -32,7 +32,7 @@ const PurleWrapper = styled.div`
 `
 
 const Phone = props => {
-	const { children } = props
+	const { children, className, animationEnd } = props
 	const [toggle, setToggle] = useState({
 		height: '200px',
 		overflow: 'hidden',
@@ -42,7 +42,7 @@ const Phone = props => {
 	const isTabletOrMobileDevice = useMediaQuery({
 		query: '(max-device-width: 1224px)',
 	})
-
+	const [animationEndClass, setAnimationEnd] = useState()
 	function togglePhone() {
 		setToggle({
 			height: '100%',
@@ -66,6 +66,9 @@ const Phone = props => {
 				left: '-10px',
 			})
 		}
+		setTimeout(() => {
+			setAnimationEnd(animationEnd)
+		}, 1000)
 	}, [isTabletOrMobile, isTabletOrMobileDevice])
 
 	return (
@@ -96,7 +99,7 @@ const Phone = props => {
 					animate={{ x: 100 }}
 				/>
 				<div className="device-wrapper">
-					<div className="device" data-device="iPhoneX" data-orientation="portrait" data-color="dark">
+					<div className={`device ${className} ${animationEndClass}`} data-device="iPhoneX" data-orientation="portrait" data-color="dark">
 						<div className="screen">
 							{children}
 						</div>
@@ -107,8 +110,15 @@ const Phone = props => {
 	)
 }
 
+Phone.defaultProps = {
+	animationEnd: '',
+	className: '',
+}
+
 Phone.propTypes = {
+	animationEnd: PropTypes.string,
 	children: PropTypes.node.isRequired,
+	className: PropTypes.string,
 }
 
 export default Phone

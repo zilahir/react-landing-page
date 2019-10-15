@@ -29,7 +29,11 @@ const Product = () => (
 					<Section imagePos="left">
 						<HeaderH2 className={styles.subHeader} key="header" text="introducing our app" />
 						<HeaderH1 key="header" text="Lorem ipsum" />
-						<Phone key="image">
+						<Phone
+							key="image"
+							className={styles.phoneAnimation}
+							animationEnd={styles.resetAnimation}
+						>
 							<div style={{
 								backgroundImage: `url(${Screen1})`,
 								width: '100%',

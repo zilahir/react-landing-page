@@ -193,7 +193,7 @@ Please read the documentation of these packages if you are not familiar with the
 
 ## Deployments
 
-This project is automatically deployed from branch `master`, using [`netlify`](https://www.netlify.com). You can follow the development process on this [url](https://react-landnig-page.netlify.com/).
+This project is automatically deployed from branch [`master`](https://github.com/zilahir/react-landing-page/commits/master), using [`netlify`](https://www.netlify.com). You can follow the development process on this [url](https://react-landnig-page.netlify.com/).
 
 ## Contact
 

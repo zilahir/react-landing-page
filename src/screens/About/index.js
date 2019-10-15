@@ -15,7 +15,7 @@ import DownArrow from '../../components/common/Svg/index'
 import styles from './About.module.scss'
 
 /**
-* @author
+* @author zilahir
 * @function About
 * */
 

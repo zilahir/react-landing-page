@@ -1,3 +1,5 @@
+# General
+
 This is a repo for an ongoing development of a landing page written in `react`.
 
 ## List of components
@@ -202,3 +204,8 @@ In case of questions, drop me a [message](mailto:zilahi@gmail.com).
 #Section
 
 Section is a component for displaying content in a section. It's responsive and takes multiple props:
+
+# Misc
+
+- This project is licenced under [MIT](https://choosealicense.com/licenses/mit/) licence.
+- The photos are in this repo are from [pexels.com](https://pexels.com)

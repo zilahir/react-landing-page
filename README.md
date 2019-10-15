@@ -198,3 +198,7 @@ This project is automatically deployed from branch `master`, using [`netlify`](h
 ## Contact
 
 In case of questions, drop me a [message](mailto:zilahi@gmail.com).
+
+#Section
+
+Section is a component for displaying content in a section. It's responsive and takes multiple props:

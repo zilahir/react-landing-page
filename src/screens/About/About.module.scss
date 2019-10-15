@@ -3,6 +3,8 @@
 @import '../../../src/styles/mixins/HeaderMixins.scss';
 @import '../../../src/styles/mixins/ParagraphMixin.scss';
 
+@keyframes slide-bottom{0%{transform:translateY(-50px)}100%{transform:translateY(0px)}}
+
 .aboutusContainer {
     .image {
         padding: 60px;
@@ -34,6 +36,13 @@
     .arrowContainer {
         display: flex;
         justify-content: flex-start;
+        padding-top: 20px;
+        @include smMax {
+            padding-top: 0;
+        }
+        svg {
+            animation:slide-bottom 1.5s cubic-bezier(.25,.46,.45,.94) .5s infinite both
+        }
     }
     .paragraph {
         @include p;

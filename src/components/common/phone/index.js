@@ -32,7 +32,7 @@ const PurleWrapper = styled.div`
 `
 
 const Phone = props => {
-	const { children, className, animationEnd } = props
+	const { children, className, animationEnd, secondaryImage, secondaryImageZoom } = props
 	const [toggle, setToggle] = useState({
 		height: '200px',
 		overflow: 'hidden',
@@ -84,7 +84,7 @@ const Phone = props => {
 			>
 				<Parallax
 					bgImage={
-						redStars
+						secondaryImage
 					}
 					strength={300}
 					style={style}
@@ -92,6 +92,7 @@ const Phone = props => {
 						position: 'absolute',
 						width: '600px',
 						height: '400px',
+						zoom: secondaryImageZoom,
 					}}
 				/>
 				<motion.div
@@ -113,12 +114,16 @@ const Phone = props => {
 Phone.defaultProps = {
 	animationEnd: '',
 	className: '',
+	secondaryImage: redStars,
+	secondaryImageZoom: 1,
 }
 
 Phone.propTypes = {
 	animationEnd: PropTypes.string,
 	children: PropTypes.node.isRequired,
 	className: PropTypes.string,
+	secondaryImage: PropTypes.string,
+	secondaryImageZoom: PropTypes.number,
 }
 
 export default Phone

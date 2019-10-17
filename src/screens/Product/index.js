@@ -12,6 +12,7 @@ import Phone from '../../components/common/phone'
 import Image from '../../components/common/Image'
 import styles from './Product.module.scss'
 import Screen1 from '../../assets/img/phonescreens/screen_1.png'
+import GreyDots from '../../assets/img/misc/grey_dots.svg'
 
 /**
 * @author zilahir
@@ -63,6 +64,8 @@ const Product = () => (
 							key="image"
 							className={styles.phoneAnimation}
 							animationEnd={styles.resetAnimation}
+							secondaryImage={GreyDots}
+							secondaryImageZoom={0.5}
 						>
 							<div style={{
 								backgroundImage: `url(${Screen1})`,

@@ -32,6 +32,7 @@ const About = () => (
 						hero
 						lgOffsetLeft={0}
 						textContainer={styles.textContainer}
+						alignSelfRight="center"
 					>
 						<HeaderH2 className={styles.subHeader} key="header" text="lorem" />
 						<HeaderH1 key="header" text="Get to know us" />

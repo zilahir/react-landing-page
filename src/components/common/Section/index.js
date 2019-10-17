@@ -29,6 +29,7 @@ const Section = props => {
 		rightLg,
 		xsOffset,
 		textContainer,
+		alignSelfRight,
 	} = props
 	return (
 		<SectionContainer backgroundColor={hero ? '#c8e9d2' : '#ffffff'} className={styles.sectionWrapper}>
@@ -97,6 +98,9 @@ const Section = props => {
 								md={6}
 								lgOffset={1}
 								className={textContainer}
+								style={{
+									alignSelf: alignSelfRight,
+								}}
 							>
 								{
 									children.map(child => (
@@ -116,6 +120,7 @@ const Section = props => {
 }
 
 Section.defaultProps = {
+	alignSelfRight: '',
 	hero: false,
 	leftLg: 5,
 	leftXs: 12,
@@ -128,6 +133,7 @@ Section.defaultProps = {
 }
 
 Section.propTypes = {
+	alignSelfRight: PropTypes.string,
 	bgColor: PropTypes.string.isRequired,
 	children: PropTypes.node.isRequired,
 	hero: PropTypes.bool,

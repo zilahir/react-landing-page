@@ -47,6 +47,7 @@ const Phone = props => {
 		setToggle({
 			height: '100%',
 		})
+		setAnimationEnd(animationEnd)
 	}
 
 	useEffect(() => {
@@ -66,9 +67,6 @@ const Phone = props => {
 				left: '-10px',
 			})
 		}
-		setTimeout(() => {
-			setAnimationEnd(animationEnd)
-		}, 1000)
 	}, [isTabletOrMobile, isTabletOrMobileDevice])
 
 	return (

@@ -16,7 +16,6 @@
     }
     .textContainer {
         justify-content: flex-start;
-        padding: 80px;
         @include smMax {
             padding: 0;
             margin: 0;

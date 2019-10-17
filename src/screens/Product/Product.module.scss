@@ -3,7 +3,7 @@
 @import '../../../src/styles/mixins/HeaderMixins.scss';
 @import '../../../src/styles/mixins/ParagraphMixin.scss';
 
-.productContainer {
+.productContainer, .functionContainer {
     .paragraph {
         @include p;
     }
@@ -27,4 +27,19 @@
             margin-top: 3px;
         }
     }
+    .phoneAnimation {
+        transform-origin: 100%;
+        transform: skewY(10deg);
+        transition: all .4s ease;
+    }
+    .resetAnimation {
+        transform-origin: 100%;
+        transform: skewY(0deg);
+        transition: all .4s ease;
+    }
+}
+
+.functionContainer {
+    width: 100%;
+    padding: 80px 0;
 }

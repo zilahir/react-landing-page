@@ -4,9 +4,6 @@ import { motion, useAnimation } from 'framer-motion'
 
 import TeamMember from '../common/TeamMember'
 import styles from './Team.module.scss'
-import Sami from '../../assets/img/team/sami.jpg'
-import Richi from '../../assets/img/team/rzilahi.jpg'
-import Yuliya from '../../assets/img/team/yuliya.jpg'
 
 /**
 * @author zilahir
@@ -14,7 +11,7 @@ import Yuliya from '../../assets/img/team/yuliya.jpg'
 * */
 
 const Team = () => {
-	const TeamMembers = [Sami, Richi, Yuliya]
+	const TeamMembers = ['https://via.placeholder.com/150', 'https://via.placeholder.com/150', 'https://via.placeholder.com/150']
 
 	const variants = {
 		visible: i => ({

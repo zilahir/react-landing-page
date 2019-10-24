@@ -16,10 +16,9 @@ const Image = styled.div`
 
 const TestimonialItem = props => {
 	const { key, src, alt, className } = props
-	const hoverImage = src.split('.')
 	return (
-		<Image hoverImage={require(`../../../assets/img/testimonials/${hoverImage[0]}_hover.png`)} className={className} key={key}>
-			<img className="demo" src={require(`../../../assets/img/testimonials/${src}`)} alt={alt} />
+		<Image hoverImage={src} className={className} key={key}>
+			<img className="demo" src={src} alt={alt} />
 		</Image>
 	)
 }

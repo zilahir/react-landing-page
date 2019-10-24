@@ -3,7 +3,6 @@ import React, { useState, useEffect } from 'react'
 import MenuItem from '../common/MenuItem'
 import { headerMenu } from '../api/headerMenu'
 import styles from './TopHeader.module.scss'
-import Logo from '../../assets/img/logo.png'
 
 /**
 * @author martincserep
@@ -20,6 +19,8 @@ const TopHeader = () => {
 	useEffect(() => {
 		getCurrantPath()
 	}, [])
+
+	const Logo = 'https://via.placeholder.com/150/5abd79/ffffff?Text=gatsbyjs'
 
 	return (
 		<div className={styles.topHeader}>

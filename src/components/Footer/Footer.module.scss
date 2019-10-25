@@ -8,15 +8,15 @@
         padding: 0;
         margin: 30px;
     }
-    transform: skew(0deg, -10deg);
     min-height: 600px;
     background: rgba($color: #f9f9f9, $alpha: .8);
     overflow: hidden;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    .content {
-        transform: skew(0deg, 10deg);
+    margin-top: 100px;
+    @include smMax {
+        margin-top: 40px;;
     }
     .socialContainer {
         ul {

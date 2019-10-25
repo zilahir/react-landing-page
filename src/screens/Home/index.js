@@ -37,6 +37,7 @@ const Homepage = () => {
 		<>
 			<Grid
 				fluid
+				className={styles.fluid}
 			>
 				<TopHeader />
 				<Row>

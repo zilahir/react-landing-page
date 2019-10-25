@@ -22,6 +22,7 @@ import styles from './About.module.scss'
 const About = () => (
 	<Grid
 		fluid
+		className={styles.fluid}
 	>
 		<TopHeader />
 		<Row>

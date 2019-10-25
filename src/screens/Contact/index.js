@@ -35,6 +35,7 @@ const Contactpage = () => {
 	return (
 		<Grid
 			fluid
+			className={styles.fluid}
 		>
 			<TopHeader />
 			<Row>

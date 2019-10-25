@@ -4,6 +4,10 @@
 @import '../../styles/mixins/HeaderMixins.scss';
 @import '../../styles/mixins/mediaQueries.scss';
 
+.fluid {
+    padding: 0;
+}
+
 .btnContainer {
     display: block;
     margin-top: 20px;

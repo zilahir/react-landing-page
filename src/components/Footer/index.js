@@ -16,59 +16,61 @@ const Footer = () => {
 	const { rights } = footerMenu.getFooterTexts()[1]
 	return (
 		<footer className={styles.footerWrapper}>
-			<div className={styles.footerNavContainer}>
-				<Row
-					center="lg"
-				>
-					<Col xs={12} lg={4}>
-						<p>
-							lorem
-						</p>
+			<div className={styles.content}>
+				<div className={styles.footerNavContainer}>
+					<Row
+						center="lg"
+					>
+						<Col xs={12} lg={4}>
+							<p>
+								lorem
+							</p>
+						</Col>
+						<Col xs={12} lg={4}>
+							<p>
+								lorem
+							</p>
+						</Col>
+					</Row>
+				</div>
+				<Row>
+					<Col xs={12} lg={12}>
+						<div className={styles.socialContainer}>
+							<ul>
+								<li>
+									<Link to="/">
+										<FiFacebook size="2em" />
+									</Link>
+								</li>
+								<li>
+									<Link to="/">
+										<FiInstagram size="2em" />
+									</Link>
+								</li>
+							</ul>
+						</div>
 					</Col>
-					<Col xs={12} lg={4}>
-						<p>
-							lorem
-						</p>
+				</Row>
+				<Row>
+					<Col lg={12} xs={12}>
+						<div className={styles.legalContainer}>
+							<p>
+								{new Date().getFullYear()}, { rights }
+							</p>
+							<small>
+								{
+									legalText
+								}
+							</small>
+							<p className={styles.heart}>
+								<small>
+									made  with <span aria-label="heart" role="img">❤️</span> in Helsinki, Finland
+								</small>
+							</p>
+						</div>
 					</Col>
 				</Row>
 			</div>
-			<Row>
-				<Col xs={12} lg={12}>
-					<div className={styles.socialContainer}>
-						<ul>
-							<li>
-								<Link to="/">
-									<FiFacebook size="2em" />
-								</Link>
-							</li>
-							<li>
-								<Link to="/">
-									<FiInstagram size="2em" />
-								</Link>
-							</li>
-						</ul>
-					</div>
-				</Col>
-			</Row>
-			<Row>
-				<Col lg={12} xs={12}>
-					<div className={styles.legalContainer}>
-						<p>
-							{new Date().getFullYear()}, { rights }
-						</p>
-						<small>
-							{
-								legalText
-							}
-						</small>
-						<p className={styles.heart}>
-							<small>
-								made  with <span aria-label="heart" role="img">❤️</span> in Helsinki, Finland
-							</small>
-						</p>
-					</div>
-				</Col>
-			</Row>
 		</footer>
 	)
 }

@@ -3,18 +3,21 @@
 @import '../../styles/mixins/mediaQueries.scss';
 
 .footerWrapper {
-    padding: 60px 0;
-    margin: 0 80px;
+    padding: 60px 80px;
     @include smMax {
         padding: 0;
         margin: 30px;
     }
+    transform: skew(0deg, -10deg);
     min-height: 600px;
-    background: rgba($color: #FFFFFF, $alpha: 1.0);
+    background: rgba($color: #f9f9f9, $alpha: .8);
     overflow: hidden;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+    .content {
+        transform: skew(0deg, 10deg);
+    }
     .socialContainer {
         ul {
             list-style-type: none;

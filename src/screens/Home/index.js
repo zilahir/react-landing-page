@@ -23,7 +23,6 @@ import HeaderH2 from '../../components/common/HeaderH2'
 * @function Homepage
 * */
 
-// eslint-disable-next-line arrow-body-style
 const Homepage = () => {
 	// const store = useStore()
 	// const { test } = store.getState()

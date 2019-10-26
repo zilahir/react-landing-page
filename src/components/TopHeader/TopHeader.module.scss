@@ -2,7 +2,11 @@
 @import '../../styles/mixins/mediaQueries.scss';
 
 .topHeader {
-    
+    &.homePage {
+        margin: 0;
+        padding: 80px;
+        background-color: $light-green;
+    }
     height: 50px;
     background: rgba($color: #FFFFFF, $alpha: 1.0);
     overflow: hidden;

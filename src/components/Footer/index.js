@@ -3,6 +3,7 @@ import { FiFacebook, FiInstagram } from 'react-icons/fi'
 import { Row, Col } from 'react-flexbox-grid'
 import { Link } from 'react-router-dom'
 
+import FooterWave from '../../assets/img/misc/footer_wave.png'
 import { footerMenu } from '../api/footer'
 import styles from './Footer.module.scss'
 
@@ -15,7 +16,12 @@ const Footer = () => {
 	const { legalText } = footerMenu.getFooterTexts()[0]
 	const { rights } = footerMenu.getFooterTexts()[1]
 	return (
-		<footer className={styles.footerWrapper}>
+		<footer
+			className={styles.footerWrapper}
+			style={{
+				backgroundImage: `url(${FooterWave})`,
+			}}
+		>
 			<div className={styles.content}>
 				<div className={styles.footerNavContainer}>
 					<Row

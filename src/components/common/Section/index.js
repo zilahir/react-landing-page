@@ -30,9 +30,16 @@ const Section = props => {
 		xsOffset,
 		textContainer,
 		alignSelfRight,
+		inlineStyle,
 	} = props
 	return (
-		<SectionContainer backgroundColor={hero ? '#c8e9d2' : '#ffffff'} className={styles.sectionWrapper}>
+		<SectionContainer
+			backgroundColor={hero ? '#c8e9d2' : '#ffffff'}
+			className={styles.sectionWrapper}
+			style={{
+				...inlineStyle,
+			}}
+		>
 			{
 				imagePos === 'right'
 					? (
@@ -122,6 +129,7 @@ const Section = props => {
 Section.defaultProps = {
 	alignSelfRight: '',
 	hero: false,
+	inlineStyle: {},
 	leftLg: 5,
 	leftXs: 12,
 	lgOffsetLeft: 1,
@@ -138,6 +146,10 @@ Section.propTypes = {
 	children: PropTypes.node.isRequired,
 	hero: PropTypes.bool,
 	imagePos: PropTypes.string.isRequired,
+	inlineStyle: PropTypes.oneOfType([
+		PropTypes.object,
+		PropTypes.array,
+	]),
 	leftLg: PropTypes.number,
 	leftXs: PropTypes.number,
 	lgOffsetLeft: PropTypes.number,

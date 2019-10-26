@@ -1,0 +1,40 @@
+@mixin background-cover(){
+    background-size: cover;
+  }
+  
+  @mixin border-radius( $radius: 3px){
+    border-radius: $radius;
+  }
+  
+  @mixin border-radius-specific( $tl-radius: 3px, $tr-radius: 3px, $bl-radius: 3px, $br-radius: 3px ){
+    border-radius: $arguments;
+  }
+  
+  @mixin box-shadow( $h-shadow: 0px, $v-shadow: 1px, $blur: 2px, $spread: 0px, $color: fade($black, 15%) ){
+    box-shadow: $arguments;
+  }
+  
+  @mixin inner-box-shadow( $h-shadow: 0px, $v-shadow: 1px, $blur: 2px, $spread: 0px, $color: fade($black, 15%) ){
+    box-shadow: inset $arguments;
+  }
+  
+  @mixin box-shadow-none(){
+    box-shadow: none;
+  }
+  
+  @mixin transitions( $property: all, $duration: 0.3s, $timing: linear, $delay: 0s ){
+    transition: $arguments;
+  }
+  
+  @mixin animation( $animation_name, $duration: 1s, $timing_function: ease ){
+    animation: $animation_name $duration $timing_function;
+  }
+  
+  @mixin box-size( $property: border-box ){
+    box-sizing: border-box;
+  }
+  
+  @mixin font-smoothing(){
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }

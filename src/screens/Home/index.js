@@ -14,7 +14,7 @@ import Screen2 from '../../assets/img/phonescreens/screen_2.png'
 // import purpleImages from '../../assets/img/misc/pruple_dots.svg'
 import HeaderH2 from '../../components/common/HeaderH2'
 import MacBook from '../../components/common/MacBook'
-
+import Button from '../../components/common/Button'
 
 /**
 * @author zilahir,martincserep
@@ -53,6 +53,10 @@ const Homepage = () => {
 								<HeaderH2 className={styles.subHeader} key="header" text="lorem" />
 								<HeaderH1 key="header" text="helloo" />
 								<Paragraph key="p" text="Exercitation pariatur fugiat incididunt esse consequat officia ut dolore. Voluptate ad nisi et fugiat reprehenderit cupidatat ipsum commodo proident veniam veniam ipsum magna et. Amet ipsum adipisicing adipisicing nostrud id culpa velit. Velit aliqua voluptate cillum ea nulla cillum eu exercitation laborum velit cupidatat mollit." />
+								<Button
+									text="Read more ⟶"
+									onClick={() => null}
+								/>
 								<MacBook key="image" />
 							</Section>
 						</div>

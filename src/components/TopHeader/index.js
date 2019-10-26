@@ -23,7 +23,7 @@ const TopHeader = () => {
 	const Logo = 'https://via.placeholder.com/150/5abd79/ffffff?Text=gatsbyjs'
 
 	return (
-		<div className={styles.topHeader}>
+		<div className={`${styles.topHeader} ${curPath === '#/' ? styles.homePage : ''}`}>
 			<div className={styles.header}>
 				<ul className={styles.logo}>
 					<li>

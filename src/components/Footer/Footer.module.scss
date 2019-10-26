@@ -5,18 +5,21 @@
 .footerWrapper {
     padding: 60px 80px;
     @include smMax {
-        padding: 0;
-        margin: 30px;
+        padding: 30px;
+        background-image: none !important;
+        background-color: $light-green;
     }
-    transform: skew(0deg, -10deg);
     min-height: 600px;
-    background: rgba($color: #f9f9f9, $alpha: .8);
     overflow: hidden;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    .content {
-        transform: skew(0deg, 10deg);
+    margin-top: 100px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 0%;
+    @include smMax {
+        margin-top: 40px;;
     }
     .socialContainer {
         ul {

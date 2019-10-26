@@ -3,6 +3,11 @@
 @import '../../../src/styles/mixins/HeaderMixins.scss';
 @import '../../../src/styles/mixins/ParagraphMixin.scss';
 
+.fluid {
+    padding: 0;
+    overflow-x: hidden;
+}
+
 .productContainer, .functionContainer {
     .paragraph {
         @include p;

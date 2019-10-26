@@ -22,6 +22,7 @@ import GreyDots from '../../assets/img/misc/grey_dots.svg'
 const Product = () => (
 	<Grid
 		fluid
+		className={styles.fluid}
 	>
 		<TopHeader />
 		<Row>

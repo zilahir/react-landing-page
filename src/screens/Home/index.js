@@ -7,15 +7,13 @@ import Footer from '../../components/Footer'
 import Section from '../../components/common/Section'
 import HeaderH1 from '../../components/common/HeaderH1'
 import Paragraph from '../../components/common/Paragraph'
-import Image from '../../components/common/Image'
 import styles from './Home.module.scss'
-import Image1 from '../../assets/img/girl_on_phone.jpg'
 import Testimonials from '../../components/Testimonials/testimonials'
 import Phone from '../../components/common/phone'
 import Screen2 from '../../assets/img/phonescreens/screen_2.png'
-// import Image3 from '../../assets/img/phone_and_food.jpg'
-import purpleImages from '../../assets/img/misc/pruple_dots.svg'
+// import purpleImages from '../../assets/img/misc/pruple_dots.svg'
 import HeaderH2 from '../../components/common/HeaderH2'
+import MacBook from '../../components/common/MacBook'
 
 
 /**
@@ -23,7 +21,6 @@ import HeaderH2 from '../../components/common/HeaderH2'
 * @function Homepage
 * */
 
-// eslint-disable-next-line arrow-body-style
 const Homepage = () => {
 	// const store = useStore()
 	// const { test } = store.getState()
@@ -37,6 +34,7 @@ const Homepage = () => {
 		<>
 			<Grid
 				fluid
+				className={styles.fluid}
 			>
 				<TopHeader />
 				<Row>
@@ -46,11 +44,16 @@ const Homepage = () => {
 								imagePos="right"
 								hero
 								xsOffset={0}
+								leftLg={3}
+								rightLg={6}
+								inlineStyle={{
+									padding: '40px 0px',
+								}}
 							>
 								<HeaderH2 className={styles.subHeader} key="header" text="lorem" />
 								<HeaderH1 key="header" text="helloo" />
 								<Paragraph key="p" text="Exercitation pariatur fugiat incididunt esse consequat officia ut dolore. Voluptate ad nisi et fugiat reprehenderit cupidatat ipsum commodo proident veniam veniam ipsum magna et. Amet ipsum adipisicing adipisicing nostrud id culpa velit. Velit aliqua voluptate cillum ea nulla cillum eu exercitation laborum velit cupidatat mollit." />
-								<Image secondaryImage={purpleImages} key="image" src={Image1} maxWidth={400} alt="phone" />
+								<MacBook key="image" />
 							</Section>
 						</div>
 					</Col>

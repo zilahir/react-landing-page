@@ -5,11 +5,15 @@
 
 @keyframes slide-bottom{0%{transform:translateY(-50px)}100%{transform:translateY(0px)}}
 
+.fluid {
+    padding: 0;
+    overflow-x: hidden;
+}
+
 .aboutusContainer {
     .image {
         padding: 60px;
     }
-    padding: 80px 0;
     @include smMax {
         padding: 0;
         margin: 0;

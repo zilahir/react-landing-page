@@ -2,13 +2,19 @@
 @import '../../styles/mixins/mediaQueries.scss';
 
 .topHeader {
-    
+    &.homePage {
+        margin: 0;
+        padding: 40px;
+        background-color: $light-green;
+        @include smMax {
+            padding: 0;
+        }
+    }
     height: 50px;
     background: rgba($color: #FFFFFF, $alpha: 1.0);
     overflow: hidden;
     padding: 20px 0;
     margin: 0 80px;
-    padding-bottom: 80px;
     .header {
         display: grid;
         grid-auto-flow: row;

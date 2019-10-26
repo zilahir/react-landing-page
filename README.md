@@ -15,6 +15,7 @@ This is a repo for an ongoing development of a landing page written in `react`.
 | map                   | :white_check_mark: |
 | team                  | :white_check_mark: |
 | phone                 | :white_check_mark: |
+| macbook               | :white_check_mark: |
 
 ## Code of conduct
 

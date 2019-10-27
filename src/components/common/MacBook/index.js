@@ -43,42 +43,44 @@ const MacBook = props => {
 			variants={animation}
 			transition={{ duration: 1, delay: 0.3 }}
 		>
-			<div className={styles.macbook}>
-				<div className={styles.screen}>
-					<div className={styles.browser}>
-						<div className={styles.toolbar}>
-							<div className={styles.row_one}>
-								<div className={styles.dot} />
-								<div className={styles.dot} />
-								<div className={styles.dot} />
-							</div>
-							<div className={styles.row_two}>
-								<div className={styles.nav}>
-									<div className={styles.prev}>&laquo;</div>
-									<div className={styles.next}>&raquo;</div>
+			<div className={styles.macWrapper}>
+				<div className={styles.macbook}>
+					<div className={styles.screen}>
+						<div className={styles.browser}>
+							<div className={styles.toolbar}>
+								<div className={styles.row_one}>
+									<div className={styles.dot} />
+									<div className={styles.dot} />
+									<div className={styles.dot} />
 								</div>
-								<div className={styles.address_bar}>
-									{barTitle}
+								<div className={styles.row_two}>
+									<div className={styles.nav}>
+										<div className={styles.prev}>&laquo;</div>
+										<div className={styles.next}>&raquo;</div>
+									</div>
+									<div className={styles.address_bar}>
+										{barTitle}
+									</div>
+									<div className={styles.search_bar} />
 								</div>
-								<div className={styles.search_bar} />
 							</div>
-						</div>
-						<div className={styles.content}>
-							{
-								children || (
-									<iframe
-										className={styles.frame}
-										height="100%"
-										src="https://google.com"
-										width="100%"
-										title="content"
-									/>
-								)
-							}
+							<div className={styles.content}>
+								{
+									children || (
+										<iframe
+											className={styles.frame}
+											height="100%"
+											src="https://google.com"
+											width="100%"
+											title="content"
+										/>
+									)
+								}
+							</div>
 						</div>
 					</div>
+					<div className={styles.body} />
 				</div>
-				<div className={styles.body} />
 			</div>
 		</motion.div>
 

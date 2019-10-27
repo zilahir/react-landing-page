@@ -4,6 +4,7 @@ import { motion, useAnimation } from 'framer-motion'
 
 import TeamMember from '../common/TeamMember'
 import styles from './Team.module.scss'
+import { team } from '../api/team'
 
 /**
 * @author zilahir
@@ -11,8 +12,6 @@ import styles from './Team.module.scss'
 * */
 
 const Team = () => {
-	const TeamMembers = ['https://via.placeholder.com/150', 'https://via.placeholder.com/150', 'https://via.placeholder.com/150']
-
 	const variants = {
 		visible: i => ({
 			opacity: 1,
@@ -57,7 +56,7 @@ const Team = () => {
 				animate={controls}
 			>
 				{
-					TeamMembers.map((member, i) => (
+					team.getTeam().map((teamMembers, i) => (
 						<motion.li
 							custom={i}
 							key={i}
@@ -65,9 +64,9 @@ const Team = () => {
 							variants={variants}
 						>
 							<TeamMember
-								image={member}
-								name="Richard Zilahi"
-								roleText="Lead Developer"
+								image={teamMembers.src}
+								name={teamMembers.name}
+								roleText={teamMembers.role}
 								lnUrl="#"
 								ind={i}
 								parallaxY={i % 2 === 0 ? PARALLAX_Y[0] : PARALLAX_Y[1]}

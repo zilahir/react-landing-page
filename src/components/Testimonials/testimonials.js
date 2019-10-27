@@ -45,8 +45,8 @@ const Testimonials = props => {
 
 	return (
 		<Waypoint
-			onEnter={() => fadeIn()}
-			bottomOffset={300}
+			onEnter={e => fadeIn(e)}
+			topOffset={550}
 		>
 			<div className={styles.testimonial}>
 				<div className={styles.testimonialWrapper}>

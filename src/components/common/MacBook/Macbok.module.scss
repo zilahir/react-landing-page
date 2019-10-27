@@ -88,7 +88,9 @@ $accent: #3fb8af;
         }
       }
       .content {
-        display: block;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         height: 90%;
         overflow: hidden;
         overflow-x: scroll;

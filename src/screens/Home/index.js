@@ -15,6 +15,7 @@ import Screen2 from '../../assets/img/phonescreens/screen_2.png'
 import HeaderH2 from '../../components/common/HeaderH2'
 import MacBook from '../../components/common/MacBook'
 import Button from '../../components/common/Button'
+import Chart from '../../components/common/Chart'
 
 /**
 * @author zilahir,martincserep
@@ -57,7 +58,9 @@ const Homepage = () => {
 									text="Read more ⟶"
 									onClick={() => null}
 								/>
-								<MacBook key="image" />
+								<MacBook key="image">
+									<Chart />
+								</MacBook>
 							</Section>
 						</div>
 					</Col>

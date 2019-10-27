@@ -11,7 +11,7 @@ import styles from './Macbok.module.scss'
 * */
 
 const MacBook = props => {
-	const { children } = props
+	const { children, barTitle } = props
 
 	const controls = useAnimation()
 	const isTabletOrMobile = useMediaQuery({ query: '(max-width: 1224px)' })
@@ -58,7 +58,7 @@ const MacBook = props => {
 									<div className={styles.next}>&raquo;</div>
 								</div>
 								<div className={styles.address_bar}>
-									http://andytran.me
+									{barTitle}
 								</div>
 								<div className={styles.search_bar} />
 							</div>
@@ -86,10 +86,12 @@ const MacBook = props => {
 }
 
 MacBook.defaultProps = {
+	barTitle: '',
 	children: null,
 }
 
 MacBook.propTypes = {
+	barTitle: PropTypes.string,
 	children: PropTypes.node,
 }
 

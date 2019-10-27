@@ -46,7 +46,7 @@ const Homepage = () => {
 								hero
 								xsOffset={0}
 								leftLg={3}
-								rightLg={6}
+								rightLg={7}
 								inlineStyle={{
 									padding: '40px 0px',
 								}}

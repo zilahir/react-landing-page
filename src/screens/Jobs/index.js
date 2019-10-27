@@ -11,6 +11,7 @@ import Paragraph from '../../components/common/Paragraph'
 import styles from './Jobs.module.scss'
 import Screen1 from '../../assets/img/phonescreens/screen_1.png'
 import GreyDots from '../../assets/img/misc/grey_dots.svg'
+import AccordionList from '../../components/AccordionList'
 
 /**
 * @author martincserep
@@ -23,6 +24,8 @@ const Jobs = () => (
 		className={styles.fluid}
 	>
 		<TopHeader />
+
+		<AccordionList />
 
 		<Footer />
 	</Grid>

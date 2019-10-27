@@ -83,6 +83,7 @@ const Contactpage = () => {
 						>
 							<div className={styles.contactForm}>
 								<div>
+									<HeaderH2 text="Send a message" />
 									<Input onChange={e => setName(e.target.value)} type="text" placeholder="Your name" />
 									<Input onChange={e => setEmail(e.target.value)} type="email" placeholder="Your e-mail" />
 									<Input onChange={e => setMessage(e.target.value)} type="text" placeholder="Your message" />

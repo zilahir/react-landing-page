@@ -9,7 +9,7 @@ import {
 
 import { jobs } from '../api/jobs'
 
-// import 'react-accessible-accordion/dist/fancy-example.css'
+import 'react-accessible-accordion/dist/fancy-example.css'
 
 /**
 * @author martincserep

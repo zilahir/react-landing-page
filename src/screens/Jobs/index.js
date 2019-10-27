@@ -24,7 +24,7 @@ const Jobs = () => (
 		className={styles.fluid}
 	>
 		<TopHeader />
-
+		<HeaderH1 text="Work with us!" />
 		<AccordionList />
 
 		<Footer />

@@ -8,8 +8,9 @@ import {
 } from 'react-accessible-accordion'
 
 import { jobs } from '../api/jobs'
-
 import 'react-accessible-accordion/dist/fancy-example.css'
+import HeaderH2 from '../common/HeaderH2'
+import Paragraph from '../common/Paragraph'
 
 /**
 * @author martincserep
@@ -28,12 +29,8 @@ export default function AccordionList() {
 							</AccordionItemButton>
 						</AccordionItemHeading>
 						<AccordionItemPanel>
-							<p>
-								{job.jobLocation}
-							</p>
-							<p>
-								{job.jobDesc}
-							</p>
+							<HeaderH2 text={job.jobLocation} />
+							<Paragraph text={job.jobDesc} />
 						</AccordionItemPanel>
 					</AccordionItem>
 				))

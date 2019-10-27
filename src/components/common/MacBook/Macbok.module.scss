@@ -101,8 +101,10 @@ $accent: #3fb8af;
     }
   }
   .body {
-    width: 948px;
+    max-width: 948px;
     margin: -10px 0 0 -91px;
+    position: relative;
+    left: 40px;
     &:before {
       display: block;
       content: '';

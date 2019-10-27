@@ -5,6 +5,7 @@ import Home from './screens/Home'
 import Contact from './screens/Contact'
 import About from './screens/About'
 import Product from './screens/Product'
+import Jobs from './screens/Jobs'
 
 function App() {
 	return (
@@ -13,6 +14,7 @@ function App() {
 			<Route path="/contact" exact component={Contact} />
 			<Route path="/about" exact component={About} />
 			<Route path="/product" exact component={Product} />
+			<Route path="/jobs" exact component={Jobs} />
 		</HashRouter>
 	)
 }

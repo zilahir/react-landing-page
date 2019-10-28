@@ -33,14 +33,15 @@ const TopHeader = () => {
 				<ul className={styles.headerList}>
 					{headerMenu.getHeaderMenu().map(menuItem => (
 						<MenuItem
+							key={menuItem.key}
 							label={menuItem.label}
 							target={menuItem.slug}
-							isActive={`#/${menuItem.slug}` === curPath ? 'active' : null}
+							isActive={`#/${menuItem.slug}` === curPath ? true : null}
 						/>
 					))}
 				</ul>
 				<ul className={styles.menuRight}>
-					<MenuItem target="contact" label="Contact" />
+					<MenuItem key={8} target="contact" label="Contact" />
 				</ul>
 			</div>
 		</div>

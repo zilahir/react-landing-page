@@ -28,12 +28,12 @@ const Product = () => (
 		<Row>
 			<Col lg={12} xs={12}>
 				<div className={styles.productContainer}>
-					<Section imagePos="left">
-						<HeaderH2 className={styles.subHeader} key="header" text="introducing our app" />
-						<HeaderH1 key="header" text="Lorem ipsum" />
-						<Paragraph key="p" className={styles.paragraph} text="Veniam tempor exercitation consectetur deserunt esse excepteur elit adipisicing. Officia laboris id tempor aliquip ullamco ullamco amet ex occaecat est eiusmod. Magna nisi veniam eiusmod nostrud aliqua aliqua reprehenderit anim. Excepteur est cillum sunt deserunt nostrud laborum in dolor nostrud ut Lorem nisi. Ut deserunt officia laborum proident ad qui consectetur dolore incididunt. Cupidatat nulla ea id irure labore consequat laboris cupidatat reprehenderit qui pariatur laboris magna." />
+					<Section bgColor="" imagePos="left">
+						<HeaderH2 className={styles.subHeader} key="upperAppIntroducingHeader" text="introducing our app" />
+						<HeaderH1 key="upperOfferHeader" text="Lorem ipsum" />
+						<Paragraph key="upperParagraph" className={styles.paragraph} text="Veniam tempor exercitation consectetur deserunt esse excepteur elit adipisicing. Officia laboris id tempor aliquip ullamco ullamco amet ex occaecat est eiusmod. Magna nisi veniam eiusmod nostrud aliqua aliqua reprehenderit anim. Excepteur est cillum sunt deserunt nostrud laborum in dolor nostrud ut Lorem nisi. Ut deserunt officia laborum proident ad qui consectetur dolore incididunt. Cupidatat nulla ea id irure labore consequat laboris cupidatat reprehenderit qui pariatur laboris magna." />
 						<Phone
-							key="image"
+							key="upperPhoneImage"
 							className={styles.phoneAnimation}
 							animationEnd={styles.resetAnimation}
 						>
@@ -57,12 +57,12 @@ const Product = () => (
 					xs={12}
 					lgOffset={1}
 				>
-					<Section imagePos="right">
-						<HeaderH2 className={styles.subHeader} key="header" text="introducing our app" />
-						<HeaderH1 key="header" text="What we offer" />
-						<Paragraph key="p" className={styles.paragraph} text="Veniam tempor exercitation consectetur deserunt esse excepteur elit adipisicing. Officia laboris id tempor aliquip ullamco ullamco amet ex occaecat est eiusmod. Magna nisi veniam eiusmod nostrud aliqua aliqua reprehenderit anim. Excepteur est cillum sunt deserunt nostrud laborum in dolor nostrud ut Lorem nisi. Ut deserunt officia laborum proident ad qui consectetur dolore incididunt. Cupidatat nulla ea id irure labore consequat laboris cupidatat reprehenderit qui pariatur laboris magna." />
+					<Section bgColor="" imagePos="right">
+						<HeaderH2 className={styles.subHeader} key="lowerAppIntroducingHeader" text="introducing our app" />
+						<HeaderH1 key="lowerOfferHeader" text="What we offer" />
+						<Paragraph key="lowerParagraph" className={styles.paragraph} text="Veniam tempor exercitation consectetur deserunt esse excepteur elit adipisicing. Officia laboris id tempor aliquip ullamco ullamco amet ex occaecat est eiusmod. Magna nisi veniam eiusmod nostrud aliqua aliqua reprehenderit anim. Excepteur est cillum sunt deserunt nostrud laborum in dolor nostrud ut Lorem nisi. Ut deserunt officia laborum proident ad qui consectetur dolore incididunt. Cupidatat nulla ea id irure labore consequat laboris cupidatat reprehenderit qui pariatur laboris magna." />
 						<Phone
-							key="image"
+							key="lowerPhoneImage"
 							className={styles.phoneAnimation}
 							animationEnd={styles.resetAnimation}
 							secondaryImage={GreyDots}

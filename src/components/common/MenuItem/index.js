@@ -10,13 +10,13 @@ import styles from './MenuItem.module.scss'
 * */
 
 const MenuItem = props => {
-	const { key, isActive, label, target } = props
+	const { index, isActive, label, target } = props
 	const [hovered, setHovered] = useState(false)
 	const toggleHover = () => setHovered(!hovered)
 
 	return (
 		<li
-			key={key}
+			key={index}
 			className={`${styles.menuItem} ${isActive ? styles.isActive : ''}`}
 			onMouseEnter={() => toggleHover()}
 			onMouseLeave={() => toggleHover()}
@@ -34,8 +34,8 @@ MenuItem.defaultProps = {
 }
 
 MenuItem.propTypes = {
+	index: PropTypes.number.isRequired,
 	isActive: PropTypes.bool,
-	key: PropTypes.number.isRequired,
 	label: PropTypes.string.isRequired,
 	target: PropTypes.string,
 }

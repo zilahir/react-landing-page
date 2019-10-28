@@ -34,6 +34,7 @@ const TopHeader = () => {
 					{headerMenu.getHeaderMenu().map(menuItem => (
 						<MenuItem
 							key={menuItem.key}
+							index={1}
 							label={menuItem.label}
 							target={menuItem.slug}
 							isActive={`#/${menuItem.slug}` === curPath ? true : null}
@@ -41,7 +42,7 @@ const TopHeader = () => {
 					))}
 				</ul>
 				<ul className={styles.menuRight}>
-					<MenuItem key={8} target="contact" label="Contact" />
+					<MenuItem index={8} target="contact" label="Contact" />
 				</ul>
 			</div>
 		</div>

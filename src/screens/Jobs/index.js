@@ -4,14 +4,9 @@ import { Grid, Row, Col } from 'react-flexbox-grid'
 
 import TopHeader from '../../components/TopHeader'
 import Footer from '../../components/Footer'
-import Section from '../../components/common/Section'
 import HeaderH1 from '../../components/common/HeaderH1'
-import HeaderH2 from '../../components/common/HeaderH2'
-import Paragraph from '../../components/common/Paragraph'
 import styles from './Jobs.module.scss'
-import Screen1 from '../../assets/img/phonescreens/screen_1.png'
-import GreyDots from '../../assets/img/misc/grey_dots.svg'
-import AccordionList from '../../components/AccordionList'
+import OpenJobs from '../../components/OpenJobs'
 
 /**
 * @author martincserep
@@ -25,7 +20,7 @@ const Jobs = () => (
 	>
 		<TopHeader />
 		<HeaderH1 text="Work with us!" />
-		<AccordionList />
+		<OpenJobs />
 
 		<Footer />
 	</Grid>

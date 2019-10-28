@@ -17,7 +17,7 @@ import Paragraph from '../common/Paragraph'
 * @function Accordion
 * */
 
-export default function AccordionList() {
+export default function OpenJobs() {
 	return (
 		<Accordion>
 			{

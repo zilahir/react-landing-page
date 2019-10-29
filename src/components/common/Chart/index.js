@@ -1,6 +1,6 @@
 import React from 'react'
 import {
-	BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip,
+	LineChart, Line, Tooltip, Legend,
 } from 'recharts'
 
 /**
@@ -34,21 +34,13 @@ const data = [
 
 const Chart = () => (
 	<div>
-		<BarChart
-			width={500}
-			height={300}
-			data={data}
-			margin={{
-				top: 20, right: 30, left: 20, bottom: 5,
-			}}
-		>
-			<CartesianGrid strokeDasharray="3 3" />
-			<XAxis dataKey="name" />
-			<YAxis />
+		<LineChart width={800} height={200} data={data}>
+			<Line type="monotone" dataKey="pv" stroke="#8884d8" strokeWidth={2} />
+			<Line type="monotone" dataKey="uv" stroke="#5abd79" strokeWidth={2} />
+			<Line type="monotone" dataKey="amt" stroke="#990000" strokeWidth={2} />
+			<Legend />
 			<Tooltip />
-			<Bar dataKey="pv" stackId="a" fill="#8884d8" />
-			<Bar dataKey="uv" stackId="a" fill="#82ca9d" />
-		</BarChart>
+		</LineChart>
 	</div>
 )
 

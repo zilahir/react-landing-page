@@ -15,9 +15,9 @@ const Image = styled.div`
 `
 
 const TestimonialItem = props => {
-	const { key, src, alt, className } = props
+	const { index, src, alt, className } = props
 	return (
-		<Image hoverImage={src} className={className} key={key}>
+		<Image hoverImage={src} className={className} index={index}>
 			<img className="demo" src={src} alt={alt} />
 		</Image>
 	)
@@ -30,7 +30,7 @@ TestimonialItem.defaultProps = {
 TestimonialItem.propTypes = {
 	alt: PropTypes.string.isRequired,
 	className: PropTypes.string,
-	key: PropTypes.number.isRequired,
+	index: PropTypes.number.isRequired,
 	src: PropTypes.string.isRequired,
 }
 

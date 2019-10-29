@@ -14,7 +14,8 @@ import Screen2 from '../../assets/img/phonescreens/screen_2.png'
 // import purpleImages from '../../assets/img/misc/pruple_dots.svg'
 import HeaderH2 from '../../components/common/HeaderH2'
 import MacBook from '../../components/common/MacBook'
-
+import Button from '../../components/common/Button'
+import Chart from '../../components/common/Chart'
 
 /**
 * @author zilahir,martincserep
@@ -45,15 +46,21 @@ const Homepage = () => {
 								hero
 								xsOffset={0}
 								leftLg={3}
-								rightLg={6}
+								rightLg={7}
 								inlineStyle={{
 									padding: '40px 0px',
 								}}
 							>
-								<HeaderH2 className={styles.subHeader} key="header" text="lorem" />
-								<HeaderH1 key="header" text="helloo" />
-								<Paragraph key="p" text="Exercitation pariatur fugiat incididunt esse consequat officia ut dolore. Voluptate ad nisi et fugiat reprehenderit cupidatat ipsum commodo proident veniam veniam ipsum magna et. Amet ipsum adipisicing adipisicing nostrud id culpa velit. Velit aliqua voluptate cillum ea nulla cillum eu exercitation laborum velit cupidatat mollit." />
-								<MacBook key="image" />
+								<HeaderH2 className={styles.subHeader} key="header-top" text="lorem" />
+								<HeaderH1 key="sub-header-top" text="helloo" />
+								<Paragraph key="p-top" text="Exercitation pariatur fugiat incididunt esse consequat officia ut dolore. Voluptate ad nisi et fugiat reprehenderit cupidatat ipsum commodo proident veniam veniam ipsum magna et. Amet ipsum adipisicing adipisicing nostrud id culpa velit. Velit aliqua voluptate cillum ea nulla cillum eu exercitation laborum velit cupidatat mollit." />
+								<Button
+									text="Read more ⟶"
+									onClick={() => null}
+								/>
+								<MacBook key="image-bottom">
+									<Chart />
+								</MacBook>
 							</Section>
 						</div>
 					</Col>
@@ -71,9 +78,9 @@ const Homepage = () => {
 					<Col lg={12} xs={12}>
 						<div className={styles.sectionContainer}>
 							<Section>
-								<HeaderH1 key="header" text="lorem ipsum" />
+								<HeaderH1 key="header-bottom" text="lorem ipsum" />
 								<Paragraph key="p" text="Exercitation pariatur fugiat incididunt esse consequat officia ut dolore. Voluptate ad nisi et fugiat reprehenderit cupidatat ipsum commodo proident veniam veniam ipsum magna et. Amet ipsum adipisicing adipisicing nostrud id culpa velit. Velit aliqua voluptate cillum ea nulla cillum eu exercitation laborum velit cupidatat mollit." />
-								<Phone key="image">
+								<Phone key="image-bottom">
 									<div style={{
 										backgroundImage: `url(${Screen2})`,
 										width: '100%',

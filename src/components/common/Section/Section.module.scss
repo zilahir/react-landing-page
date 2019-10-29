@@ -5,6 +5,9 @@
         padding: 30px;
     }
     display: block;
+    &.heroWrapper {
+        height: 100vh;
+    }
     .textContainer {
         display: flex;
         justify-content: center;

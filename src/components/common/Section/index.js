@@ -35,7 +35,7 @@ const Section = props => {
 	return (
 		<SectionContainer
 			backgroundColor={hero ? '#c8e9d2' : '#ffffff'}
-			className={styles.sectionWrapper}
+			className={`${styles.sectionWrapper} ${hero ? styles.heroWrapper : ''}`}
 			style={{
 				...inlineStyle,
 			}}
@@ -53,7 +53,7 @@ const Section = props => {
 							>
 								{
 									children.map(child => (
-										child.key !== 'image'
+										child.key && !child.key.includes('image')
 											? (
 												child
 											)
@@ -70,7 +70,7 @@ const Section = props => {
 							>
 								{
 									children.map(child => (
-										child.key === 'image'
+										child.key && child.key.includes('image')
 											? (
 												child
 											)
@@ -91,7 +91,7 @@ const Section = props => {
 							>
 								{
 									children.map(child => (
-										child.key === 'image'
+										child.key && child.key.includes('image')
 											? (
 												child
 											)
@@ -111,7 +111,7 @@ const Section = props => {
 							>
 								{
 									children.map(child => (
-										child.key !== 'image'
+										child.key && !child.key.includes('image')
 											? (
 												child
 											)
@@ -128,7 +128,9 @@ const Section = props => {
 
 Section.defaultProps = {
 	alignSelfRight: '',
+	bgColor: null,
 	hero: false,
+	imagePos: 'right',
 	inlineStyle: {},
 	leftLg: 5,
 	leftXs: 12,
@@ -142,10 +144,10 @@ Section.defaultProps = {
 
 Section.propTypes = {
 	alignSelfRight: PropTypes.string,
-	bgColor: PropTypes.string.isRequired,
+	bgColor: PropTypes.string,
 	children: PropTypes.node.isRequired,
 	hero: PropTypes.bool,
-	imagePos: PropTypes.string.isRequired,
+	imagePos: PropTypes.oneOf(['left', 'right']),
 	inlineStyle: PropTypes.oneOfType([
 		PropTypes.object,
 		PropTypes.array,

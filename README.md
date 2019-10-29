@@ -2,6 +2,8 @@
 
 This is a repo for an ongoing development of a landing page written in `react`.
 
+[![Build Status](https://travis-ci.org/zilahir/react-landing-page.svg?branch=master)](https://travis-ci.org/zilahir/react-landing-page)
+
 ## List of components
 
 | task                  | status             | props                             |

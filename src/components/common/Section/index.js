@@ -53,7 +53,7 @@ const Section = props => {
 							>
 								{
 									children.map(child => (
-										child.key !== 'image'
+										child.key && !child.key.includes('image')
 											? (
 												child
 											)
@@ -70,7 +70,7 @@ const Section = props => {
 							>
 								{
 									children.map(child => (
-										child.key === 'image'
+										child.key && child.key.includes('image')
 											? (
 												child
 											)
@@ -91,7 +91,7 @@ const Section = props => {
 							>
 								{
 									children.map(child => (
-										child.key === 'image'
+										child.key && child.key.includes('image')
 											? (
 												child
 											)
@@ -111,7 +111,7 @@ const Section = props => {
 							>
 								{
 									children.map(child => (
-										child.key !== 'image'
+										child.key && !child.key.includes('image')
 											? (
 												child
 											)

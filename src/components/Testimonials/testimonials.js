@@ -46,7 +46,6 @@ const Testimonials = props => {
 	return (
 		<Waypoint
 			onEnter={e => fadeIn(e)}
-			debug
 			topOffset={300}
 		>
 			<div className={styles.testimonial}>
@@ -59,15 +58,17 @@ const Testimonials = props => {
 								initial="hidden"
 								animate={controls}
 							>
-								{testimonials.getTestimonials().map((testimonialItems, i) => (
+								{testimonials.getTestimonials().map((testimonialItem, i) => (
 									<motion.li
 										custom={i}
 										animate={controls}
 										variants={variants}
+										key={`${TestimonialItem.alt}-${i + 1}`}
 									>
 										<TestimonialItem
-											src={testimonialItems.src}
-											key={testimonialItems.key}
+											src={testimonialItem.src}
+											alt={testimonialItem.alt}
+											index={i}
 										/>
 									</motion.li>
 								))}

@@ -11,7 +11,7 @@ import styles from './Macbok.module.scss'
 * */
 
 const MacBook = props => {
-	const { children, barTitle } = props
+	const { children, barTitle, frameUrl } = props
 
 	const controls = useAnimation()
 	const isTabletOrMobile = useMediaQuery({ query: '(max-width: 1224px)' })
@@ -70,7 +70,7 @@ const MacBook = props => {
 										<iframe
 											className={styles.frame}
 											height="100%"
-											src="https://google.com"
+											src={frameUrl}
 											width="100%"
 											title="content"
 										/>
@@ -90,11 +90,13 @@ const MacBook = props => {
 MacBook.defaultProps = {
 	barTitle: '',
 	children: null,
+	frameUrl: null,
 }
 
 MacBook.propTypes = {
 	barTitle: PropTypes.string,
 	children: PropTypes.node,
+	frameUrl: PropTypes.string,
 }
 
 export default MacBook

@@ -204,10 +204,6 @@ This project is automatically deployed from branch [`master`](https://github.com
 
 In case of questions, drop me a [message](mailto:zilahi@gmail.com).
 
-#Section
-
-Section is a component for displaying content in a section. It's responsive and takes multiple props:
-
 # Misc
 
 - This project is licenced under [MIT](https://choosealicense.com/licenses/mit/) licence.

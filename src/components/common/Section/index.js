@@ -128,7 +128,9 @@ const Section = props => {
 
 Section.defaultProps = {
 	alignSelfRight: '',
+	bgColor: null,
 	hero: false,
+	imagePos: 'right',
 	inlineStyle: {},
 	leftLg: 5,
 	leftXs: 12,
@@ -142,10 +144,10 @@ Section.defaultProps = {
 
 Section.propTypes = {
 	alignSelfRight: PropTypes.string,
-	bgColor: PropTypes.string.isRequired,
+	bgColor: PropTypes.string,
 	children: PropTypes.node.isRequired,
 	hero: PropTypes.bool,
-	imagePos: PropTypes.string.isRequired,
+	imagePos: PropTypes.oneOf(['left', 'right']),
 	inlineStyle: PropTypes.oneOfType([
 		PropTypes.object,
 		PropTypes.array,

@@ -18,10 +18,21 @@ const Jobs = () => (
 		fluid
 		className={styles.fluid}
 	>
-		<Row>
-			<Col lg={12}>
-				<TopHeader />
-				<HeaderH1 text="Work with us!" />
+		<TopHeader />
+		<div className={styles.headerContainer}>
+			<Row>
+				<Col
+					lg={10}
+					lgOffset={1}
+				>
+					<HeaderH1 text="Work with us!" />
+				</Col>
+			</Row>
+		</div>
+		<Row
+			center="lg"
+		>
+			<Col lg={8}>
 				<OpenJobs />
 			</Col>
 		</Row>

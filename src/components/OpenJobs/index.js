@@ -62,7 +62,7 @@ const OpenJobs = () => {
 								<Icon icon={mapPin} size="2em" />
 								<HeaderH2 className={styles.jobLocation} text={job.jobLocation} />
 							</div>
-							<Paragraph text={job.jobDesc} />
+							<Paragraph className={styles.jobDesc} text={job.jobDesc} />
 						</AccordionItemPanel>
 					</AccordionItem>
 				))

@@ -26,7 +26,7 @@
                 border-bottom: 2px solid $main-dark;
                 .title {
                     color: $main-dark;
-                    margin-left: 20px;
+                    margin-left: 20px
                 }
                 .buttonIcon {
                     display: flex;
@@ -42,6 +42,10 @@
             }
             .jobLocation {
                 margin-left: 10px;
+            }
+            .jobDesc {
+                max-width: 80%;
+                padding: 30px;
             }
         }
     }

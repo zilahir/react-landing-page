@@ -78,7 +78,7 @@ Read more about `react-hooks` in it's [documentation](https://reactjs.org/docs/h
 
 For `hooks` follow the naming conventions, as in the example above. If a variable needs to be set to a specific value, use the `set` in the naming, so it will be consequent, and readable.
 
-## File structure
+## Project structure
 
 Each component have to be in `components` folder.
 
@@ -88,18 +88,39 @@ Each component have to be in `components` folder.
 
 ## Folder structure
 
-- **components**
+The structure of the folders tried to be kept as consistent and self explanary explanatory as possible. Everything goes where it belongs.
 
-  - **MenuItem**
-    - [index.js](components/MenuItem/index.js)
-    - [MenuItem.module.scss](components/MenuItem/MenuItem.module.scss)
-  - **api**
-    - [headerMenu.js](components/api/headerMenu.js)
-  - **common**
+```markdown
+├── App.js
+├── App.test.js
+├── actions
+│ ├── actionTypes.js
+│ └── test.js
+├── assets
+│ └── img
+├── components
+│ ├── Footer
+│ │ ├── Footer.module.scss
+│ │ └── index.js
+│ └── common
+│ ├── Button
+│ │ ├── Button.module.scss
+│ │ └── index.js
+├── reducers
+│ └── test.js
+├── screens
+│ ├── Home
+│ │ ├── Home.module.scss
+│ │ └── index.js
+└── styles
+├── mixins
+│ ├── Button.scss
+└── variables.scss
+```
 
-  - **TopHeader**
-    - [TopHeader.module.scss](components/TopHeader/TopHeader.module.scss)
-    - [index.js](components/TopHeader/index.js)
+The `filenames` and `foldernames` should be in the following format:
+
+`<SomeComponent>` / `index.js` / `SomeComponent.module.scss`
 
 ## Naming conventions
 
@@ -203,10 +224,6 @@ This project is automatically deployed from branch [`master`](https://github.com
 ## Contact
 
 In case of questions, drop me a [message](mailto:zilahi@gmail.com).
-
-#Section
-
-Section is a component for displaying content in a section. It's responsive and takes multiple props:
 
 # Misc
 

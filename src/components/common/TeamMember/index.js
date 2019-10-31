@@ -10,7 +10,7 @@ import { FiLinkedin } from 'react-icons/fi/'
 import styles from './TeamMember.module.scss'
 
 /**
-* @author
+* @author martincserep
 * @function TeamMember
 * */
 
@@ -71,11 +71,12 @@ const TeamMember = props => {
 }
 
 TeamMember.defaultProps = {
+	bio: 'Sample bio text',
 	parallaxY: [],
 }
 
 TeamMember.propTypes = {
-	bio: PropTypes.string.isRequired,
+	bio: PropTypes.string,
 	image: PropTypes.string.isRequired,
 	lnUrl: PropTypes.string.isRequired,
 	name: PropTypes.string.isRequired,

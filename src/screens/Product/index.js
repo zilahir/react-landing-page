@@ -57,7 +57,10 @@ const Product = () => (
 					xs={12}
 					lgOffset={1}
 				>
-					<Section bgColor="" imagePos="right">
+					<Section
+						imagePos="right"
+						xsOffset={0}
+					>
 						<HeaderH2 className={styles.subHeader} key="header-bottom" text="introducing our app" />
 						<HeaderH1 key="header-sub-bottom" text="What we offer" />
 						<Paragraph key="p-bottom" className={styles.paragraph} text="Veniam tempor exercitation consectetur deserunt esse excepteur elit adipisicing. Officia laboris id tempor aliquip ullamco ullamco amet ex occaecat est eiusmod. Magna nisi veniam eiusmod nostrud aliqua aliqua reprehenderit anim. Excepteur est cillum sunt deserunt nostrud laborum in dolor nostrud ut Lorem nisi. Ut deserunt officia laborum proident ad qui consectetur dolore incididunt. Cupidatat nulla ea id irure labore consequat laboris cupidatat reprehenderit qui pariatur laboris magna." />

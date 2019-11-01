@@ -47,3 +47,9 @@
     width: 100%;
     padding: 80px 0;
 }
+
+.textContainer {
+    @include smMax {
+        margin-top: 80px;
+    }
+}

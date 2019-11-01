@@ -23,6 +23,7 @@
 }
 
 .menuContainer {
+    overflow: hidden !important; //i hate inline styles bühh.
     nav {
         a {
             text-align: left;

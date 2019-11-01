@@ -1,0 +1,13 @@
+@import '../../styles/variables.scss';
+
+.burgerButton {
+    position: fixed;
+    width: 36px;
+    height: 30px;
+    top: 0;
+    left: 0;
+}
+
+.menu {
+    background-color: $light-green;
+}

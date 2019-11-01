@@ -6,10 +6,12 @@ import Contact from './screens/Contact'
 import About from './screens/About'
 import Product from './screens/Product'
 import Jobs from './screens/Jobs'
+import BurgerMenu from './components/BurgerMenu'
 
 function App() {
 	return (
 		<HashRouter>
+			<BurgerMenu />
 			<Route path="/" exact component={Home} />
 			<Route path="/contact" exact component={Contact} />
 			<Route path="/about" exact component={About} />

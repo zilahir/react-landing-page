@@ -19,8 +19,23 @@ const Jobs = () => (
 		className={styles.fluid}
 	>
 		<TopHeader />
-		<HeaderH1 text="Work with us!" />
-		<OpenJobs />
+		<div className={styles.headerContainer}>
+			<Row>
+				<Col
+					lg={10}
+					lgOffset={1}
+				>
+					<HeaderH1 text="Work with us!" />
+				</Col>
+			</Row>
+		</div>
+		<Row
+			center="lg"
+		>
+			<Col lg={8}>
+				<OpenJobs />
+			</Col>
+		</Row>
 
 		<Footer />
 	</Grid>

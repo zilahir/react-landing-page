@@ -7,13 +7,16 @@
     display: block;
     &.heroWrapper {
         height: 100vh;
+        @include smMax {
+            height: unset;
+        }
     }
     .textContainer {
         display: flex;
         justify-content: center;
         flex-direction: column;
         @include smMax {
-            margin: 80px 0;
+            // margin: 80px 0;
         }
     }
 }

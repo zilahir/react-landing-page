@@ -229,3 +229,7 @@ In case of questions, drop me a [message](mailto:zilahi@gmail.com).
 
 - This project is licenced under [MIT](https://choosealicense.com/licenses/mit/) licence.
 - The photos are in this repo are from [pexels.com](https://pexels.com)
+
+# Design
+
+If you have design suggestioin, or any type of UI / UX related interaction idea's, open an [issue](https://github.com/zilahir/react-landing-page/issues) and let's discuss it.

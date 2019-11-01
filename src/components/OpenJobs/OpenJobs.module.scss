@@ -1,0 +1,53 @@
+@import '../../styles/variables';
+
+.accordion {
+    font-family: 'KoHo', sans-serif;
+    .jobIsOpen {
+        .button {
+            border-bottom: 0 !important;
+        }
+    }
+    .item {
+        &:focus {
+            outline: none;
+        }
+        .heading {
+            div {
+                &:focus {
+                    outline: none;
+                }
+            }
+            .button {
+               &:hover {
+                   cursor: pointer;
+               } 
+                background-color: transparent;
+                padding: 30px;
+                border-bottom: 2px solid $main-dark;
+                .title {
+                    color: $main-dark;
+                    margin-left: 20px
+                }
+                .buttonIcon {
+                    display: flex;
+                }
+            }
+        }
+        .panel {
+            background: $light-green;
+            padding: 30px;
+            border-bottom: 4px solid $main-green;
+            .iconContainer {
+                display: flex;
+            }
+            .jobLocation {
+                margin-left: 10px;
+            }
+            .jobDesc {
+                max-width: 80%;
+                padding: 30px;
+                text-align: left;
+            }
+        }
+    }
+}

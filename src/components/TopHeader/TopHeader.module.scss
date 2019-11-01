@@ -7,10 +7,13 @@
         padding: 40px;
         background-color: $light-green;
         @include smMax {
-            padding: 0;
+            padding: 10px;
         }
     }
     height: 50px;
+    @include smMax {
+        height: 60px;
+    }
     background: rgba($color: #FFFFFF, $alpha: 1.0);
     overflow: hidden;
     padding: 20px 0;
@@ -23,6 +26,9 @@
         grid-gap: 8px;
     }
     .logo {
+        @include smMax {
+            display: none;
+        }
         list-style-type: none;
         img {
             max-width: 50px;

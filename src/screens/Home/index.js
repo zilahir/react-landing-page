@@ -77,7 +77,9 @@ const Homepage = () => {
 				<Row>
 					<Col lg={12} xs={12}>
 						<div className={styles.sectionContainer}>
-							<Section>
+							<Section
+								xsOffset={0}
+							>
 								<HeaderH1 key="header-bottom" text="lorem ipsum" />
 								<Paragraph key="p" text="Exercitation pariatur fugiat incididunt esse consequat officia ut dolore. Voluptate ad nisi et fugiat reprehenderit cupidatat ipsum commodo proident veniam veniam ipsum magna et. Amet ipsum adipisicing adipisicing nostrud id culpa velit. Velit aliqua voluptate cillum ea nulla cillum eu exercitation laborum velit cupidatat mollit." />
 								<Phone key="image-bottom">

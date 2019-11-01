@@ -1,5 +1,5 @@
 import React from 'react'
-import { Route, HashRouter } from 'react-router-dom'
+import { Route, BrowserRouter as Router } from 'react-router-dom'
 
 import Home from './screens/Home'
 import Contact from './screens/Contact'
@@ -10,14 +10,14 @@ import BurgerMenu from './components/BurgerMenu'
 
 function App() {
 	return (
-		<HashRouter>
+		<Router>
 			<BurgerMenu />
 			<Route path="/" exact component={Home} />
 			<Route path="/contact" exact component={Contact} />
 			<Route path="/about" exact component={About} />
 			<Route path="/product" exact component={Product} />
 			<Route path="/jobs" exact component={Jobs} />
-		</HashRouter>
+		</Router>
 	)
 }
 

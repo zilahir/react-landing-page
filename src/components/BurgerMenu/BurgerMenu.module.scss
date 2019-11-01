@@ -1,11 +1,11 @@
 @import '../../styles/variables.scss';
 
 .burgerButton {
-    position: fixed;
+    position: absolute;
     width: 36px;
     height: 30px;
-    top: 0;
-    left: 0;
+    top: 25px;
+    left: 10px;
 }
 
 .menu {

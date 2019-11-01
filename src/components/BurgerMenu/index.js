@@ -21,8 +21,11 @@ const BurgerMenu = () => {
 				role="button"
 				tabIndex={0}
 				className={styles.burgerButton}
+				style={{
+					color: '#5abd79',
+				}}
 			>
-				<Icon icon={MenuIcon} />
+				<Icon size="3em" icon={MenuIcon} />
 			</div>
 			<Menu
 				isOpen={isBurgerMenuOpen}

@@ -7,6 +7,9 @@
     display: block;
     &.heroWrapper {
         height: 100vh;
+        @include smMax {
+            height: unset;
+        }
     }
     .textContainer {
         display: flex;

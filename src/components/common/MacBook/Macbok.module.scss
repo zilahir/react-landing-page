@@ -1,4 +1,5 @@
 @import '../../../styles/mixins/MacBook.scss';
+@import '../../../styles/mixins/mediaQueries.scss';
 
 // VARIABLES
 $white: #FFFFFF;
@@ -10,6 +11,9 @@ $accent: #3fb8af;
 
 .macWrapper {
     position: relative;
+    @include smMax {
+      display: none;
+    }
     .macbook {
         width: 766px;
         margin: 50px auto;

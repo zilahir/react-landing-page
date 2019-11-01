@@ -39,7 +39,10 @@ const Homepage = () => {
 			>
 				<TopHeader />
 				<Row>
-					<Col lg={12} xs={12}>
+					<Col
+						lg={12}
+						xs={12}
+					>
 						<div className={styles.sectionContainer}>
 							<Section
 								imagePos="right"
@@ -47,9 +50,6 @@ const Homepage = () => {
 								xsOffset={0}
 								leftLg={3}
 								rightLg={7}
-								inlineStyle={{
-									padding: '40px 0px',
-								}}
 							>
 								<HeaderH2 className={styles.subHeader} key="header-top" text="lorem" />
 								<HeaderH1 key="sub-header-top" text="helloo" />

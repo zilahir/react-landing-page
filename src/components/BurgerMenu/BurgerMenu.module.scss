@@ -10,4 +10,17 @@
 
 .menu {
     background-color: $light-green;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 30px;
+    * {
+        &:focus {
+            outline: none;
+        }
+    }
+}
+
+.logo {
+    border-radius: 100%;
 }

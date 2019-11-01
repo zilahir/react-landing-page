@@ -11,6 +11,8 @@ import styles from './BurgerMenu.module.scss'
 * @function BurgerMenu
 * */
 
+const Logo = 'https://via.placeholder.com/150/5abd79/ffffff?Text=gatsbyjs'
+
 const BurgerMenu = () => {
 	const [isBurgerMenuOpen, setBurgerMenuOpen] = useState(false)
 	return (
@@ -32,6 +34,9 @@ const BurgerMenu = () => {
 				customBurgerIcon={false}
 				itemListClassName={styles.menu}
 			>
+				<Link to="/">
+					<img className={styles.logo} alt="log" src={Logo} />
+				</Link>
 				<Link to="about">
 					About
 				</Link>

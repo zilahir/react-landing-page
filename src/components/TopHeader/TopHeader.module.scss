@@ -26,6 +26,9 @@
         grid-gap: 8px;
     }
     .logo {
+        @include smMax {
+            display: none;
+        }
         list-style-type: none;
         img {
             max-width: 50px;

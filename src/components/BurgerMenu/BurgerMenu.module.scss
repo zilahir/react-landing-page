@@ -1,4 +1,5 @@
 @import '../../styles/variables.scss';
+@import '../../styles/mixins/ParagraphMixin';
 
 .burgerButton {
     position: absolute;
@@ -17,6 +18,18 @@
     * {
         &:focus {
             outline: none;
+        }
+    }
+}
+
+.menuContainer {
+    nav {
+        a {
+            text-align: left;
+            text-transform: uppercase;
+            @include p;
+            text-decoration: none;
+            font-weight: 700;
         }
     }
 }

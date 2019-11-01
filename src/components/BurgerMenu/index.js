@@ -4,6 +4,7 @@ import { slide as Menu } from 'react-burger-menu'
 import { menu as MenuIcon } from 'react-icons-kit/feather/menu'
 import Icon from 'react-icons-kit'
 
+import { headerMenu } from '../api/headerMenu'
 import styles from './BurgerMenu.module.scss'
 
 /**
@@ -21,7 +22,7 @@ const BurgerMenu = () => {
 				onClick={() => setBurgerMenuOpen(!isBurgerMenuOpen)}
 				onKeyPress={() => null}
 				role="button"
-				tabIndex={0}
+				tabIndex={-1}
 				className={styles.burgerButton}
 				style={{
 					color: '#5abd79',
@@ -33,13 +34,21 @@ const BurgerMenu = () => {
 				isOpen={isBurgerMenuOpen}
 				customBurgerIcon={false}
 				itemListClassName={styles.menu}
+				menuClassName={styles.menuContainer}
 			>
 				<Link to="/">
 					<img className={styles.logo} alt="log" src={Logo} />
 				</Link>
-				<Link to="about">
-					About
-				</Link>
+				{
+					headerMenu.getHeaderMenu().map(menuItem => (
+						<Link
+							to={menuItem.slug}
+							key={menuItem.key}
+						>
+							{menuItem.label}
+						</Link>
+					))
+				}
 			</Menu>
 		</div>
 	)

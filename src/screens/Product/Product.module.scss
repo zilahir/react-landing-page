@@ -49,7 +49,11 @@
 }
 
 .textContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     @include smMax {
+        display: block;
         margin-top: 80px;
     }
 }

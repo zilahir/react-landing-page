@@ -12,7 +12,7 @@ import styles from './TopHeader.module.scss'
 const TopHeader = () => {
 	const [curPath, setCurPath] = useState(null)
 	function getCurrantPath() {
-		const curpath = window.location.hash
+		const curpath = window.location.pathname
 		setCurPath(curpath)
 	}
 
@@ -37,7 +37,7 @@ const TopHeader = () => {
 							index={1}
 							label={menuItem.label}
 							target={menuItem.slug}
-							isActive={`#/${menuItem.slug}` === curPath ? true : null}
+							isActive={`/${menuItem.slug}` === curPath ? true : null}
 						/>
 					))}
 				</ul>

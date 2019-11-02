@@ -38,6 +38,7 @@ const TeamMember = props => {
 	const isTabletOrMobileDevice = useMediaQuery({
 		query: '(max-device-width: 1224px)',
 	})
+	// console.debug('parallaxY', parallaxY)
 	return (
 		<ParallaxProvider>
 			<Parallax
@@ -80,7 +81,7 @@ TeamMember.propTypes = {
 	image: PropTypes.string.isRequired,
 	lnUrl: PropTypes.string.isRequired,
 	name: PropTypes.string.isRequired,
-	parallaxY: PropTypes.arrayOf,
+	parallaxY: PropTypes.arrayOf(PropTypes.number),
 	roleText: PropTypes.string.isRequired,
 }
 

@@ -9,6 +9,8 @@ module.exports = {
 				useResolveUrlLoader: true,
 				sassRuleTest: /\.global\.s(a|c)ss$/,
 				sassRuleModulesTest: /\.mod\.s(a|c)ss$/,
+				debug: true,
+				javascriptEnabled: true,
 			},
 		},
 		{

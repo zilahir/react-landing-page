@@ -32,6 +32,7 @@ const OpenJobs = () => {
 				jobs.getJobs().map((job, index) => (
 					<AccordionItem
 						className={`${styles.item} ${index === activeJob[0] ? styles.jobIsOpen : ''}`}
+						key={job.key}
 					>
 						<AccordionItemHeading
 							className={styles.heading}

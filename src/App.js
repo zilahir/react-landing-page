@@ -1,11 +1,11 @@
 import React from 'react'
 import { Route, BrowserRouter as Router } from 'react-router-dom'
 
-import Home from './screens/Home'
-import Contact from './screens/Contact'
-import About from './screens/About'
-import Product from './screens/Product'
-import Jobs from './screens/Jobs'
+import Home from './pages/Home'
+import Contact from './pages/Contact'
+import About from './pages/About'
+import Product from './pages/Product'
+import Jobs from './pages/Jobs'
 import BurgerMenu from './components/BurgerMenu'
 
 function App() {

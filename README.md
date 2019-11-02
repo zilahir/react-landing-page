@@ -84,7 +84,7 @@ Each component have to be in `components` folder.
 
 1. in `common/<component-name>`, if it's a _common_ component.
 
-2. in `screens/<screen-name>`, if it's a page.
+2. in `pages/<page-name>`, if it's a page.
 
 ## Folder structure
 
@@ -108,7 +108,7 @@ The structure of the folders tried to be kept as consistent and self explanary e
 │ │ └── index.js
 ├── reducers
 │ └── test.js
-├── screens
+├── pages
 │ ├── Home
 │ │ ├── Home.module.scss
 │ │ └── index.js

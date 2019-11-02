@@ -5,9 +5,15 @@
   "dependencies": {
     "@zilahir/html5-device-mockups": "^3.2.5",
     "framer-motion": "^1.6.8",
+    "gatsby": "^2.17.7",
+    "gatsby-plugin-manifest": "^2.2.26",
+    "gatsby-plugin-offline": "^3.0.17",
+    "gatsby-plugin-sass": "^2.1.20",
+    "gatsby-source-graphql": "^2.1.21",
     "i": "^0.3.6",
-    "node-sass": "^4.12.0",
+    "node-sass": "^4.13.0",
     "npm": "^6.12.0",
+    "postcss-preset-env": "^6.7.0",
     "prop-types": "^15.7.2",
     "react": "^16.10.1",
     "react-accessible-accordion": "^3.0.0",
@@ -31,10 +37,8 @@
     "styled-components": "^4.4.0"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
+    "build": "gatsby build",
+    "develop": "gatsby develop",
     "format": "prettier --write",
     "lint:js": "eslint --ext .js,.jsx ."
   },
@@ -84,8 +88,11 @@
     "eslint-plugin-react": "^7.14.3",
     "husky": "^3.0.8",
     "lint-staged": "^9.2.5",
+    "postcss": "^7.0.21",
     "prettier": "^1.18.2",
     "redux-devtools-extension": "^2.13.8",
+    "resolve-url-loader": "^3.1.0",
+    "sass": "^1.23.3",
     "sass-loader": "^8.0.0",
     "stylelint": "^11.0.0",
     "yarn": "^1.17.3"

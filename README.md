@@ -84,7 +84,7 @@ Each component have to be in `components` folder.
 
 1. in `common/<component-name>`, if it's a _common_ component.
 
-2. in `screens/<screen-name>`, if it's a page.
+2. in `pages/<page-name>`, if it's a page.
 
 ## Folder structure
 
@@ -108,7 +108,7 @@ The structure of the folders tried to be kept as consistent and self explanary e
 │ │ └── index.js
 ├── reducers
 │ └── test.js
-├── screens
+├── pages
 │ ├── Home
 │ │ ├── Home.module.scss
 │ │ └── index.js
@@ -207,13 +207,14 @@ const menuItem = headerMenu.getHeaderMenu();
 
 Here's a list of _important_ dependencies we are using in this project:
 
+1. [`gatsbyJS`](https://www.gatsbyjs.org/)
 1. [`framer-motion`](https://github.com/framer/motion)
-2. [`react-waypoint`](https://github.com/civiccc/react-waypoint)
-3. [`redux`](https://github.com/reduxjs/redux)
-4. [`redux-thunk`](https://github.com/reduxjs/redux-thunk) (_not in use currently_)
-5. [`styled-components`](https://github.com/styled-components/styled-components)
-6. [`react-parallax`](https://github.com/RRutsche/react-parallax)
-7. [`react-responsive`](https://github.com/contra/react-responsive)
+1. [`react-waypoint`](https://github.com/civiccc/react-waypoint)
+1. [`redux`](https://github.com/reduxjs/redux)
+1. [`redux-thunk`](https://github.com/reduxjs/redux-thunk) (_not in use currently_)
+1. [`styled-components`](https://github.com/styled-components/styled-components)
+1. [`react-parallax`](https://github.com/RRutsche/react-parallax)
+1. [`react-responsive`](https://github.com/contra/react-responsive)
 
 Please read the documentation of these packages if you are not familiar with them.
 

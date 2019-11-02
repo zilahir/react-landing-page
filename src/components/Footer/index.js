@@ -23,22 +23,6 @@ const Footer = () => {
 			}}
 		>
 			<div className={styles.content}>
-				<div className={styles.footerNavContainer}>
-					<Row
-						center="lg"
-					>
-						<Col xs={12} lg={4}>
-							<p>
-								lorem
-							</p>
-						</Col>
-						<Col xs={12} lg={4}>
-							<p>
-								lorem
-							</p>
-						</Col>
-					</Row>
-				</div>
 				<Row>
 					<Col xs={12} lg={12}>
 						<div className={styles.socialContainer}>

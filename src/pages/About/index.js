@@ -19,7 +19,7 @@ import styles from './About.module.scss'
 * @function About
 * */
 
-const About = () => (
+const AboutPage = () => (
 	<Grid
 		fluid
 		className={styles.fluid}
@@ -81,4 +81,4 @@ const About = () => (
 	</Grid>
 )
 
-export default About
+export default AboutPage

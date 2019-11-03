@@ -3,7 +3,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { useMediaQuery } from 'react-responsive'
 import { ParallaxProvider, Parallax } from 'react-scroll-parallax'
-import { Link } from 'react-router-dom'
+import { Link } from 'gatsby'
 import styled from 'styled-components'
 import { FiLinkedin } from 'react-icons/fi/'
 

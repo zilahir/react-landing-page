@@ -34,7 +34,7 @@ const TopHeader = () => {
 		}
 	`)
 	return (
-		<div className={`${styles.topHeader} ${curPath === '#/' ? styles.homePage : ''}`}>
+		<div className={`${styles.topHeader} ${curPath === '/' ? styles.homePage : ''}`}>
 			<div className={styles.header}>
 				<ul className={styles.logo}>
 					<li>
@@ -48,7 +48,7 @@ const TopHeader = () => {
 							index={1}
 							label={menuItem.menuItem}
 							target={`${menuItem.target}`}
-							isActive={`${menuItem.menuItem}` === curPath ? true : null}
+							isActive={`${menuItem.target}` === curPath ? true : null}
 						/>
 					))}
 				</ul>

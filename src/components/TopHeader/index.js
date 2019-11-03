@@ -36,13 +36,13 @@ const TopHeader = () => {
 							key={menuItem.key}
 							index={1}
 							label={menuItem.label}
-							target={menuItem.slug}
+							target={`/${menuItem.slug}`}
 							isActive={`/${menuItem.slug}` === curPath ? true : null}
 						/>
 					))}
 				</ul>
 				<ul className={styles.menuRight}>
-					<MenuItem index={8} target="contact" label="Contact" />
+					<MenuItem index={8} target="/contact" label="Contact" />
 				</ul>
 			</div>
 		</div>

@@ -20,6 +20,7 @@ const Maps = () => {
 			</Marker>
 		)
 	}
+	console.debug('mapToken', process.env)
 	return (
 		<div className={styles.mapWrapper}>
 			<ReactMapGL

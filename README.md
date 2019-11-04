@@ -4,6 +4,13 @@ This is a repo for an ongoing development of a landing page written in `react`.
 
 [![Build Status](https://travis-ci.org/zilahir/react-landing-page.svg?branch=master)](https://travis-ci.org/zilahir/react-landing-page)
 
+## Run locally
+
+1. clone the repo
+2. hit `npm i`
+3. set up `GraphCMS` and `gatsby-config.js`. [Documentation](https://github.com/zilahir/react-landing-page/wiki/GraphCMS)
+4. start local develoment environment by `gatsby develop`
+
 ## List of components
 
 ```

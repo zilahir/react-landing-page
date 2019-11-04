@@ -53,7 +53,7 @@ const TopHeader = () => {
 					))}
 				</ul>
 				<ul className={styles.menuRight}>
-					<MenuItem index={8} target="/contact" label="Contact" />
+					<MenuItem index={8} target="/Contact" label="Contact" />
 				</ul>
 			</div>
 		</div>

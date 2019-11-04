@@ -1,17 +1,17 @@
 /* eslint-disable react/no-array-index-key */
 import React from 'react'
 import { motion, useAnimation } from 'framer-motion'
+import PropTypes from 'prop-types'
 
 import TeamMember from '../common/TeamMember'
 import styles from './Team.module.scss'
-import { team } from '../api/team'
 
 /**
 * @author zilahir
 * @function Team
 * */
 
-const Team = () => {
+const Team = props => {
 	const variants = {
 		visible: i => ({
 			opacity: 1,
@@ -34,7 +34,7 @@ const Team = () => {
 		},
 	}
 	const controls = useAnimation()
-
+	const { teamMembers } = props
 	const PARALLAX_Y = [
 		[10, -10],
 		[-20, 20],
@@ -56,7 +56,7 @@ const Team = () => {
 				animate={controls}
 			>
 				{
-					team.getTeam().map((teamMembers, i) => (
+					teamMembers.map((member, i) => (
 						<motion.li
 							custom={i}
 							key={i}
@@ -64,9 +64,9 @@ const Team = () => {
 							variants={variants}
 						>
 							<TeamMember
-								image={teamMembers.src}
-								name={teamMembers.name}
-								roleText={teamMembers.role}
+								image="https://via.placeholder.com/150/c8e9d2"
+								name={member.name}
+								roleText="lorem"
 								lnUrl="#"
 								ind={i}
 								parallaxY={i % 2 === 0 ? PARALLAX_Y[0] : PARALLAX_Y[1]}
@@ -79,5 +79,8 @@ const Team = () => {
 	)
 }
 
+Team.propTypes = {
+	teamMembers: PropTypes.arrayOf(PropTypes.object).isRequired,
+}
 
 export default Team

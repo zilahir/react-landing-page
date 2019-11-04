@@ -1,12 +1,16 @@
 import React from 'react'
 
+import Homepage from './Home'
+
 /**
 * @author zilahir
 * @function Index
 * */
 
 const Index = () => (
-	<div>Index</div>
+	<>
+		<Homepage />
+	</>
 )
 
 export default Index

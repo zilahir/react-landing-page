@@ -1,5 +1,7 @@
 import React from 'react'
 import { Grid, Row, Col } from 'react-flexbox-grid'
+import { graphql } from 'gatsby'
+import PropTypes from 'prop-types'
 
 import TopHeader from '../../components/TopHeader'
 import Footer from '../../components/Footer'
@@ -19,7 +21,7 @@ import styles from './About.module.scss'
 * @function About
 * */
 
-const About = () => (
+const AboutPage = ({ data }) => (
 	<Grid
 		fluid
 		className={styles.fluid}
@@ -66,7 +68,7 @@ const About = () => (
 		<Row>
 			<Col lg={12} xs={12}>
 				<div className={`${styles.aboutusContainer}`}>
-					<Team />
+					<Team teamMembers={data.team.teams} />
 				</div>
 			</Col>
 		</Row>
@@ -81,4 +83,26 @@ const About = () => (
 	</Grid>
 )
 
-export default About
+export default AboutPage
+
+AboutPage.defaultProps = {
+	data: {},
+}
+
+AboutPage.propTypes = {
+	data: PropTypes.objectOf([
+		PropTypes.number,
+		PropTypes.string,
+	]),
+}
+
+export const getAllTeamMembers = graphql`
+  query {
+	team {
+		teams {
+		id
+		name
+		}
+	}
+}
+`

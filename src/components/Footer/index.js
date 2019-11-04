@@ -1,7 +1,6 @@
 import React from 'react'
 import { FiFacebook, FiInstagram } from 'react-icons/fi'
 import { Row, Col } from 'react-flexbox-grid'
-import { Link } from 'react-router-dom'
 
 import FooterWave from '../../assets/img/misc/footer_wave.png'
 import { footerMenu } from '../api/footer'
@@ -28,14 +27,14 @@ const Footer = () => {
 						<div className={styles.socialContainer}>
 							<ul>
 								<li>
-									<Link to="/">
+									<a rel="noopener noreferrer" target="_blank" href="https://facebook.com">
 										<FiFacebook size="2em" />
-									</Link>
+									</a>
 								</li>
 								<li>
-									<Link to="/">
+									<a rel="noopener noreferrer" target="_blank" href="https://instagram.com">
 										<FiInstagram size="2em" />
-									</Link>
+									</a>
 								</li>
 							</ul>
 						</div>

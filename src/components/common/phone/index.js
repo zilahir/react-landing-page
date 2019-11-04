@@ -32,7 +32,13 @@ const PurleWrapper = styled.div`
 `
 
 const Phone = props => {
-	const { children, className, animationEnd, secondaryImage, secondaryImageZoom } = props
+	const {
+		children,
+		className,
+		animationEnd,
+		secondaryImage,
+		secondaryImageZoom,
+	} = props
 	const [toggle, setToggle] = useState({
 		height: '200px',
 		overflow: 'hidden',

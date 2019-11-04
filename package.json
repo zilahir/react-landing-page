@@ -89,5 +89,15 @@
     "sass-loader": "^8.0.0",
     "stylelint": "^11.0.0",
     "yarn": "^1.17.3"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zilahir/react-landing-page"
+  },
+  "author": {
+    "name": "Richard Zilahi",
+    "email": "zilahi@gmail.com",
+    "url": "https://richardzilhi.hu"
   }
 }

@@ -4,20 +4,31 @@ This is a repo for an ongoing development of a landing page written in `react`.
 
 [![Build Status](https://travis-ci.org/zilahir/react-landing-page.svg?branch=master)](https://travis-ci.org/zilahir/react-landing-page)
 
+## Run locally
+
+1. clone the repo
+2. hit `npm i`
+3. set up `GraphCMS` and `gatsby-config.js`. [Documentation](https://github.com/zilahir/react-landing-page/wiki/GraphCMS)
+4. start local develoment environment by `gatsby develop`
+
 ## List of components
 
-| task                  | status             | props                             |
-| --------------------- | ------------------ | --------------------------------- |
-| header `h1`           | :white_check_mark: | `text:string`, `className:string` |
-| header `h2`           | :white_check_mark: | `text:string`, `className:string` |
-| header menu items     | :hammer:           |
-| `button`              | :white_check_mark: |
-| text block `p`        | :white_check_mark: |
-| testimonials `(logo)` | :white_check_mark: |
-| map                   | :white_check_mark: |
-| team                  | :white_check_mark: |
-| phone                 | :white_check_mark: |
-| macbook               | :white_check_mark: |
+```
+[NOTE]: The documentation of each components, with examples are under construction.
+Until then, check the individual code for each component to get more insight.
+```
+
+| task                | status             | props                                                                                                                       |
+| ------------------- | ------------------ | --------------------------------------------------------------------------------------------------------------------------- |
+| `<HeaderH1>`        | :white_check_mark: | `text:string`, `className:string`                                                                                           |
+| `<HeaderH2>`        | :white_check_mark: | `text:string`, `className:string`                                                                                           |
+| `<Button>`          | :white_check_mark: | `bgColor: string`, `className: string`, `onClick: func`, `children: React.node`, `isAnimation: boolean`                     |
+| `<Paragraph>`       | :white_check_mark: | `text: String`, `className: String`                                                                                         |
+| `<TestimonialItem>` | :white_check_mark: | `index: Number`, `src: String`, `alt: String`, `className: String`                                                          |
+| `<Map />`           | :white_check_mark: | _TODO:_ `graphql`                                                                                                           |
+| `<Team>`            | :white_check_mark: | _TODO:_ `graphql`                                                                                                           |
+| `<Phone />`         | :white_check_mark: | `children: React.node`, `className: String`, `animationEnd: String`, `secondaryImage: String`, `secondaryImageZoom: Number` |
+| `<Macbook />`       | :white_check_mark: | `children: React.node`, `barTitle: String`, `frameUrl: String`                                                              |
 
 ## Code of conduct
 
@@ -215,8 +226,21 @@ Here's a list of _important_ dependencies we are using in this project:
 1. [`styled-components`](https://github.com/styled-components/styled-components)
 1. [`react-parallax`](https://github.com/RRutsche/react-parallax)
 1. [`react-responsive`](https://github.com/contra/react-responsive)
+1. [`react-map-gl`](https://github.com/uber/react-map-gl#readme)
 
 Please read the documentation of these packages if you are not familiar with them.
+
+## MapBox
+
+On the website, there is a map incuded. To be able to use it, you need to provide your own `TOKEN` for it. To learn how to use the tokens, visit the related [part](https://github.com/uber/react-map-gl#about-mapbox-tokens) of the documentation.
+
+Since we are using `gatsbyJS`, you must the related way of declaring `env` variables.
+
+`Gatsby` prefixes the `env` variables with `GATSBY_`, so your token will be something like:
+
+```
+GATSBY_MAPBOX_ACCESS_TOKEN=<YOURTOKEN>
+```
 
 ## Deployments
 

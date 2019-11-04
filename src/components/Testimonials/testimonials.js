@@ -1,12 +1,12 @@
 import React from 'react'
 import { Row, Col } from 'react-flexbox-grid'
+import { useStaticQuery, graphql } from 'gatsby'
 import { Waypoint } from 'react-waypoint'
 import { motion, useAnimation } from 'framer-motion'
 import PropTypes from 'prop-types'
 
 import styles from './Testimonials.module.scss'
 import TestimonialItem from '../common/TestimonialItem/testimonialitem'
-import { testimonials } from '../api/testimonials'
 
 /**
 * @author martincserep, zilahri
@@ -15,6 +15,20 @@ import { testimonials } from '../api/testimonials'
 
 
 const Testimonials = props => {
+	const TestimonialData = useStaticQuery(graphql`
+		query {
+		team {
+			clientses {
+				id
+				logo {
+					fileName
+					url
+				}
+				name
+				}
+			}
+  		}
+  	`)
 	const { className } = props
 	const variants = {
 		visible: i => ({
@@ -58,16 +72,16 @@ const Testimonials = props => {
 								initial="hidden"
 								animate={controls}
 							>
-								{testimonials.getTestimonials().map((testimonialItem, i) => (
+								{TestimonialData.team.clientses.map((testimonialItem, i) => (
 									<motion.li
 										custom={i}
 										animate={controls}
 										variants={variants}
-										key={`${TestimonialItem.alt}-${i + 1}`}
+										key={testimonialItem.id}
 									>
 										<TestimonialItem
-											src={testimonialItem.src}
-											alt={testimonialItem.alt}
+											src={testimonialItem.logo.url}
+											alt={testimonialItem.name}
 											index={i}
 										/>
 									</motion.li>

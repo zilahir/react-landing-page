@@ -29,6 +29,8 @@
     .linkList {
         list-style-type: none;
         display: grid;
+        padding: 0;
+        margin: 0;
         li {
             a {
                 svg {

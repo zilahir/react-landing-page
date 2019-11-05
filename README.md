@@ -4,6 +4,10 @@ This is a repo for an ongoing development of a landing page written in `react`.
 
 [![Build Status](https://travis-ci.org/zilahir/react-landing-page.svg?branch=master)](https://travis-ci.org/zilahir/react-landing-page)
 
+## Releases
+
+The latest releases can be found under [releases](https://github.com/zilahir/react-landing-page/releases).
+
 ## Run locally
 
 1. clone the repo

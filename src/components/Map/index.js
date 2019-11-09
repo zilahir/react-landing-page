@@ -5,7 +5,7 @@ import ReactMapGL, { Marker } from 'react-map-gl'
 
 import CityPin from './CityPin'
 import styles from './Map.module.scss'
-import { allRestaurants } from './restaurants'
+import { allMarkers } from './markers'
 
 /**
 * @author zilahir
@@ -20,6 +20,7 @@ const Maps = () => {
 			</Marker>
 		)
 	}
+	console.debug('mapToken', process.env)
 	return (
 		<div className={styles.mapWrapper}>
 			<ReactMapGL
@@ -28,9 +29,10 @@ const Maps = () => {
 				latitude={61.49911}
 				longitude={23.78712}
 				zoom={12}
+				MapboxAccessToken={process.env.GATSBY_MAPBOX_ACCESS_TOKEN}
 			>
 				{
-					allRestaurants.partners.map(((rest, i) => (
+					allMarkers.partners.map(((rest, i) => (
 						renderCityMarker(rest, i)
 					)))
 				}
